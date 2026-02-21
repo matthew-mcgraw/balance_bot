@@ -1,0 +1,29 @@
+{
+  "package_name": "balance_hw_interfaces",
+  "output_dir": "/home/mmcgraw/Projects/balance_bot/build/balance_hw_interfaces/rosidl_typesupport_fastrtps_cpp/balance_hw_interfaces",
+  "template_dir": "/opt/ros/jazzy/share/rosidl_typesupport_fastrtps_cpp/resource",
+  "idl_tuples": [
+    "/home/mmcgraw/Projects/balance_bot/build/balance_hw_interfaces/rosidl_adapter/balance_hw_interfaces:srv/SetDirection.idl",
+    "/home/mmcgraw/Projects/balance_bot/build/balance_hw_interfaces/rosidl_adapter/balance_hw_interfaces:srv/SetPwm.idl"
+  ],
+  "ros_interface_dependencies": [
+    "service_msgs:/opt/ros/jazzy/share/service_msgs/msg/ServiceEventInfo.idl",
+    "builtin_interfaces:/opt/ros/jazzy/share/builtin_interfaces/msg/Duration.idl",
+    "builtin_interfaces:/opt/ros/jazzy/share/builtin_interfaces/msg/Time.idl"
+  ],
+  "target_dependencies": [
+    "/opt/ros/jazzy/lib/rosidl_typesupport_fastrtps_cpp/rosidl_typesupport_fastrtps_cpp",
+    "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_typesupport_fastrtps_cpp/__init__.py",
+    "/opt/ros/jazzy/share/rosidl_typesupport_fastrtps_cpp/resource/idl__rosidl_typesupport_fastrtps_cpp.hpp.em",
+    "/opt/ros/jazzy/share/rosidl_typesupport_fastrtps_cpp/resource/idl__type_support.cpp.em",
+    "/opt/ros/jazzy/share/rosidl_typesupport_fastrtps_cpp/resource/msg__rosidl_typesupport_fastrtps_cpp.hpp.em",
+    "/opt/ros/jazzy/share/rosidl_typesupport_fastrtps_cpp/resource/msg__type_support.cpp.em",
+    "/opt/ros/jazzy/share/rosidl_typesupport_fastrtps_cpp/resource/srv__rosidl_typesupport_fastrtps_cpp.hpp.em",
+    "/opt/ros/jazzy/share/rosidl_typesupport_fastrtps_cpp/resource/srv__type_support.cpp.em",
+    "/home/mmcgraw/Projects/balance_bot/build/balance_hw_interfaces/rosidl_adapter/balance_hw_interfaces/srv/SetDirection.idl",
+    "/home/mmcgraw/Projects/balance_bot/build/balance_hw_interfaces/rosidl_adapter/balance_hw_interfaces/srv/SetPwm.idl",
+    "/opt/ros/jazzy/share/service_msgs/msg/ServiceEventInfo.idl",
+    "/opt/ros/jazzy/share/builtin_interfaces/msg/Duration.idl",
+    "/opt/ros/jazzy/share/builtin_interfaces/msg/Time.idl"
+  ]
+}

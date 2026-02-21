@@ -1,0 +1,10 @@
+motor_enable_node:
+  ros__parameters:
+    pwm_a: 13
+    a_in1: 6
+    a_in2: 26
+    pwm_b: 12
+    b_in3: 20
+    b_in4: 16
+    chip_path: "/dev/gpiochip0"
+    motor_mode: "pwm"

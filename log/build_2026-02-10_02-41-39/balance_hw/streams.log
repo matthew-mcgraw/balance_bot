@@ -1,0 +1,33 @@
+[0.050s] Invoking command in '/home/mmcgraw/Projects/balance_bot/build/balance_hw': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake --build /home/mmcgraw/Projects/balance_bot/build/balance_hw -- -j4 -l4
+[0.174s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.202s] -- Found rclcpp: 28.1.13 (/opt/ros/jazzy/share/rclcpp/cmake)
+[1.337s] -- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[1.377s] -- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[1.425s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.481s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.717s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[1.723s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[1.970s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.211s] -- Found std_msgs: 5.3.6 (/opt/ros/jazzy/share/std_msgs/cmake)
+[2.261s] -- Found std_srvs: 5.3.6 (/opt/ros/jazzy/share/std_srvs/cmake)
+[2.318s] -- Found example_interfaces: 0.12.0 (/opt/ros/jazzy/share/example_interfaces/cmake)
+[2.515s] -- Found ament_lint_auto: 0.17.3 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[2.958s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.959s] -- Configured cppcheck include dirs: 
+[2.959s] -- Configured cppcheck exclude dirs and/or files: 
+[2.962s] -- Added test 'lint_cmake' to check CMake code style
+[2.971s] -- Added test 'uncrustify' to check C / C++ code style
+[2.971s] -- Configured uncrustify additional arguments: 
+[2.973s] -- Added test 'xmllint' to check XML markup files
+[2.977s] -- Configuring done (2.8s)
+[3.054s] -- Generating done (0.0s)
+[3.075s] -- Build files have been written to: /home/mmcgraw/Projects/balance_bot/build/balance_hw
+[3.297s] [ 50%] [32mBuilding CXX object CMakeFiles/motor_enable_node.dir/src/motor_enable_node.cpp.o[0m
+[4.938s] [01m[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/motor_enable_node.cpp:6:10:[m[K [01;31m[Kfatal error: [m[Kexample_interfaces/srv/set_int64.hpp: No such file or directory
+[4.939s]     6 | #include [01;31m[K<example_interfaces/srv/set_int64.hpp>[m[K
+[4.939s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.940s] compilation terminated.
+[4.951s] gmake[2]: *** [CMakeFiles/motor_enable_node.dir/build.make:76: CMakeFiles/motor_enable_node.dir/src/motor_enable_node.cpp.o] Error 1
+[4.952s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/motor_enable_node.dir/all] Error 2
+[4.953s] gmake: *** [Makefile:146: all] Error 2
+[4.962s] Invoked command in '/home/mmcgraw/Projects/balance_bot/build/balance_hw' returned '2': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake --build /home/mmcgraw/Projects/balance_bot/build/balance_hw -- -j4 -l4

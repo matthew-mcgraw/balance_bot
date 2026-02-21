@@ -1,0 +1,19 @@
+[0.070s] Invoking command in '/home/mmcgraw/Projects/balance_bot/build/balance_hw': CMAKE_PREFIX_PATH=/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces:/home/mmcgraw/Projects/balance_bot/install/balance_hw:/opt/ros/jazzy /usr/bin/cmake --build /home/mmcgraw/Projects/balance_bot/build/balance_hw -- -j4 -l4
+[0.389s] [ 50%] [32mBuilding CXX object CMakeFiles/motor_enable_node.dir/src/motor_enable_node.cpp.o[0m
+[11.096s] [01m[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/motor_enable_node.cpp:[m[K In constructor ‘[01m[KMotorEnableNode::[01;32m[KMotorEnableNode[m[K()[m[K’:
+[11.097s] [01m[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/motor_enable_node.cpp:150:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kcmd_watchdoc_timer_[m[K’ was not declared in this scope; did you mean ‘[01m[Kcmd_watchdog_timer_[m[K’?
+[11.098s]   150 |             [01;31m[Kcmd_watchdoc_timer_[m[K = this->create_wall_timer(
+[11.098s]       |             [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[11.099s]       |             [32m[Kcmd_watchdog_timer_[m[K
+[11.103s] [01m[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/motor_enable_node.cpp:[m[K In lambda function:
+[11.104s] [01m[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/motor_enable_node.cpp:154:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kinst64_t[m[K’ does not name a type; did you mean ‘[01m[Kint64_t[m[K’?
+[11.104s]   154 |                     const [01;31m[Kinst64_t[m[K timeout_ns = static_cast<int64_t>(cmd_timeout_ms_) * 1000000LL;
+[11.105s]       |                           [01;31m[K^~~~~~~~[m[K
+[11.105s]       |                           [32m[Kint64_t[m[K
+[11.131s] [01m[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/motor_enable_node.cpp:156:31:[m[K [01;31m[Kerror: [m[K‘[01m[Ktimeout_ns[m[K’ was not declared in this scope
+[11.131s]   156 |                     if (age > [01;31m[Ktimeout_ns[m[K) {
+[11.132s]       |                               [01;31m[K^~~~~~~~~~[m[K
+[20.547s] gmake[2]: *** [CMakeFiles/motor_enable_node.dir/build.make:76: CMakeFiles/motor_enable_node.dir/src/motor_enable_node.cpp.o] Error 1
+[20.548s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/motor_enable_node.dir/all] Error 2
+[20.550s] gmake: *** [Makefile:146: all] Error 2
+[20.558s] Invoked command in '/home/mmcgraw/Projects/balance_bot/build/balance_hw' returned '2': CMAKE_PREFIX_PATH=/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces:/home/mmcgraw/Projects/balance_bot/install/balance_hw:/opt/ros/jazzy /usr/bin/cmake --build /home/mmcgraw/Projects/balance_bot/build/balance_hw -- -j4 -l4

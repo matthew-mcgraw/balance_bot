@@ -1,0 +1,5 @@
+build balance_hw:
+    colcon build --packages-select balance_hw 
+
+build balance_hw_interfaces:
+    colcon build --packages-select balance_hw_interfaces

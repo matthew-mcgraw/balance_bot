@@ -1,0 +1,241 @@
+[0.000000] (-) TimerEvent: {}
+[0.001800] (-) JobUnselected: {'identifier': 'balance_hw_interfaces'}
+[0.002040] (balance_hw) JobQueued: {'identifier': 'balance_hw', 'dependencies': OrderedDict({'balance_hw_interfaces': '/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces'})}
+[0.002193] (balance_hw) JobStarted: {'identifier': 'balance_hw'}
+[0.047977] (balance_hw) JobProgress: {'identifier': 'balance_hw', 'progress': 'cmake'}
+[0.057480] (balance_hw) JobProgress: {'identifier': 'balance_hw', 'progress': 'build'}
+[0.060453] (balance_hw) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/mmcgraw/Projects/balance_bot/build/balance_hw', '--', '-j4', '-l4'], 'cwd': '/home/mmcgraw/Projects/balance_bot/build/balance_hw', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'mmcgraw', 'SSH_CLIENT': '2601:602:867f:a290:e470:7097:d155:77ac 54128 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib', 'HOME': '/home/mmcgraw', 'OLDPWD': '/home/mmcgraw', 'SSH_TTY': '/dev/pts/4', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'mmcgraw', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '1035', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/mmcgraw/Projects/balance_bot/build/balance_hw', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '2601:602:867f:a290:e470:7097:d155:77ac 54128 2601:602:867f:a290:da3a:ddff:feb7:2f83 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces:/opt/ros/jazzy'}), 'shell': False}
+[0.099116] (-) TimerEvent: {}
+[0.198744] (balance_hw) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.199648] (-) TimerEvent: {}
+[0.300309] (-) TimerEvent: {}
+[0.401347] (-) TimerEvent: {}
+[0.502243] (-) TimerEvent: {}
+[0.603382] (-) TimerEvent: {}
+[0.704516] (-) TimerEvent: {}
+[0.805393] (-) TimerEvent: {}
+[0.906385] (-) TimerEvent: {}
+[1.007049] (-) TimerEvent: {}
+[1.107714] (-) TimerEvent: {}
+[1.182795] (balance_hw) StdoutLine: {'line': b'-- Found rclcpp: 28.1.16 (/opt/ros/jazzy/share/rclcpp/cmake)\n'}
+[1.207891] (-) TimerEvent: {}
+[1.308498] (-) TimerEvent: {}
+[1.311161] (balance_hw) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[1.355572] (balance_hw) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[1.408689] (-) TimerEvent: {}
+[1.412746] (balance_hw) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.469695] (balance_hw) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.508878] (-) TimerEvent: {}
+[1.609482] (-) TimerEvent: {}
+[1.708708] (balance_hw) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[1.709617] (-) TimerEvent: {}
+[1.715360] (balance_hw) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.809842] (-) TimerEvent: {}
+[1.910735] (-) TimerEvent: {}
+[1.968159] (balance_hw) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[2.010909] (-) TimerEvent: {}
+[2.111593] (-) TimerEvent: {}
+[2.193062] (balance_hw) StdoutLine: {'line': b'-- Found std_msgs: 5.3.6 (/opt/ros/jazzy/share/std_msgs/cmake)\n'}
+[2.211727] (-) TimerEvent: {}
+[2.244324] (balance_hw) StdoutLine: {'line': b'-- Found std_srvs: 5.3.6 (/opt/ros/jazzy/share/std_srvs/cmake)\n'}
+[2.302471] (balance_hw) StdoutLine: {'line': b'-- Found balance_hw_interfaces: 0.0.0 (/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/share/balance_hw_interfaces/cmake)\n'}
+[2.311890] (-) TimerEvent: {}
+[2.378423] (balance_hw) StdoutLine: {'line': b'-- Found geometry_msgs: 5.3.6 (/opt/ros/jazzy/share/geometry_msgs/cmake)\n'}
+[2.412080] (-) TimerEvent: {}
+[2.462971] (balance_hw) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.17.4 (/opt/ros/jazzy/share/ament_lint_auto/cmake)\n'}
+[2.512260] (-) TimerEvent: {}
+[2.613043] (-) TimerEvent: {}
+[2.713679] (-) TimerEvent: {}
+[2.814605] (-) TimerEvent: {}
+[2.902879] (balance_hw) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[2.903791] (balance_hw) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[2.904377] (balance_hw) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[2.907612] (balance_hw) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.914633] (-) TimerEvent: {}
+[2.915251] (balance_hw) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[2.916027] (balance_hw) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[2.917605] (balance_hw) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.922045] (balance_hw) StdoutLine: {'line': b'-- Configuring done (2.7s)\n'}
+[3.014858] (-) TimerEvent: {}
+[3.092937] (balance_hw) StdoutLine: {'line': b'-- Generating done (0.1s)\n'}
+[3.115062] (-) TimerEvent: {}
+[3.148367] (balance_hw) StdoutLine: {'line': b'-- Build files have been written to: /home/mmcgraw/Projects/balance_bot/build/balance_hw\n'}
+[3.215267] (-) TimerEvent: {}
+[3.316946] (-) TimerEvent: {}
+[3.385079] (balance_hw) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/motor_enable_node.dir/src/motor_enable_node.cpp.o\x1b[0m\n'}
+[3.417166] (-) TimerEvent: {}
+[3.518002] (-) TimerEvent: {}
+[3.618696] (-) TimerEvent: {}
+[3.719604] (-) TimerEvent: {}
+[3.820286] (-) TimerEvent: {}
+[3.921687] (-) TimerEvent: {}
+[4.022309] (-) TimerEvent: {}
+[4.122968] (-) TimerEvent: {}
+[4.223617] (-) TimerEvent: {}
+[4.324329] (-) TimerEvent: {}
+[4.425384] (-) TimerEvent: {}
+[4.526096] (-) TimerEvent: {}
+[4.626752] (-) TimerEvent: {}
+[4.727362] (-) TimerEvent: {}
+[4.828052] (-) TimerEvent: {}
+[4.928882] (-) TimerEvent: {}
+[5.029571] (-) TimerEvent: {}
+[5.130199] (-) TimerEvent: {}
+[5.230865] (-) TimerEvent: {}
+[5.331630] (-) TimerEvent: {}
+[5.432357] (-) TimerEvent: {}
+[5.533203] (-) TimerEvent: {}
+[5.633985] (-) TimerEvent: {}
+[5.734680] (-) TimerEvent: {}
+[5.835414] (-) TimerEvent: {}
+[5.936233] (-) TimerEvent: {}
+[6.037036] (-) TimerEvent: {}
+[6.137790] (-) TimerEvent: {}
+[6.238513] (-) TimerEvent: {}
+[6.339342] (-) TimerEvent: {}
+[6.440187] (-) TimerEvent: {}
+[6.540929] (-) TimerEvent: {}
+[6.641708] (-) TimerEvent: {}
+[6.742489] (-) TimerEvent: {}
+[6.843344] (-) TimerEvent: {}
+[6.944679] (-) TimerEvent: {}
+[7.045517] (-) TimerEvent: {}
+[7.146383] (-) TimerEvent: {}
+[7.247226] (-) TimerEvent: {}
+[7.348046] (-) TimerEvent: {}
+[7.448733] (-) TimerEvent: {}
+[7.549455] (-) TimerEvent: {}
+[7.650324] (-) TimerEvent: {}
+[7.751040] (-) TimerEvent: {}
+[7.851710] (-) TimerEvent: {}
+[7.952400] (-) TimerEvent: {}
+[8.053183] (-) TimerEvent: {}
+[8.154055] (-) TimerEvent: {}
+[8.254859] (-) TimerEvent: {}
+[8.355578] (-) TimerEvent: {}
+[8.456285] (-) TimerEvent: {}
+[8.557053] (-) TimerEvent: {}
+[8.657866] (-) TimerEvent: {}
+[8.758664] (-) TimerEvent: {}
+[8.859358] (-) TimerEvent: {}
+[8.960183] (-) TimerEvent: {}
+[9.061968] (-) TimerEvent: {}
+[9.162798] (-) TimerEvent: {}
+[9.263489] (-) TimerEvent: {}
+[9.364288] (-) TimerEvent: {}
+[9.465068] (-) TimerEvent: {}
+[9.565807] (-) TimerEvent: {}
+[9.666486] (-) TimerEvent: {}
+[9.767236] (-) TimerEvent: {}
+[9.867990] (-) TimerEvent: {}
+[9.968696] (-) TimerEvent: {}
+[10.069395] (-) TimerEvent: {}
+[10.170163] (-) TimerEvent: {}
+[10.270952] (-) TimerEvent: {}
+[10.371823] (-) TimerEvent: {}
+[10.472593] (-) TimerEvent: {}
+[10.573347] (-) TimerEvent: {}
+[10.674061] (-) TimerEvent: {}
+[10.774780] (-) TimerEvent: {}
+[10.875481] (-) TimerEvent: {}
+[10.976330] (-) TimerEvent: {}
+[11.077074] (-) TimerEvent: {}
+[11.177811] (-) TimerEvent: {}
+[11.278581] (-) TimerEvent: {}
+[11.379308] (-) TimerEvent: {}
+[11.480071] (-) TimerEvent: {}
+[11.580826] (-) TimerEvent: {}
+[11.681593] (-) TimerEvent: {}
+[11.782286] (-) TimerEvent: {}
+[11.883110] (-) TimerEvent: {}
+[11.983896] (-) TimerEvent: {}
+[12.084634] (-) TimerEvent: {}
+[12.185336] (-) TimerEvent: {}
+[12.286200] (-) TimerEvent: {}
+[12.386963] (-) TimerEvent: {}
+[12.487675] (-) TimerEvent: {}
+[12.588378] (-) TimerEvent: {}
+[12.689102] (-) TimerEvent: {}
+[12.789829] (-) TimerEvent: {}
+[12.890501] (-) TimerEvent: {}
+[12.991258] (-) TimerEvent: {}
+[13.092022] (-) TimerEvent: {}
+[13.192713] (-) TimerEvent: {}
+[13.293380] (-) TimerEvent: {}
+[13.394118] (-) TimerEvent: {}
+[13.494865] (-) TimerEvent: {}
+[13.595625] (-) TimerEvent: {}
+[13.696332] (-) TimerEvent: {}
+[13.797164] (-) TimerEvent: {}
+[13.897918] (-) TimerEvent: {}
+[13.998631] (-) TimerEvent: {}
+[14.048355] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/motor_enable_node.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KMotorEnableNode::\x1b[01;32m\x1b[KMotorEnableNode\x1b[m\x1b[K()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[14.049339] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/motor_enable_node.cpp:143:66:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[14.049884] (balance_hw) StderrLine: {'line': b'  143 |                 std::bind(&MotorEnableNode::on_cmd_vel, this, _1)\x1b[01;31m\x1b[K;\x1b[m\x1b[K\n'}
+[14.050291] (balance_hw) StderrLine: {'line': b'      |                                                                  \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[14.050851] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/motor_enable_node.cpp:140:80:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kto match this \xe2\x80\x98\x1b[01m\x1b[K(\x1b[m\x1b[K\xe2\x80\x99\n'}
+[14.051267] (balance_hw) StderrLine: {'line': b'  140 |             cmd_vel_sub_ = this->create_subscription<geometry_msgs::msg::Twist>\x1b[01;36m\x1b[K(\x1b[m\x1b[K\n'}
+[14.051719] (balance_hw) StderrLine: {'line': b'      |                                                                                \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[14.052185] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/motor_enable_node.cpp:144:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected primary-expression before \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[14.052618] (balance_hw) StderrLine: {'line': b'  144 |             \x1b[01;31m\x1b[K)\x1b[m\x1b[K\n'}
+[14.053042] (balance_hw) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[14.098801] (-) TimerEvent: {}
+[14.199475] (-) TimerEvent: {}
+[14.300247] (-) TimerEvent: {}
+[14.401134] (-) TimerEvent: {}
+[14.501888] (-) TimerEvent: {}
+[14.602646] (-) TimerEvent: {}
+[14.703355] (-) TimerEvent: {}
+[14.804088] (-) TimerEvent: {}
+[14.904882] (-) TimerEvent: {}
+[15.005602] (-) TimerEvent: {}
+[15.106258] (-) TimerEvent: {}
+[15.207033] (-) TimerEvent: {}
+[15.307704] (-) TimerEvent: {}
+[15.408385] (-) TimerEvent: {}
+[15.509250] (-) TimerEvent: {}
+[15.610043] (-) TimerEvent: {}
+[15.710714] (-) TimerEvent: {}
+[15.811456] (-) TimerEvent: {}
+[15.912199] (-) TimerEvent: {}
+[16.012936] (-) TimerEvent: {}
+[16.113674] (-) TimerEvent: {}
+[16.214345] (-) TimerEvent: {}
+[16.315072] (-) TimerEvent: {}
+[16.415801] (-) TimerEvent: {}
+[16.516478] (-) TimerEvent: {}
+[16.617194] (-) TimerEvent: {}
+[16.717942] (-) TimerEvent: {}
+[16.818658] (-) TimerEvent: {}
+[16.919356] (-) TimerEvent: {}
+[17.020097] (-) TimerEvent: {}
+[17.120819] (-) TimerEvent: {}
+[17.221509] (-) TimerEvent: {}
+[17.322238] (-) TimerEvent: {}
+[17.422992] (-) TimerEvent: {}
+[17.523686] (-) TimerEvent: {}
+[17.624386] (-) TimerEvent: {}
+[17.725122] (-) TimerEvent: {}
+[17.825859] (-) TimerEvent: {}
+[17.926607] (-) TimerEvent: {}
+[18.027326] (-) TimerEvent: {}
+[18.128099] (-) TimerEvent: {}
+[18.228860] (-) TimerEvent: {}
+[18.329663] (-) TimerEvent: {}
+[18.430390] (-) TimerEvent: {}
+[18.531227] (-) TimerEvent: {}
+[18.632042] (-) TimerEvent: {}
+[18.735711] (-) TimerEvent: {}
+[18.836509] (-) TimerEvent: {}
+[18.937482] (-) TimerEvent: {}
+[19.038408] (-) TimerEvent: {}
+[19.139180] (-) TimerEvent: {}
+[19.239919] (-) TimerEvent: {}
+[19.340654] (-) TimerEvent: {}
+[19.441416] (-) TimerEvent: {}
+[19.454626] (balance_hw) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/motor_enable_node.dir/build.make:76: CMakeFiles/motor_enable_node.dir/src/motor_enable_node.cpp.o] Error 1\n'}
+[19.455443] (balance_hw) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/motor_enable_node.dir/all] Error 2\n'}
+[19.456267] (balance_hw) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[19.464736] (balance_hw) CommandEnded: {'returncode': 2}
+[19.517435] (balance_hw) JobEnded: {'identifier': 'balance_hw', 'rc': 2}
+[19.529059] (-) EventReactorShutdown: {}

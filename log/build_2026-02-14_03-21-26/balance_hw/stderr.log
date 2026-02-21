@@ -1,0 +1,3 @@
+gmake[2]: *** [CMakeFiles/motor_enable_node.dir/build.make:76: CMakeFiles/motor_enable_node.dir/src/motor_enable_node.cpp.o] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/motor_enable_node.dir/all] Interrupt
+gmake: *** [Makefile:146: all] Interrupt

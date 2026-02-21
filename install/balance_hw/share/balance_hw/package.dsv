@@ -1,0 +1,8 @@
+source;share/balance_hw/hook/cmake_prefix_path.ps1
+source;share/balance_hw/hook/cmake_prefix_path.dsv
+source;share/balance_hw/hook/cmake_prefix_path.sh
+source;share/balance_hw/local_setup.bash
+source;share/balance_hw/local_setup.dsv
+source;share/balance_hw/local_setup.ps1
+source;share/balance_hw/local_setup.sh
+source;share/balance_hw/local_setup.zsh

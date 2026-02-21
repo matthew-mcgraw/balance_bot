@@ -1,0 +1,124 @@
+[0.000000] (-) TimerEvent: {}
+[0.001064] (-) JobUnselected: {'identifier': 'balance_hw_interfaces'}
+[0.001916] (balance_hw) JobQueued: {'identifier': 'balance_hw', 'dependencies': OrderedDict({'balance_hw_interfaces': '/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces'})}
+[0.002458] (balance_hw) JobStarted: {'identifier': 'balance_hw'}
+[0.055265] (balance_hw) JobProgress: {'identifier': 'balance_hw', 'progress': 'cmake'}
+[0.059160] (balance_hw) JobProgress: {'identifier': 'balance_hw', 'progress': 'build'}
+[0.062251] (balance_hw) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/mmcgraw/Projects/balance_bot/build/balance_hw', '--', '-j4', '-l4'], 'cwd': '/home/mmcgraw/Projects/balance_bot/build/balance_hw', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'mmcgraw', 'SSH_CLIENT': '2601:602:867f:a290:a01f:73ac:a56c:5fb9 55010 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib', 'HOME': '/home/mmcgraw', 'OLDPWD': '/sys/class/pwm/pwmchip0', 'SSH_TTY': '/dev/pts/4', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/mmcgraw/Projects/balance_bot/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'mmcgraw', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '176', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/mmcgraw/Projects/balance_bot/install/balance_hw:/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/mmcgraw/Projects/balance_bot/build/balance_hw', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '2601:602:867f:a290:a01f:73ac:a56c:5fb9 55010 2601:602:867f:a290:da3a:ddff:feb7:2f83 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces:/home/mmcgraw/Projects/balance_bot/install/balance_hw:/opt/ros/jazzy'}), 'shell': False}
+[0.098938] (-) TimerEvent: {}
+[0.200429] (-) TimerEvent: {}
+[0.301137] (-) TimerEvent: {}
+[0.387649] (balance_hw) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/motor_enable_node.dir/src/motor_enable_node.cpp.o\x1b[0m\n'}
+[0.401370] (-) TimerEvent: {}
+[0.502458] (-) TimerEvent: {}
+[0.603073] (-) TimerEvent: {}
+[0.703740] (-) TimerEvent: {}
+[0.804597] (-) TimerEvent: {}
+[0.906201] (-) TimerEvent: {}
+[1.006893] (-) TimerEvent: {}
+[1.107574] (-) TimerEvent: {}
+[1.208208] (-) TimerEvent: {}
+[1.308878] (-) TimerEvent: {}
+[1.409506] (-) TimerEvent: {}
+[1.510139] (-) TimerEvent: {}
+[1.610870] (-) TimerEvent: {}
+[1.711500] (-) TimerEvent: {}
+[1.812135] (-) TimerEvent: {}
+[1.912807] (-) TimerEvent: {}
+[2.013478] (-) TimerEvent: {}
+[2.114453] (-) TimerEvent: {}
+[2.215136] (-) TimerEvent: {}
+[2.315892] (-) TimerEvent: {}
+[2.416675] (-) TimerEvent: {}
+[2.517413] (-) TimerEvent: {}
+[2.618122] (-) TimerEvent: {}
+[2.718883] (-) TimerEvent: {}
+[2.819657] (-) TimerEvent: {}
+[2.920454] (-) TimerEvent: {}
+[3.022078] (-) TimerEvent: {}
+[3.123041] (-) TimerEvent: {}
+[3.223969] (-) TimerEvent: {}
+[3.325087] (-) TimerEvent: {}
+[3.429133] (-) TimerEvent: {}
+[3.530072] (-) TimerEvent: {}
+[3.632624] (-) TimerEvent: {}
+[3.733688] (-) TimerEvent: {}
+[3.834487] (-) TimerEvent: {}
+[3.935384] (-) TimerEvent: {}
+[4.036169] (-) TimerEvent: {}
+[4.136987] (-) TimerEvent: {}
+[4.237769] (-) TimerEvent: {}
+[4.338568] (-) TimerEvent: {}
+[4.439751] (-) TimerEvent: {}
+[4.540506] (-) TimerEvent: {}
+[4.641487] (-) TimerEvent: {}
+[4.742649] (-) TimerEvent: {}
+[4.843989] (-) TimerEvent: {}
+[4.945506] (-) TimerEvent: {}
+[5.046885] (-) TimerEvent: {}
+[5.147951] (-) TimerEvent: {}
+[5.248731] (-) TimerEvent: {}
+[5.349468] (-) TimerEvent: {}
+[5.450268] (-) TimerEvent: {}
+[5.551112] (-) TimerEvent: {}
+[5.651995] (-) TimerEvent: {}
+[5.752861] (-) TimerEvent: {}
+[5.853612] (-) TimerEvent: {}
+[5.954392] (-) TimerEvent: {}
+[6.055194] (-) TimerEvent: {}
+[6.156019] (-) TimerEvent: {}
+[6.256762] (-) TimerEvent: {}
+[6.357480] (-) TimerEvent: {}
+[6.458163] (-) TimerEvent: {}
+[6.558907] (-) TimerEvent: {}
+[6.659639] (-) TimerEvent: {}
+[6.760420] (-) TimerEvent: {}
+[6.861137] (-) TimerEvent: {}
+[6.961887] (-) TimerEvent: {}
+[7.062622] (-) TimerEvent: {}
+[7.163302] (-) TimerEvent: {}
+[7.264040] (-) TimerEvent: {}
+[7.367548] (-) TimerEvent: {}
+[7.468442] (-) TimerEvent: {}
+[7.569245] (-) TimerEvent: {}
+[7.670059] (-) TimerEvent: {}
+[7.772003] (-) TimerEvent: {}
+[7.873409] (-) TimerEvent: {}
+[7.975084] (-) TimerEvent: {}
+[8.075895] (-) TimerEvent: {}
+[8.177199] (-) TimerEvent: {}
+[8.278805] (-) TimerEvent: {}
+[8.380263] (-) TimerEvent: {}
+[8.481082] (-) TimerEvent: {}
+[8.582480] (-) TimerEvent: {}
+[8.683231] (-) TimerEvent: {}
+[8.784043] (-) TimerEvent: {}
+[8.885317] (-) TimerEvent: {}
+[8.986176] (-) TimerEvent: {}
+[9.087498] (-) TimerEvent: {}
+[9.188266] (-) TimerEvent: {}
+[9.289076] (-) TimerEvent: {}
+[9.390434] (-) TimerEvent: {}
+[9.491440] (-) TimerEvent: {}
+[9.593059] (-) TimerEvent: {}
+[9.695121] (-) TimerEvent: {}
+[9.795938] (-) TimerEvent: {}
+[9.896744] (-) TimerEvent: {}
+[9.997524] (-) TimerEvent: {}
+[10.098855] (-) TimerEvent: {}
+[10.199745] (-) TimerEvent: {}
+[10.301117] (-) TimerEvent: {}
+[10.402678] (-) TimerEvent: {}
+[10.504544] (-) TimerEvent: {}
+[10.605960] (-) TimerEvent: {}
+[10.707723] (-) TimerEvent: {}
+[10.808524] (-) TimerEvent: {}
+[10.909320] (-) TimerEvent: {}
+[11.007683] (balance_hw) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/motor_enable_node.dir/build.make:76: CMakeFiles/motor_enable_node.dir/src/motor_enable_node.cpp.o] Interrupt\n'}
+[11.009578] (-) TimerEvent: {}
+[11.012134] (balance_hw) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/motor_enable_node.dir/all] Interrupt\n'}
+[11.013643] (balance_hw) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Interrupt\n'}
+[11.058395] (balance_hw) CommandEnded: {'returncode': -2}
+[11.111469] (-) TimerEvent: {}
+[11.132317] (balance_hw) JobEnded: {'identifier': 'balance_hw', 'rc': 'SIGINT'}
+[11.145562] (-) EventReactorShutdown: {}

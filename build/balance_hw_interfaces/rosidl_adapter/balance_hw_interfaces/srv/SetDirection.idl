@@ -1,0 +1,19 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from balance_hw_interfaces/srv/SetDirection.srv
+// generated code does not contain a copyright notice
+
+
+module balance_hw_interfaces {
+  module srv {
+    struct SetDirection_Request {
+      @verbatim (language="comment", text=
+        "-1 back, 0 stop, 1 forward")
+      int8 direction;
+    };
+    struct SetDirection_Response {
+      boolean success;
+
+      string message;
+    };
+  };
+};

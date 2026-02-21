@@ -1,0 +1,560 @@
+[0.000000] (-) TimerEvent: {}
+[0.000917] (-) JobUnselected: {'identifier': 'balance_hw_interfaces'}
+[0.001754] (balance_hw) JobQueued: {'identifier': 'balance_hw', 'dependencies': OrderedDict({'balance_hw_interfaces': '/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces'})}
+[0.002276] (balance_hw) JobStarted: {'identifier': 'balance_hw'}
+[0.064637] (balance_hw) JobProgress: {'identifier': 'balance_hw', 'progress': 'cmake'}
+[0.072006] (balance_hw) JobProgress: {'identifier': 'balance_hw', 'progress': 'build'}
+[0.074726] (balance_hw) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/mmcgraw/Projects/balance_bot/build/balance_hw', '--', '-j4', '-l4'], 'cwd': '/home/mmcgraw/Projects/balance_bot/build/balance_hw', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'mmcgraw', 'SSH_CLIENT': '2601:602:867f:a290:a01f:73ac:a56c:5fb9 55010 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib', 'HOME': '/home/mmcgraw', 'OLDPWD': '/home/mmcgraw', 'SSH_TTY': '/dev/pts/4', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/mmcgraw/Projects/balance_bot/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'mmcgraw', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '176', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/mmcgraw/Projects/balance_bot/install/balance_hw:/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/mmcgraw/Projects/balance_bot/build/balance_hw', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '2601:602:867f:a290:a01f:73ac:a56c:5fb9 55010 2601:602:867f:a290:da3a:ddff:feb7:2f83 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces:/home/mmcgraw/Projects/balance_bot/install/balance_hw:/opt/ros/jazzy'}), 'shell': False}
+[0.099309] (-) TimerEvent: {}
+[0.200008] (-) TimerEvent: {}
+[0.261934] (balance_hw) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.300293] (-) TimerEvent: {}
+[0.401042] (-) TimerEvent: {}
+[0.501742] (-) TimerEvent: {}
+[0.602355] (-) TimerEvent: {}
+[0.702924] (-) TimerEvent: {}
+[0.803551] (-) TimerEvent: {}
+[0.904204] (-) TimerEvent: {}
+[1.004916] (-) TimerEvent: {}
+[1.105582] (-) TimerEvent: {}
+[1.206440] (-) TimerEvent: {}
+[1.259480] (balance_hw) StdoutLine: {'line': b'-- Found rclcpp: 28.1.16 (/opt/ros/jazzy/share/rclcpp/cmake)\n'}
+[1.306590] (-) TimerEvent: {}
+[1.393161] (balance_hw) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[1.406739] (-) TimerEvent: {}
+[1.432763] (balance_hw) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[1.482303] (balance_hw) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.506902] (-) TimerEvent: {}
+[1.538705] (balance_hw) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.607103] (-) TimerEvent: {}
+[1.707878] (-) TimerEvent: {}
+[1.808582] (-) TimerEvent: {}
+[1.831518] (balance_hw) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[1.843918] (balance_hw) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.908774] (-) TimerEvent: {}
+[2.009555] (-) TimerEvent: {}
+[2.110338] (-) TimerEvent: {}
+[2.183464] (balance_hw) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[2.210515] (-) TimerEvent: {}
+[2.311196] (-) TimerEvent: {}
+[2.411954] (-) TimerEvent: {}
+[2.512700] (-) TimerEvent: {}
+[2.523851] (balance_hw) StdoutLine: {'line': b'-- Found std_msgs: 5.3.6 (/opt/ros/jazzy/share/std_msgs/cmake)\n'}
+[2.603323] (balance_hw) StdoutLine: {'line': b'-- Found std_srvs: 5.3.6 (/opt/ros/jazzy/share/std_srvs/cmake)\n'}
+[2.612882] (-) TimerEvent: {}
+[2.689458] (balance_hw) StdoutLine: {'line': b'-- Found balance_hw_interfaces: 0.0.0 (/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/share/balance_hw_interfaces/cmake)\n'}
+[2.713052] (-) TimerEvent: {}
+[2.764146] (balance_hw) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.17.4 (/opt/ros/jazzy/share/ament_lint_auto/cmake)\n'}
+[2.813295] (-) TimerEvent: {}
+[2.913942] (-) TimerEvent: {}
+[3.014595] (-) TimerEvent: {}
+[3.115336] (-) TimerEvent: {}
+[3.205319] (balance_hw) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[3.206215] (balance_hw) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[3.206753] (balance_hw) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[3.210073] (balance_hw) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[3.215470] (-) TimerEvent: {}
+[3.217969] (balance_hw) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[3.218663] (balance_hw) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[3.220307] (balance_hw) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[3.229807] (balance_hw) StdoutLine: {'line': b'-- Configuring done (3.0s)\n'}
+[3.315662] (-) TimerEvent: {}
+[3.333565] (balance_hw) StdoutLine: {'line': b'-- Generating done (0.1s)\n'}
+[3.356850] (balance_hw) StdoutLine: {'line': b'-- Build files have been written to: /home/mmcgraw/Projects/balance_bot/build/balance_hw\n'}
+[3.415889] (-) TimerEvent: {}
+[3.518422] (-) TimerEvent: {}
+[3.619051] (-) TimerEvent: {}
+[3.647178] (balance_hw) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/motor_enable_node.dir/src/motor_enable_node.cpp.o\x1b[0m\n'}
+[3.719319] (-) TimerEvent: {}
+[3.820572] (-) TimerEvent: {}
+[3.921253] (-) TimerEvent: {}
+[4.021861] (-) TimerEvent: {}
+[4.122487] (-) TimerEvent: {}
+[4.223112] (-) TimerEvent: {}
+[4.323767] (-) TimerEvent: {}
+[4.424364] (-) TimerEvent: {}
+[4.524982] (-) TimerEvent: {}
+[4.625701] (-) TimerEvent: {}
+[4.726325] (-) TimerEvent: {}
+[4.826938] (-) TimerEvent: {}
+[4.927608] (-) TimerEvent: {}
+[5.028278] (-) TimerEvent: {}
+[5.129000] (-) TimerEvent: {}
+[5.230183] (-) TimerEvent: {}
+[5.331437] (-) TimerEvent: {}
+[5.432474] (-) TimerEvent: {}
+[5.533562] (-) TimerEvent: {}
+[5.634295] (-) TimerEvent: {}
+[5.735341] (-) TimerEvent: {}
+[5.836038] (-) TimerEvent: {}
+[5.936792] (-) TimerEvent: {}
+[6.037560] (-) TimerEvent: {}
+[6.138312] (-) TimerEvent: {}
+[6.238952] (-) TimerEvent: {}
+[6.339616] (-) TimerEvent: {}
+[6.440336] (-) TimerEvent: {}
+[6.541008] (-) TimerEvent: {}
+[6.641740] (-) TimerEvent: {}
+[6.742412] (-) TimerEvent: {}
+[6.843169] (-) TimerEvent: {}
+[6.943976] (-) TimerEvent: {}
+[7.044854] (-) TimerEvent: {}
+[7.145648] (-) TimerEvent: {}
+[7.246405] (-) TimerEvent: {}
+[7.347212] (-) TimerEvent: {}
+[7.448118] (-) TimerEvent: {}
+[7.548855] (-) TimerEvent: {}
+[7.649691] (-) TimerEvent: {}
+[7.750446] (-) TimerEvent: {}
+[7.851167] (-) TimerEvent: {}
+[7.951942] (-) TimerEvent: {}
+[8.052698] (-) TimerEvent: {}
+[8.153398] (-) TimerEvent: {}
+[8.254127] (-) TimerEvent: {}
+[8.354873] (-) TimerEvent: {}
+[8.455683] (-) TimerEvent: {}
+[8.556424] (-) TimerEvent: {}
+[8.657214] (-) TimerEvent: {}
+[8.757941] (-) TimerEvent: {}
+[8.858688] (-) TimerEvent: {}
+[8.959355] (-) TimerEvent: {}
+[9.060047] (-) TimerEvent: {}
+[9.160765] (-) TimerEvent: {}
+[9.261550] (-) TimerEvent: {}
+[9.362312] (-) TimerEvent: {}
+[9.462982] (-) TimerEvent: {}
+[9.563814] (-) TimerEvent: {}
+[9.664554] (-) TimerEvent: {}
+[9.765306] (-) TimerEvent: {}
+[9.866021] (-) TimerEvent: {}
+[9.966775] (-) TimerEvent: {}
+[10.067518] (-) TimerEvent: {}
+[10.168290] (-) TimerEvent: {}
+[10.269017] (-) TimerEvent: {}
+[10.369752] (-) TimerEvent: {}
+[10.470488] (-) TimerEvent: {}
+[10.571170] (-) TimerEvent: {}
+[10.671937] (-) TimerEvent: {}
+[10.772738] (-) TimerEvent: {}
+[10.873500] (-) TimerEvent: {}
+[10.974198] (-) TimerEvent: {}
+[11.074964] (-) TimerEvent: {}
+[11.175698] (-) TimerEvent: {}
+[11.276402] (-) TimerEvent: {}
+[11.377093] (-) TimerEvent: {}
+[11.477847] (-) TimerEvent: {}
+[11.578583] (-) TimerEvent: {}
+[11.679322] (-) TimerEvent: {}
+[11.780005] (-) TimerEvent: {}
+[11.880750] (-) TimerEvent: {}
+[11.981530] (-) TimerEvent: {}
+[12.082293] (-) TimerEvent: {}
+[12.182984] (-) TimerEvent: {}
+[12.283742] (-) TimerEvent: {}
+[12.384427] (-) TimerEvent: {}
+[12.485110] (-) TimerEvent: {}
+[12.585854] (-) TimerEvent: {}
+[12.686614] (-) TimerEvent: {}
+[12.787371] (-) TimerEvent: {}
+[12.888075] (-) TimerEvent: {}
+[12.988853] (-) TimerEvent: {}
+[13.089628] (-) TimerEvent: {}
+[13.190763] (-) TimerEvent: {}
+[13.291498] (-) TimerEvent: {}
+[13.392192] (-) TimerEvent: {}
+[13.492942] (-) TimerEvent: {}
+[13.593703] (-) TimerEvent: {}
+[13.694406] (-) TimerEvent: {}
+[13.795140] (-) TimerEvent: {}
+[13.895915] (-) TimerEvent: {}
+[13.996678] (-) TimerEvent: {}
+[14.097411] (-) TimerEvent: {}
+[14.198090] (-) TimerEvent: {}
+[14.298914] (-) TimerEvent: {}
+[14.399679] (-) TimerEvent: {}
+[14.500383] (-) TimerEvent: {}
+[14.601085] (-) TimerEvent: {}
+[14.701891] (-) TimerEvent: {}
+[14.786475] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/motor_enable_node.cpp:181:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Krlccpp\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[14.787391] (balance_hw) StderrLine: {'line': b'  181 |         \x1b[01;31m\x1b[Krlccpp\x1b[m\x1b[K::Service<SetPwm>::SharedPtr motors_pwm_srv_;\n'}
+[14.787943] (balance_hw) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[14.802100] (-) TimerEvent: {}
+[14.879110] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/motor_enable_node.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KMotorEnableNode::\x1b[01;32m\x1b[KMotorEnableNode\x1b[m\x1b[K()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[14.879947] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/motor_enable_node.cpp:145:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmotors_pwm_srv_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kmotors_enable_srv_\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[14.880526] (balance_hw) StderrLine: {'line': b'  145 |             \x1b[01;31m\x1b[Kmotors_pwm_srv_\x1b[m\x1b[K = this->create_service<SetPwm>>(\n'}
+[14.880999] (balance_hw) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[14.881476] (balance_hw) StderrLine: {'line': b'      |             \x1b[32m\x1b[Kmotors_enable_srv_\x1b[m\x1b[K\n'}
+[14.895463] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/motor_enable_node.cpp:146:17:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kleft operand of comma operator has no effect [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value\x07-Wunused-value\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[14.896559] (balance_hw) StderrLine: {'line': b'  146 |                 \x1b[01;35m\x1b[K"motors_pwm"\x1b[m\x1b[K,\n'}
+[14.897123] (balance_hw) StderrLine: {'line': b'      |                 \x1b[01;35m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[14.897606] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/motor_enable_node.cpp:145:58:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno match for \xe2\x80\x98\x1b[01m\x1b[Koperator>\x1b[m\x1b[K\xe2\x80\x99 (operand types are \xe2\x80\x98\x1b[01m\x1b[K<unresolved overloaded function type>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kstd::_Bind_helper<false, void (MotorEnableNode::*)(std::shared_ptr<balance_hw_interfaces::srv::SetPwm_Request_<std::allocator<void> > >, std::shared_ptr<balance_hw_interfaces::srv::SetPwm_Response_<std::allocator<void> > >), MotorEnableNode*, const std::_Placeholder<1>&, const std::_Placeholder<2>&>::type\x1b[m\x1b[K\xe2\x80\x99)\n'}
+[14.898128] (balance_hw) StderrLine: {'line': b'  145 |             motors_pwm_srv_ = \x1b[32m\x1b[Kthis->create_service<SetPwm\x1b[m\x1b[K\x1b[01;31m\x1b[K>>\x1b[m\x1b[K\x1b[34m\x1b[K(\x1b[m\x1b[K\n'}
+[14.898973] (balance_hw) StderrLine: {'line': b'      |                               \x1b[32m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\x1b[01;31m\x1b[K^~\x1b[m\x1b[K\x1b[34m\x1b[K~\x1b[m\x1b[K\n'}
+[14.899631] (balance_hw) StderrLine: {'line': b'      |                                     \x1b[32m\x1b[K|\x1b[m\x1b[K\n'}
+[14.900065] (balance_hw) StderrLine: {'line': b'      |                                     \x1b[32m\x1b[K<unresolved overloaded function type>\x1b[m\x1b[K\n'}
+[14.900643] (balance_hw) StderrLine: {'line': b'  146 | \x1b[34m\x1b[K                "motors_pwm",\x1b[m\x1b[K\n'}
+[14.901057] (balance_hw) StderrLine: {'line': b'      |                 \x1b[34m\x1b[K~~~~~~~~~~~~~\x1b[m\x1b[K                             \n'}
+[14.904172] (-) TimerEvent: {}
+[14.904837] (balance_hw) StderrLine: {'line': b'      |                             \x1b[34m\x1b[K|\x1b[m\x1b[K\n'}
+[14.906348] (balance_hw) StderrLine: {'line': b'      |                             \x1b[34m\x1b[Kstd::_Bind_helper<false, void (MotorEnableNode::*)(std::shared_ptr<balance_hw_interfaces::srv::SetPwm_Request_<std::allocator<void> > >, std::shared_ptr<balance_hw_interfaces::srv::SetPwm_Response_<std::allocator<void> > >), MotorEnableNode*, const std::_Placeholder<1>&, const std::_Placeholder<2>&>::type\x1b[m\x1b[K\n'}
+[14.907587] (balance_hw) StderrLine: {'line': b'  147 | \x1b[34m\x1b[K                std::bind(&MotorEnableNode::on_motors_pwm, this, _1, _2)\x1b[m\x1b[K\n'}
+[14.908784] (balance_hw) StderrLine: {'line': b'      |                 \x1b[34m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[14.910338] (balance_hw) StderrLine: {'line': b'  148 | \x1b[34m\x1b[K            )\x1b[m\x1b[K;\n'}
+[14.912464] (balance_hw) StderrLine: {'line': b'      |             \x1b[34m\x1b[K~\x1b[m\x1b[K                                             \n'}
+[14.913613] (balance_hw) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/13/bits/stl_tempbuf.h:62\x1b[m\x1b[K,\n'}
+[14.914047] (balance_hw) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/13/memory:66\x1b[m\x1b[K,\n'}
+[14.914509] (balance_hw) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:169\x1b[m\x1b[K,\n'}
+[14.914899] (balance_hw) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/motor_enable_node.cpp:1\x1b[m\x1b[K:\n'}
+[14.915337] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_pair.h:848:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _T1, class _T2> constexpr bool std::\x1b[01;32m\x1b[Koperator>\x1b[m\x1b[K(const pair<_T1, _T2>&, const pair<_T1, _T2>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[14.915814] (balance_hw) StderrLine: {'line': b'  848 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K>(const pair<_T1, _T2>& __x, const pair<_T1, _T2>& __y)\n'}
+[14.916184] (balance_hw) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[14.916661] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_pair.h:848:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[14.917115] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/motor_enable_node.cpp:148:13:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd::_Bind_helper<false, void (MotorEnableNode::*)(std::shared_ptr<balance_hw_interfaces::srv::SetPwm_Request_<std::allocator<void> > >, std::shared_ptr<balance_hw_interfaces::srv::SetPwm_Response_<std::allocator<void> > >), MotorEnableNode*, const std::_Placeholder<1>&, const std::_Placeholder<2>&>::type\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::pair<_T1, _T2>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[14.917705] (balance_hw) StderrLine: {'line': b'  148 |             \x1b[01;36m\x1b[K)\x1b[m\x1b[K;\n'}
+[14.918112] (balance_hw) StderrLine: {'line': b'      |             \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[14.918574] (balance_hw) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/13/bits/stl_algobase.h:67\x1b[m\x1b[K,\n'}
+[14.918983] (balance_hw) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/13/bits/stl_uninitialized.h:63\x1b[m\x1b[K,\n'}
+[14.919431] (balance_hw) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/13/memory:69\x1b[m\x1b[K:\n'}
+[14.919836] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_iterator.h:469:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Iterator> constexpr bool std::\x1b[01;32m\x1b[Koperator>\x1b[m\x1b[K(const reverse_iterator<_Iterator>&, const reverse_iterator<_Iterator>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[14.920197] (balance_hw) StderrLine: {'line': b'  469 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K>(const reverse_iterator<_Iterator>& __x,\n'}
+[14.920632] (balance_hw) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[14.921006] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_iterator.h:469:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[14.921482] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/motor_enable_node.cpp:148:13:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd::_Bind_helper<false, void (MotorEnableNode::*)(std::shared_ptr<balance_hw_interfaces::srv::SetPwm_Request_<std::allocator<void> > >, std::shared_ptr<balance_hw_interfaces::srv::SetPwm_Response_<std::allocator<void> > >), MotorEnableNode*, const std::_Placeholder<1>&, const std::_Placeholder<2>&>::type\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::reverse_iterator<_Iterator>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[14.922071] (balance_hw) StderrLine: {'line': b'  148 |             \x1b[01;36m\x1b[K)\x1b[m\x1b[K;\n'}
+[14.922540] (balance_hw) StderrLine: {'line': b'      |             \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[14.922937] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_iterator.h:514:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _IteratorL, class _IteratorR> constexpr bool std::\x1b[01;32m\x1b[Koperator>\x1b[m\x1b[K(const reverse_iterator<_Iterator>&, const reverse_iterator<_IteratorR>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[14.923406] (balance_hw) StderrLine: {'line': b'  514 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K>(const reverse_iterator<_IteratorL>& __x,\n'}
+[14.923848] (balance_hw) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[14.924214] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_iterator.h:514:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[14.924704] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/motor_enable_node.cpp:148:13:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd::_Bind_helper<false, void (MotorEnableNode::*)(std::shared_ptr<balance_hw_interfaces::srv::SetPwm_Request_<std::allocator<void> > >, std::shared_ptr<balance_hw_interfaces::srv::SetPwm_Response_<std::allocator<void> > >), MotorEnableNode*, const std::_Placeholder<1>&, const std::_Placeholder<2>&>::type\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::reverse_iterator<_IteratorR>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[14.925213] (balance_hw) StderrLine: {'line': b'  148 |             \x1b[01;36m\x1b[K)\x1b[m\x1b[K;\n'}
+[14.925717] (balance_hw) StderrLine: {'line': b'      |             \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[14.926106] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_iterator.h:1725:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _IteratorL, class _IteratorR> constexpr bool std::\x1b[01;32m\x1b[Koperator>\x1b[m\x1b[K(const move_iterator<_IteratorL>&, const move_iterator<_IteratorR>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[14.926546] (balance_hw) StderrLine: {'line': b' 1725 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K>(const move_iterator<_IteratorL>& __x,\n'}
+[14.926877] (balance_hw) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[14.927188] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_iterator.h:1725:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[14.927645] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/motor_enable_node.cpp:148:13:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd::_Bind_helper<false, void (MotorEnableNode::*)(std::shared_ptr<balance_hw_interfaces::srv::SetPwm_Request_<std::allocator<void> > >, std::shared_ptr<balance_hw_interfaces::srv::SetPwm_Response_<std::allocator<void> > >), MotorEnableNode*, const std::_Placeholder<1>&, const std::_Placeholder<2>&>::type\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::move_iterator<_IteratorR>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[14.928014] (balance_hw) StderrLine: {'line': b'  148 |             \x1b[01;36m\x1b[K)\x1b[m\x1b[K;\n'}
+[14.928521] (balance_hw) StderrLine: {'line': b'      |             \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[14.929126] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_iterator.h:1784:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Iterator> constexpr bool std::\x1b[01;32m\x1b[Koperator>\x1b[m\x1b[K(const move_iterator<_IteratorL>&, const move_iterator<_IteratorL>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[14.929906] (balance_hw) StderrLine: {'line': b' 1784 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K>(const move_iterator<_Iterator>& __x,\n'}
+[14.930565] (balance_hw) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[14.931134] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_iterator.h:1784:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[14.931757] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/motor_enable_node.cpp:148:13:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd::_Bind_helper<false, void (MotorEnableNode::*)(std::shared_ptr<balance_hw_interfaces::srv::SetPwm_Request_<std::allocator<void> > >, std::shared_ptr<balance_hw_interfaces::srv::SetPwm_Response_<std::allocator<void> > >), MotorEnableNode*, const std::_Placeholder<1>&, const std::_Placeholder<2>&>::type\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::move_iterator<_IteratorL>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[14.932251] (balance_hw) StderrLine: {'line': b'  148 |             \x1b[01;36m\x1b[K)\x1b[m\x1b[K;\n'}
+[14.932790] (balance_hw) StderrLine: {'line': b'      |             \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[14.933265] (balance_hw) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/13/bits/unique_ptr.h:36\x1b[m\x1b[K,\n'}
+[14.933901] (balance_hw) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/13/memory:78\x1b[m\x1b[K:\n'}
+[14.934622] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/tuple:1980:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class ... _TElements, class ... _UElements> constexpr bool std::\x1b[01;32m\x1b[Koperator>\x1b[m\x1b[K(const tuple<_UTypes ...>&, const tuple<_UTypes ...>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[14.935292] (balance_hw) StderrLine: {'line': b' 1980 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K>(const tuple<_TElements...>& __t,\n'}
+[14.935955] (balance_hw) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[14.937156] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/tuple:1980:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[14.938182] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/motor_enable_node.cpp:148:13:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd::_Bind_helper<false, void (MotorEnableNode::*)(std::shared_ptr<balance_hw_interfaces::srv::SetPwm_Request_<std::allocator<void> > >, std::shared_ptr<balance_hw_interfaces::srv::SetPwm_Response_<std::allocator<void> > >), MotorEnableNode*, const std::_Placeholder<1>&, const std::_Placeholder<2>&>::type\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::tuple<_UTypes ...>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[14.939001] (balance_hw) StderrLine: {'line': b'  148 |             \x1b[01;36m\x1b[K)\x1b[m\x1b[K;\n'}
+[14.939799] (balance_hw) StderrLine: {'line': b'      |             \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[14.940853] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/unique_ptr.h:934:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class _Dp, class _Up, class _Ep> bool std::\x1b[01;32m\x1b[Koperator>\x1b[m\x1b[K(const unique_ptr<_Tp, _Dp>&, const unique_ptr<_Up, _Ep>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[14.941852] (balance_hw) StderrLine: {'line': b'  934 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K>(const unique_ptr<_Tp, _Dp>& __x,\n'}
+[14.942726] (balance_hw) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[14.943522] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/unique_ptr.h:934:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[14.944306] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/motor_enable_node.cpp:148:13:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd::_Bind_helper<false, void (MotorEnableNode::*)(std::shared_ptr<balance_hw_interfaces::srv::SetPwm_Request_<std::allocator<void> > >, std::shared_ptr<balance_hw_interfaces::srv::SetPwm_Response_<std::allocator<void> > >), MotorEnableNode*, const std::_Placeholder<1>&, const std::_Placeholder<2>&>::type\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::unique_ptr<_Up, _Ep>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[14.945156] (balance_hw) StderrLine: {'line': b'  148 |             \x1b[01;36m\x1b[K)\x1b[m\x1b[K;\n'}
+[14.945961] (balance_hw) StderrLine: {'line': b'      |             \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[14.947320] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/unique_ptr.h:942:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class _Dp> bool std::\x1b[01;32m\x1b[Koperator>\x1b[m\x1b[K(const unique_ptr<_Tp, _Dp>&, nullptr_t)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[14.947828] (balance_hw) StderrLine: {'line': b'  942 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K>(const unique_ptr<_Tp, _Dp>& __x, nullptr_t)\n'}
+[14.948249] (balance_hw) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[14.948753] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/unique_ptr.h:942:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[14.949139] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/motor_enable_node.cpp:148:13:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  couldn\xe2\x80\x99t deduce template parameter \xe2\x80\x98\x1b[01m\x1b[K_Tp\x1b[m\x1b[K\xe2\x80\x99\n'}
+[14.949739] (balance_hw) StderrLine: {'line': b'  148 |             \x1b[01;36m\x1b[K)\x1b[m\x1b[K;\n'}
+[14.950117] (balance_hw) StderrLine: {'line': b'      |             \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[14.950585] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/unique_ptr.h:952:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class _Dp> bool std::\x1b[01;32m\x1b[Koperator>\x1b[m\x1b[K(nullptr_t, const unique_ptr<_Tp, _Dp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[14.950981] (balance_hw) StderrLine: {'line': b'  952 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K>(nullptr_t, const unique_ptr<_Tp, _Dp>& __x)\n'}
+[14.951431] (balance_hw) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[14.951869] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/unique_ptr.h:952:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[14.952293] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/motor_enable_node.cpp:148:13:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd::_Bind_helper<false, void (MotorEnableNode::*)(std::shared_ptr<balance_hw_interfaces::srv::SetPwm_Request_<std::allocator<void> > >, std::shared_ptr<balance_hw_interfaces::srv::SetPwm_Response_<std::allocator<void> > >), MotorEnableNode*, const std::_Placeholder<1>&, const std::_Placeholder<2>&>::type\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::unique_ptr<_Tp, _Dp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[14.952836] (balance_hw) StderrLine: {'line': b'  148 |             \x1b[01;36m\x1b[K)\x1b[m\x1b[K;\n'}
+[14.953334] (balance_hw) StderrLine: {'line': b'      |             \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[14.953809] (balance_hw) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/13/bits/shared_ptr.h:53\x1b[m\x1b[K,\n'}
+[14.954195] (balance_hw) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/13/memory:80\x1b[m\x1b[K:\n'}
+[14.954690] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/shared_ptr_base.h:1883:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp1, class _Tp2, __gnu_cxx::_Lock_policy _Lp> bool std::\x1b[01;32m\x1b[Koperator>\x1b[m\x1b[K(const __shared_ptr<_Tp1, _Lp>&, const __shared_ptr<_Tp2, _Lp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[14.955076] (balance_hw) StderrLine: {'line': b' 1883 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K>(const __shared_ptr<_Tp1, _Lp>& __a,\n'}
+[14.955536] (balance_hw) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[14.955933] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/shared_ptr_base.h:1883:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[14.956364] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/motor_enable_node.cpp:148:13:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd::_Bind_helper<false, void (MotorEnableNode::*)(std::shared_ptr<balance_hw_interfaces::srv::SetPwm_Request_<std::allocator<void> > >, std::shared_ptr<balance_hw_interfaces::srv::SetPwm_Response_<std::allocator<void> > >), MotorEnableNode*, const std::_Placeholder<1>&, const std::_Placeholder<2>&>::type\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::__shared_ptr<_Tp2, _Lp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[14.956872] (balance_hw) StderrLine: {'line': b'  148 |             \x1b[01;36m\x1b[K)\x1b[m\x1b[K;\n'}
+[14.957404] (balance_hw) StderrLine: {'line': b'      |             \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[14.957843] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/shared_ptr_base.h:1889:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, __gnu_cxx::_Lock_policy _Lp> bool std::\x1b[01;32m\x1b[Koperator>\x1b[m\x1b[K(const __shared_ptr<_Tp, _Lp>&, nullptr_t)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[14.958277] (balance_hw) StderrLine: {'line': b' 1889 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K>(const __shared_ptr<_Tp, _Lp>& __a, nullptr_t) noexcept\n'}
+[14.958744] (balance_hw) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[14.959106] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/shared_ptr_base.h:1889:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[14.959586] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/motor_enable_node.cpp:148:13:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  couldn\xe2\x80\x99t deduce template parameter \xe2\x80\x98\x1b[01m\x1b[K_Tp\x1b[m\x1b[K\xe2\x80\x99\n'}
+[14.959992] (balance_hw) StderrLine: {'line': b'  148 |             \x1b[01;36m\x1b[K)\x1b[m\x1b[K;\n'}
+[14.960402] (balance_hw) StderrLine: {'line': b'      |             \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[14.960817] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/shared_ptr_base.h:1894:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, __gnu_cxx::_Lock_policy _Lp> bool std::\x1b[01;32m\x1b[Koperator>\x1b[m\x1b[K(nullptr_t, const __shared_ptr<_Tp, _Lp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[14.961202] (balance_hw) StderrLine: {'line': b' 1894 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K>(nullptr_t, const __shared_ptr<_Tp, _Lp>& __a) noexcept\n'}
+[14.961673] (balance_hw) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[14.962138] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/shared_ptr_base.h:1894:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[14.962708] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/motor_enable_node.cpp:148:13:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd::_Bind_helper<false, void (MotorEnableNode::*)(std::shared_ptr<balance_hw_interfaces::srv::SetPwm_Request_<std::allocator<void> > >, std::shared_ptr<balance_hw_interfaces::srv::SetPwm_Response_<std::allocator<void> > >), MotorEnableNode*, const std::_Placeholder<1>&, const std::_Placeholder<2>&>::type\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::__shared_ptr<_Tp, _Lp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[14.963199] (balance_hw) StderrLine: {'line': b'  148 |             \x1b[01;36m\x1b[K)\x1b[m\x1b[K;\n'}
+[14.963791] (balance_hw) StderrLine: {'line': b'      |             \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[14.964259] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/shared_ptr.h:653:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class _Up> bool std::\x1b[01;32m\x1b[Koperator>\x1b[m\x1b[K(const shared_ptr<_Tp>&, const shared_ptr<_Tp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[14.964738] (balance_hw) StderrLine: {'line': b'  653 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K>(const shared_ptr<_Tp>& __a, const shared_ptr<_Up>& __b) noexcept\n'}
+[14.965127] (balance_hw) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[14.965632] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/shared_ptr.h:653:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[14.966123] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/motor_enable_node.cpp:148:13:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd::_Bind_helper<false, void (MotorEnableNode::*)(std::shared_ptr<balance_hw_interfaces::srv::SetPwm_Request_<std::allocator<void> > >, std::shared_ptr<balance_hw_interfaces::srv::SetPwm_Response_<std::allocator<void> > >), MotorEnableNode*, const std::_Placeholder<1>&, const std::_Placeholder<2>&>::type\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::shared_ptr<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[14.966665] (balance_hw) StderrLine: {'line': b'  148 |             \x1b[01;36m\x1b[K)\x1b[m\x1b[K;\n'}
+[14.967059] (balance_hw) StderrLine: {'line': b'      |             \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[14.967517] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/shared_ptr.h:659:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> bool std::\x1b[01;32m\x1b[Koperator>\x1b[m\x1b[K(const shared_ptr<_Tp>&, nullptr_t)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[14.967927] (balance_hw) StderrLine: {'line': b'  659 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K>(const shared_ptr<_Tp>& __a, nullptr_t) noexcept\n'}
+[14.968376] (balance_hw) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[14.968828] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/shared_ptr.h:659:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[14.969207] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/motor_enable_node.cpp:148:13:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  couldn\xe2\x80\x99t deduce template parameter \xe2\x80\x98\x1b[01m\x1b[K_Tp\x1b[m\x1b[K\xe2\x80\x99\n'}
+[14.969710] (balance_hw) StderrLine: {'line': b'  148 |             \x1b[01;36m\x1b[K)\x1b[m\x1b[K;\n'}
+[14.970113] (balance_hw) StderrLine: {'line': b'      |             \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[14.970676] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/shared_ptr.h:665:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> bool std::\x1b[01;32m\x1b[Koperator>\x1b[m\x1b[K(nullptr_t, const shared_ptr<_Tp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[14.971068] (balance_hw) StderrLine: {'line': b'  665 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K>(nullptr_t, const shared_ptr<_Tp>& __a) noexcept\n'}
+[14.971515] (balance_hw) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[14.971979] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/shared_ptr.h:665:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[14.972416] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/motor_enable_node.cpp:148:13:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd::_Bind_helper<false, void (MotorEnableNode::*)(std::shared_ptr<balance_hw_interfaces::srv::SetPwm_Request_<std::allocator<void> > >, std::shared_ptr<balance_hw_interfaces::srv::SetPwm_Response_<std::allocator<void> > >), MotorEnableNode*, const std::_Placeholder<1>&, const std::_Placeholder<2>&>::type\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::shared_ptr<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[14.972901] (balance_hw) StderrLine: {'line': b'  148 |             \x1b[01;36m\x1b[K)\x1b[m\x1b[K;\n'}
+[14.973334] (balance_hw) StderrLine: {'line': b'      |             \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[14.973792] (balance_hw) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/13/bits/basic_string.h:47\x1b[m\x1b[K,\n'}
+[14.974166] (balance_hw) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/13/string:54\x1b[m\x1b[K,\n'}
+[14.974650] (balance_hw) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:18\x1b[m\x1b[K,\n'}
+[14.975041] (balance_hw) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:171\x1b[m\x1b[K:\n'}
+[14.975496] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/string_view:693:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits> constexpr bool std::\x1b[01;32m\x1b[Koperator>\x1b[m\x1b[K(basic_string_view<_CharT, _Traits>, basic_string_view<_CharT, _Traits>)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[14.975905] (balance_hw) StderrLine: {'line': b'  693 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K> (basic_string_view<_CharT, _Traits> __x,\n'}
+[14.976299] (balance_hw) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[14.976740] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/string_view:693:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[14.977127] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/motor_enable_node.cpp:148:13:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd::_Bind<void (MotorEnableNode::*(MotorEnableNode*, std::_Placeholder<1>, std::_Placeholder<2>))(std::shared_ptr<balance_hw_interfaces::srv::SetPwm_Request_<std::allocator<void> > >, std::shared_ptr<balance_hw_interfaces::srv::SetPwm_Response_<std::allocator<void> > >)>\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_string_view<_CharT, _Traits>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[14.977743] (balance_hw) StderrLine: {'line': b'  148 |             \x1b[01;36m\x1b[K)\x1b[m\x1b[K;\n'}
+[14.978154] (balance_hw) StderrLine: {'line': b'      |             \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[14.978602] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/string_view:700:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits> constexpr bool std::\x1b[01;32m\x1b[Koperator>\x1b[m\x1b[K(basic_string_view<_CharT, _Traits>, __type_identity_t<basic_string_view<_CharT, _Traits> >)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[14.979074] (balance_hw) StderrLine: {'line': b'  700 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K> (basic_string_view<_CharT, _Traits> __x,\n'}
+[14.979521] (balance_hw) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[14.979910] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/string_view:700:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[14.980452] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/motor_enable_node.cpp:148:13:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  couldn\xe2\x80\x99t deduce template parameter \xe2\x80\x98\x1b[01m\x1b[K_CharT\x1b[m\x1b[K\xe2\x80\x99\n'}
+[14.980943] (balance_hw) StderrLine: {'line': b'  148 |             \x1b[01;36m\x1b[K)\x1b[m\x1b[K;\n'}
+[14.981385] (balance_hw) StderrLine: {'line': b'      |             \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[14.981810] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/string_view:708:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits> constexpr bool std::\x1b[01;32m\x1b[Koperator>\x1b[m\x1b[K(__type_identity_t<basic_string_view<_CharT, _Traits> >, basic_string_view<_CharT, _Traits>)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[14.982191] (balance_hw) StderrLine: {'line': b'  708 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K> (__type_identity_t<basic_string_view<_CharT, _Traits>> __x,\n'}
+[14.982653] (balance_hw) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[14.983055] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/string_view:708:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[14.983528] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/motor_enable_node.cpp:148:13:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd::_Bind<void (MotorEnableNode::*(MotorEnableNode*, std::_Placeholder<1>, std::_Placeholder<2>))(std::shared_ptr<balance_hw_interfaces::srv::SetPwm_Request_<std::allocator<void> > >, std::shared_ptr<balance_hw_interfaces::srv::SetPwm_Response_<std::allocator<void> > >)>\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_string_view<_CharT, _Traits>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[14.984019] (balance_hw) StderrLine: {'line': b'  148 |             \x1b[01;36m\x1b[K)\x1b[m\x1b[K;\n'}
+[14.984467] (balance_hw) StderrLine: {'line': b'      |             \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[14.984869] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/basic_string.h:3870:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits, class _Alloc> bool std::\x1b[01;32m\x1b[Koperator>\x1b[m\x1b[K(const __cxx11::basic_string<_CharT, _Traits, _Allocator>&, const __cxx11::basic_string<_CharT, _Traits, _Allocator>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[14.985404] (balance_hw) StderrLine: {'line': b' 3870 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K>(const basic_string<_CharT, _Traits, _Alloc>& __lhs,\n'}
+[14.985816] (balance_hw) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[14.986179] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/basic_string.h:3870:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[14.986657] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/motor_enable_node.cpp:148:13:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd::_Bind_helper<false, void (MotorEnableNode::*)(std::shared_ptr<balance_hw_interfaces::srv::SetPwm_Request_<std::allocator<void> > >, std::shared_ptr<balance_hw_interfaces::srv::SetPwm_Response_<std::allocator<void> > >), MotorEnableNode*, const std::_Placeholder<1>&, const std::_Placeholder<2>&>::type\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::__cxx11::basic_string<_CharT, _Traits, _Allocator>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[14.987153] (balance_hw) StderrLine: {'line': b'  148 |             \x1b[01;36m\x1b[K)\x1b[m\x1b[K;\n'}
+[14.987611] (balance_hw) StderrLine: {'line': b'      |             \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[14.988009] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/basic_string.h:3884:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits, class _Alloc> bool std::\x1b[01;32m\x1b[Koperator>\x1b[m\x1b[K(const __cxx11::basic_string<_CharT, _Traits, _Allocator>&, const _CharT*)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[14.988515] (balance_hw) StderrLine: {'line': b' 3884 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K>(const basic_string<_CharT, _Traits, _Alloc>& __lhs,\n'}
+[14.988948] (balance_hw) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[14.989402] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/basic_string.h:3884:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[14.989904] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/motor_enable_node.cpp:148:13:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kconst _CharT*\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kstd::_Bind<void (MotorEnableNode::*(MotorEnableNode*, std::_Placeholder<1>, std::_Placeholder<2>))(std::shared_ptr<balance_hw_interfaces::srv::SetPwm_Request_<std::allocator<void> > >, std::shared_ptr<balance_hw_interfaces::srv::SetPwm_Response_<std::allocator<void> > >)>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[14.990487] (balance_hw) StderrLine: {'line': b'  148 |             \x1b[01;36m\x1b[K)\x1b[m\x1b[K;\n'}
+[14.990962] (balance_hw) StderrLine: {'line': b'      |             \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[14.991395] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/basic_string.h:3897:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits, class _Alloc> bool std::\x1b[01;32m\x1b[Koperator>\x1b[m\x1b[K(const _CharT*, const __cxx11::basic_string<_CharT, _Traits, _Allocator>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[14.991830] (balance_hw) StderrLine: {'line': b' 3897 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K>(const _CharT* __lhs,\n'}
+[14.992209] (balance_hw) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[14.992679] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/basic_string.h:3897:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[14.993051] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/motor_enable_node.cpp:148:13:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd::_Bind_helper<false, void (MotorEnableNode::*)(std::shared_ptr<balance_hw_interfaces::srv::SetPwm_Request_<std::allocator<void> > >, std::shared_ptr<balance_hw_interfaces::srv::SetPwm_Response_<std::allocator<void> > >), MotorEnableNode*, const std::_Placeholder<1>&, const std::_Placeholder<2>&>::type\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::__cxx11::basic_string<_CharT, _Traits, _Allocator>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[14.993553] (balance_hw) StderrLine: {'line': b'  148 |             \x1b[01;36m\x1b[K)\x1b[m\x1b[K;\n'}
+[14.993955] (balance_hw) StderrLine: {'line': b'      |             \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[14.994375] (balance_hw) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/13/vector:66\x1b[m\x1b[K,\n'}
+[14.994890] (balance_hw) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:19\x1b[m\x1b[K:\n'}
+[14.995308] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_vector.h:2092:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class _Alloc> bool std::\x1b[01;32m\x1b[Koperator>\x1b[m\x1b[K(const vector<_Tp, _Alloc>&, const vector<_Tp, _Alloc>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[14.995744] (balance_hw) StderrLine: {'line': b' 2092 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K>(const vector<_Tp, _Alloc>& __x, const vector<_Tp, _Alloc>& __y)\n'}
+[14.996084] (balance_hw) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[14.996538] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_vector.h:2092:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[14.996998] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/motor_enable_node.cpp:148:13:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd::_Bind_helper<false, void (MotorEnableNode::*)(std::shared_ptr<balance_hw_interfaces::srv::SetPwm_Request_<std::allocator<void> > >, std::shared_ptr<balance_hw_interfaces::srv::SetPwm_Response_<std::allocator<void> > >), MotorEnableNode*, const std::_Placeholder<1>&, const std::_Placeholder<2>&>::type\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::vector<_Tp, _Alloc>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[14.997487] (balance_hw) StderrLine: {'line': b'  148 |             \x1b[01;36m\x1b[K)\x1b[m\x1b[K;\n'}
+[14.998130] (balance_hw) StderrLine: {'line': b'      |             \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[14.998703] (balance_hw) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__struct.hpp:12\x1b[m\x1b[K,\n'}
+[14.999132] (balance_hw) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/list_parameters.hpp:7\x1b[m\x1b[K,\n'}
+[14.999630] (balance_hw) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:21\x1b[m\x1b[K:\n'}
+[15.000040] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/array:343:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, long unsigned int _Nm> bool std::\x1b[01;32m\x1b[Koperator>\x1b[m\x1b[K(const array<_Tp, _Nm>&, const array<_Tp, _Nm>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[15.000524] (balance_hw) StderrLine: {'line': b'  343 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K>(const array<_Tp, _Nm>& __one, const array<_Tp, _Nm>& __two)\n'}
+[15.000956] (balance_hw) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[15.001532] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/array:343:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[15.001960] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/motor_enable_node.cpp:148:13:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd::_Bind_helper<false, void (MotorEnableNode::*)(std::shared_ptr<balance_hw_interfaces::srv::SetPwm_Request_<std::allocator<void> > >, std::shared_ptr<balance_hw_interfaces::srv::SetPwm_Response_<std::allocator<void> > >), MotorEnableNode*, const std::_Placeholder<1>&, const std::_Placeholder<2>&>::type\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::array<_Tp, _Nm>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[15.002589] (balance_hw) StderrLine: {'line': b'  148 |             \x1b[01;36m\x1b[K)\x1b[m\x1b[K;\n'}
+[15.003016] (balance_hw) StderrLine: {'line': b'      |             \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[15.003564] (balance_hw) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/13/set:63\x1b[m\x1b[K,\n'}
+[15.003984] (balance_hw) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:21\x1b[m\x1b[K,\n'}
+[15.004421] (-) TimerEvent: {}
+[15.004762] (balance_hw) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[15.005443] (balance_hw) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:172\x1b[m\x1b[K:\n'}
+[15.005894] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_set.h:1039:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Key, class _Compare, class _Alloc> bool std::\x1b[01;32m\x1b[Koperator>\x1b[m\x1b[K(const set<_Key, _Compare, _Allocator>&, const set<_Key, _Compare, _Allocator>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[15.006363] (balance_hw) StderrLine: {'line': b' 1039 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K>(const set<_Key, _Compare, _Alloc>& __x,\n'}
+[15.006815] (balance_hw) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[15.007212] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_set.h:1039:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[15.007731] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/motor_enable_node.cpp:148:13:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd::_Bind_helper<false, void (MotorEnableNode::*)(std::shared_ptr<balance_hw_interfaces::srv::SetPwm_Request_<std::allocator<void> > >, std::shared_ptr<balance_hw_interfaces::srv::SetPwm_Response_<std::allocator<void> > >), MotorEnableNode*, const std::_Placeholder<1>&, const std::_Placeholder<2>&>::type\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::set<_Key, _Compare, _Allocator>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[15.008162] (balance_hw) StderrLine: {'line': b'  148 |             \x1b[01;36m\x1b[K)\x1b[m\x1b[K;\n'}
+[15.008653] (balance_hw) StderrLine: {'line': b'      |             \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[15.009069] (balance_hw) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/13/set:64\x1b[m\x1b[K:\n'}
+[15.009573] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_multiset.h:1025:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Key, class _Compare, class _Alloc> bool std::\x1b[01;32m\x1b[Koperator>\x1b[m\x1b[K(const multiset<_Key, _Compare, _Allocator>&, const multiset<_Key, _Compare, _Allocator>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[15.010007] (balance_hw) StderrLine: {'line': b' 1025 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K>(const multiset<_Key,_Compare,_Alloc>& __x,\n'}
+[15.010487] (balance_hw) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[15.010920] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_multiset.h:1025:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[15.011455] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/motor_enable_node.cpp:148:13:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd::_Bind_helper<false, void (MotorEnableNode::*)(std::shared_ptr<balance_hw_interfaces::srv::SetPwm_Request_<std::allocator<void> > >, std::shared_ptr<balance_hw_interfaces::srv::SetPwm_Response_<std::allocator<void> > >), MotorEnableNode*, const std::_Placeholder<1>&, const std::_Placeholder<2>&>::type\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::multiset<_Key, _Compare, _Allocator>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[15.012039] (balance_hw) StderrLine: {'line': b'  148 |             \x1b[01;36m\x1b[K)\x1b[m\x1b[K;\n'}
+[15.012913] (balance_hw) StderrLine: {'line': b'      |             \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[15.013428] (balance_hw) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/13/list:65\x1b[m\x1b[K,\n'}
+[15.013863] (balance_hw) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/executor.hpp:23\x1b[m\x1b[K,\n'}
+[15.014269] (balance_hw) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K:\n'}
+[15.014739] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_list.h:2195:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class _Alloc> bool std::\x1b[01;32m\x1b[Koperator>\x1b[m\x1b[K(const __cxx11::list<_Tp, _Alloc>&, const __cxx11::list<_Tp, _Alloc>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[15.015123] (balance_hw) StderrLine: {'line': b' 2195 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K>(const list<_Tp, _Alloc>& __x, const list<_Tp, _Alloc>& __y)\n'}
+[15.015646] (balance_hw) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[15.016141] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_list.h:2195:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[15.016638] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/motor_enable_node.cpp:148:13:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd::_Bind_helper<false, void (MotorEnableNode::*)(std::shared_ptr<balance_hw_interfaces::srv::SetPwm_Request_<std::allocator<void> > >, std::shared_ptr<balance_hw_interfaces::srv::SetPwm_Response_<std::allocator<void> > >), MotorEnableNode*, const std::_Placeholder<1>&, const std::_Placeholder<2>&>::type\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::__cxx11::list<_Tp, _Alloc>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[15.017195] (balance_hw) StderrLine: {'line': b'  148 |             \x1b[01;36m\x1b[K)\x1b[m\x1b[K;\n'}
+[15.017908] (balance_hw) StderrLine: {'line': b'      |             \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[15.023078] (balance_hw) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/13/map:63\x1b[m\x1b[K,\n'}
+[15.023713] (balance_hw) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/executor.hpp:24\x1b[m\x1b[K:\n'}
+[15.024123] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_map.h:1565:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Key, class _Tp, class _Compare, class _Alloc> bool std::\x1b[01;32m\x1b[Koperator>\x1b[m\x1b[K(const map<_Key, _Tp, _Compare, _Allocator>&, const map<_Key, _Tp, _Compare, _Allocator>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[15.024626] (balance_hw) StderrLine: {'line': b' 1565 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K>(const map<_Key, _Tp, _Compare, _Alloc>& __x,\n'}
+[15.025027] (balance_hw) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[15.025670] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_map.h:1565:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[15.026365] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/motor_enable_node.cpp:148:13:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd::_Bind_helper<false, void (MotorEnableNode::*)(std::shared_ptr<balance_hw_interfaces::srv::SetPwm_Request_<std::allocator<void> > >, std::shared_ptr<balance_hw_interfaces::srv::SetPwm_Response_<std::allocator<void> > >), MotorEnableNode*, const std::_Placeholder<1>&, const std::_Placeholder<2>&>::type\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::map<_Key, _Tp, _Compare, _Allocator>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[15.026974] (balance_hw) StderrLine: {'line': b'  148 |             \x1b[01;36m\x1b[K)\x1b[m\x1b[K;\n'}
+[15.027430] (balance_hw) StderrLine: {'line': b'      |             \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[15.027855] (balance_hw) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/13/map:64\x1b[m\x1b[K:\n'}
+[15.028266] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_multimap.h:1186:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Key, class _Tp, class _Compare, class _Alloc> bool std::\x1b[01;32m\x1b[Koperator>\x1b[m\x1b[K(const multimap<_Key, _Tp, _Compare, _Allocator>&, const multimap<_Key, _Tp, _Compare, _Allocator>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[15.028750] (balance_hw) StderrLine: {'line': b' 1186 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K>(const multimap<_Key, _Tp, _Compare, _Alloc>& __x,\n'}
+[15.029128] (balance_hw) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[15.029607] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_multimap.h:1186:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[15.030009] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/motor_enable_node.cpp:148:13:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd::_Bind_helper<false, void (MotorEnableNode::*)(std::shared_ptr<balance_hw_interfaces::srv::SetPwm_Request_<std::allocator<void> > >, std::shared_ptr<balance_hw_interfaces::srv::SetPwm_Response_<std::allocator<void> > >), MotorEnableNode*, const std::_Placeholder<1>&, const std::_Placeholder<2>&>::type\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::multimap<_Key, _Tp, _Compare, _Allocator>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[15.030605] (balance_hw) StderrLine: {'line': b'  148 |             \x1b[01;36m\x1b[K)\x1b[m\x1b[K;\n'}
+[15.030997] (balance_hw) StderrLine: {'line': b'      |             \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[15.031417] (balance_hw) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/client.hpp:23\x1b[m\x1b[K,\n'}
+[15.031830] (balance_hw) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[15.032204] (balance_hw) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[15.032685] (balance_hw) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[15.033060] (balance_hw) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[15.033585] (balance_hw) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/executor_options.hpp:22\x1b[m\x1b[K,\n'}
+[15.033991] (balance_hw) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/executor.hpp:38\x1b[m\x1b[K:\n'}
+[15.034426] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/optional:1262:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class _Up> constexpr std::__optional_gt_t<_Tp, _Up> std::\x1b[01;32m\x1b[Koperator>\x1b[m\x1b[K(const optional<_Tp>&, const optional<_Up>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[15.035206] (balance_hw) StderrLine: {'line': b' 1262 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K>(const optional<_Tp>& __lhs, const optional<_Up>& __rhs)\n'}
+[15.035699] (balance_hw) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[15.036077] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/optional:1262:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[15.036690] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/motor_enable_node.cpp:148:13:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd::_Bind_helper<false, void (MotorEnableNode::*)(std::shared_ptr<balance_hw_interfaces::srv::SetPwm_Request_<std::allocator<void> > >, std::shared_ptr<balance_hw_interfaces::srv::SetPwm_Response_<std::allocator<void> > >), MotorEnableNode*, const std::_Placeholder<1>&, const std::_Placeholder<2>&>::type\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::optional<_Up>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[15.037135] (balance_hw) StderrLine: {'line': b'  148 |             \x1b[01;36m\x1b[K)\x1b[m\x1b[K;\n'}
+[15.037615] (balance_hw) StderrLine: {'line': b'      |             \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[15.037993] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/optional:1332:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> constexpr bool std::\x1b[01;32m\x1b[Koperator>\x1b[m\x1b[K(const optional<_Tp>&, nullopt_t)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[15.038430] (balance_hw) StderrLine: {'line': b' 1332 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K>(const optional<_Tp>& __lhs, nullopt_t) noexcept\n'}
+[15.038870] (balance_hw) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[15.039457] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/optional:1332:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[15.040148] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/motor_enable_node.cpp:148:13:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  couldn\xe2\x80\x99t deduce template parameter \xe2\x80\x98\x1b[01m\x1b[K_Tp\x1b[m\x1b[K\xe2\x80\x99\n'}
+[15.040655] (balance_hw) StderrLine: {'line': b'  148 |             \x1b[01;36m\x1b[K)\x1b[m\x1b[K;\n'}
+[15.041053] (balance_hw) StderrLine: {'line': b'      |             \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[15.041647] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/optional:1337:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> constexpr bool std::\x1b[01;32m\x1b[Koperator>\x1b[m\x1b[K(nullopt_t, const optional<_Tp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[15.042208] (balance_hw) StderrLine: {'line': b' 1337 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K>(nullopt_t, const optional<_Tp>& /* __rhs */) noexcept\n'}
+[15.042691] (balance_hw) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[15.043056] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/optional:1337:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[15.043533] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/motor_enable_node.cpp:148:13:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd::_Bind_helper<false, void (MotorEnableNode::*)(std::shared_ptr<balance_hw_interfaces::srv::SetPwm_Request_<std::allocator<void> > >, std::shared_ptr<balance_hw_interfaces::srv::SetPwm_Response_<std::allocator<void> > >), MotorEnableNode*, const std::_Placeholder<1>&, const std::_Placeholder<2>&>::type\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::optional<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[15.043981] (balance_hw) StderrLine: {'line': b'  148 |             \x1b[01;36m\x1b[K)\x1b[m\x1b[K;\n'}
+[15.044509] (balance_hw) StderrLine: {'line': b'      |             \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[15.044949] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/optional:1400:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class _Up> constexpr std::__optional_gt_t<_Tp, _Up> std::\x1b[01;32m\x1b[Koperator>\x1b[m\x1b[K(const optional<_Tp>&, const _Up&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[15.045575] (balance_hw) StderrLine: {'line': b' 1400 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K>(const optional<_Tp>& __lhs, const _Up& __rhs)\n'}
+[15.045974] (balance_hw) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[15.046410] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/optional:1400:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[15.046827] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/motor_enable_node.cpp:148:13:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  couldn\xe2\x80\x99t deduce template parameter \xe2\x80\x98\x1b[01m\x1b[K_Tp\x1b[m\x1b[K\xe2\x80\x99\n'}
+[15.047297] (balance_hw) StderrLine: {'line': b'  148 |             \x1b[01;36m\x1b[K)\x1b[m\x1b[K;\n'}
+[15.048140] (balance_hw) StderrLine: {'line': b'      |             \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[15.048812] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/optional:1406:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class _Up> constexpr std::__optional_gt_t<_Up, _Tp> std::\x1b[01;32m\x1b[Koperator>\x1b[m\x1b[K(const _Up&, const optional<_Tp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[15.049425] (balance_hw) StderrLine: {'line': b' 1406 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K>(const _Up& __lhs, const optional<_Tp>& __rhs)\n'}
+[15.049875] (balance_hw) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[15.050313] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/optional:1406:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[15.050943] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/motor_enable_node.cpp:148:13:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd::_Bind_helper<false, void (MotorEnableNode::*)(std::shared_ptr<balance_hw_interfaces::srv::SetPwm_Request_<std::allocator<void> > >, std::shared_ptr<balance_hw_interfaces::srv::SetPwm_Response_<std::allocator<void> > >), MotorEnableNode*, const std::_Placeholder<1>&, const std::_Placeholder<2>&>::type\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::optional<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[15.051721] (balance_hw) StderrLine: {'line': b'  148 |             \x1b[01;36m\x1b[K)\x1b[m\x1b[K;\n'}
+[15.052132] (balance_hw) StderrLine: {'line': b'      |             \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[15.052615] (balance_hw) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/client.hpp:29\x1b[m\x1b[K:\n'}
+[15.053013] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/variant:1269:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class ... _Types> constexpr bool std::\x1b[01;32m\x1b[Koperator>\x1b[m\x1b[K(const variant<_Types ...>&, const variant<_Types ...>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[15.053465] (balance_hw) StderrLine: {'line': b' 1269 |   \x1b[01;36m\x1b[K_VARIANT_RELATION_FUNCTION_TEMPLATE\x1b[m\x1b[K(>, greater)\n'}
+[15.053859] (balance_hw) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.054247] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/variant:1269:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[15.054703] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/motor_enable_node.cpp:148:13:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd::_Bind_helper<false, void (MotorEnableNode::*)(std::shared_ptr<balance_hw_interfaces::srv::SetPwm_Request_<std::allocator<void> > >, std::shared_ptr<balance_hw_interfaces::srv::SetPwm_Response_<std::allocator<void> > >), MotorEnableNode*, const std::_Placeholder<1>&, const std::_Placeholder<2>&>::type\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::variant<_Types ...>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[15.055185] (balance_hw) StderrLine: {'line': b'  148 |             \x1b[01;36m\x1b[K)\x1b[m\x1b[K;\n'}
+[15.055651] (balance_hw) StderrLine: {'line': b'      |             \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[15.056029] (balance_hw) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/13/deque:66\x1b[m\x1b[K,\n'}
+[15.056476] (balance_hw) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors/executor_entities_collection.hpp:18\x1b[m\x1b[K,\n'}
+[15.056878] (balance_hw) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/executor.hpp:39\x1b[m\x1b[K:\n'}
+[15.057303] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_deque.h:2345:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class _Alloc> bool std::\x1b[01;32m\x1b[Koperator>\x1b[m\x1b[K(const deque<_Tp, _Alloc>&, const deque<_Tp, _Alloc>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[15.057972] (balance_hw) StderrLine: {'line': b' 2345 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K>(const deque<_Tp, _Alloc>& __x, const deque<_Tp, _Alloc>& __y)\n'}
+[15.058550] (balance_hw) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[15.058951] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_deque.h:2345:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[15.059404] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/motor_enable_node.cpp:148:13:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd::_Bind_helper<false, void (MotorEnableNode::*)(std::shared_ptr<balance_hw_interfaces::srv::SetPwm_Request_<std::allocator<void> > >, std::shared_ptr<balance_hw_interfaces::srv::SetPwm_Response_<std::allocator<void> > >), MotorEnableNode*, const std::_Placeholder<1>&, const std::_Placeholder<2>&>::type\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::deque<_Tp, _Alloc>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[15.059934] (balance_hw) StderrLine: {'line': b'  148 |             \x1b[01;36m\x1b[K)\x1b[m\x1b[K;\n'}
+[15.060392] (balance_hw) StderrLine: {'line': b'      |             \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[15.060814] (balance_hw) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/13/queue:66\x1b[m\x1b[K,\n'}
+[15.061191] (balance_hw) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/experimental/executors/events_executor/events_queue.hpp:18\x1b[m\x1b[K,\n'}
+[15.061751] (balance_hw) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/experimental/executors/events_executor/events_executor.hpp:27\x1b[m\x1b[K,\n'}
+[15.062167] (balance_hw) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors.hpp:24\x1b[m\x1b[K:\n'}
+[15.062637] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_queue.h:413:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class _Seq> bool std::\x1b[01;32m\x1b[Koperator>\x1b[m\x1b[K(const queue<_Tp, _Seq>&, const queue<_Tp, _Seq>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[15.063068] (balance_hw) StderrLine: {'line': b'  413 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K>(const queue<_Tp, _Seq>& __x, const queue<_Tp, _Seq>& __y)\n'}
+[15.063547] (balance_hw) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[15.063947] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_queue.h:413:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[15.064500] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/motor_enable_node.cpp:148:13:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd::_Bind_helper<false, void (MotorEnableNode::*)(std::shared_ptr<balance_hw_interfaces::srv::SetPwm_Request_<std::allocator<void> > >, std::shared_ptr<balance_hw_interfaces::srv::SetPwm_Response_<std::allocator<void> > >), MotorEnableNode*, const std::_Placeholder<1>&, const std::_Placeholder<2>&>::type\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::queue<_Tp, _Seq>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[15.065020] (balance_hw) StderrLine: {'line': b'  148 |             \x1b[01;36m\x1b[K)\x1b[m\x1b[K;\n'}
+[15.065489] (balance_hw) StderrLine: {'line': b'      |             \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[15.065915] (balance_hw) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:22\x1b[m\x1b[K:\n'}
+[15.066363] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/thread:87:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kbool std::\x1b[01;32m\x1b[Koperator>\x1b[m\x1b[K(thread::id, thread::id)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[15.066799] (balance_hw) StderrLine: {'line': b'   87 |   \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K>(thread::id __x, thread::id __y) noexcept\n'}
+[15.067192] (balance_hw) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[15.067670] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/thread:87:24:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[K<unresolved overloaded function type>\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kstd::thread::id\x1b[m\x1b[K\xe2\x80\x99\n'}
+[15.068083] (balance_hw) StderrLine: {'line': b'   87 |   operator>(\x1b[01;36m\x1b[Kthread::id __x\x1b[m\x1b[K, thread::id __y) noexcept\n'}
+[15.068598] (balance_hw) StderrLine: {'line': b'      |             \x1b[01;36m\x1b[K~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[15.069004] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/variant:1307:18:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kconstexpr bool std::\x1b[01;32m\x1b[Koperator>\x1b[m\x1b[K(monostate, monostate)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[15.069489] (balance_hw) StderrLine: {'line': b' 1307 |   constexpr bool \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K>(monostate, monostate) noexcept { return false; }\n'}
+[15.069902] (balance_hw) StderrLine: {'line': b'      |                  \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[15.070346] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/variant:1307:28:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[K<unresolved overloaded function type>\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kstd::monostate\x1b[m\x1b[K\xe2\x80\x99\n'}
+[15.070796] (balance_hw) StderrLine: {'line': b' 1307 |   constexpr bool operator>(\x1b[01;36m\x1b[Kmonostate\x1b[m\x1b[K, monostate) noexcept { return false; }\n'}
+[15.071201] (balance_hw) StderrLine: {'line': b'      |                            \x1b[01;36m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[15.104606] (-) TimerEvent: {}
+[15.205323] (-) TimerEvent: {}
+[15.306000] (-) TimerEvent: {}
+[15.406769] (-) TimerEvent: {}
+[15.507513] (-) TimerEvent: {}
+[15.608198] (-) TimerEvent: {}
+[15.708917] (-) TimerEvent: {}
+[15.809668] (-) TimerEvent: {}
+[15.910374] (-) TimerEvent: {}
+[16.011046] (-) TimerEvent: {}
+[16.111800] (-) TimerEvent: {}
+[16.212522] (-) TimerEvent: {}
+[16.313207] (-) TimerEvent: {}
+[16.413930] (-) TimerEvent: {}
+[16.514673] (-) TimerEvent: {}
+[16.615364] (-) TimerEvent: {}
+[16.716041] (-) TimerEvent: {}
+[16.816801] (-) TimerEvent: {}
+[16.917578] (-) TimerEvent: {}
+[17.018372] (-) TimerEvent: {}
+[17.119071] (-) TimerEvent: {}
+[17.219870] (-) TimerEvent: {}
+[17.320706] (-) TimerEvent: {}
+[17.421412] (-) TimerEvent: {}
+[17.522117] (-) TimerEvent: {}
+[17.622828] (-) TimerEvent: {}
+[17.723562] (-) TimerEvent: {}
+[17.824292] (-) TimerEvent: {}
+[17.924978] (-) TimerEvent: {}
+[18.025732] (-) TimerEvent: {}
+[18.126421] (-) TimerEvent: {}
+[18.227097] (-) TimerEvent: {}
+[18.327845] (-) TimerEvent: {}
+[18.428581] (-) TimerEvent: {}
+[18.529297] (-) TimerEvent: {}
+[18.629966] (-) TimerEvent: {}
+[18.730717] (-) TimerEvent: {}
+[18.831500] (-) TimerEvent: {}
+[18.863335] (balance_hw) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/motor_enable_node.dir/build.make:76: CMakeFiles/motor_enable_node.dir/src/motor_enable_node.cpp.o] Error 1\n'}
+[18.864299] (balance_hw) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/motor_enable_node.dir/all] Error 2\n'}
+[18.865214] (balance_hw) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[18.873742] (balance_hw) CommandEnded: {'returncode': 2}
+[18.930800] (balance_hw) JobEnded: {'identifier': 'balance_hw', 'rc': 2}
+[18.935455] (-) TimerEvent: {}
+[18.942510] (-) EventReactorShutdown: {}

@@ -1,0 +1,575 @@
+[0.000000] (-) TimerEvent: {}
+[0.000923] (-) JobUnselected: {'identifier': 'balance_hw'}
+[0.001737] (balance_hw_interfaces) JobQueued: {'identifier': 'balance_hw_interfaces', 'dependencies': OrderedDict()}
+[0.002332] (balance_hw_interfaces) JobStarted: {'identifier': 'balance_hw_interfaces'}
+[0.056839] (balance_hw_interfaces) JobProgress: {'identifier': 'balance_hw_interfaces', 'progress': 'cmake'}
+[0.059911] (balance_hw_interfaces) Command: {'cmd': ['/usr/bin/cmake', '/home/mmcgraw/Projects/balance_bot/src/balance_hw_interfaces', '-DCMAKE_INSTALL_PREFIX=/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces'], 'cwd': '/home/mmcgraw/Projects/balance_bot/build/balance_hw_interfaces', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'mmcgraw', 'SSH_CLIENT': '2601:602:867f:a290:b46b:93db:f869:aeb2 55284 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib', 'HOME': '/home/mmcgraw', 'OLDPWD': '/home/mmcgraw/Projects/balance_bot/src', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'mmcgraw', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '2', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/mmcgraw/Projects/balance_bot/build/balance_hw_interfaces', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '2601:602:867f:a290:b46b:93db:f869:aeb2 55284 2601:602:867f:a290:da3a:ddff:feb7:2f83 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy'}), 'shell': False}
+[0.099276] (-) TimerEvent: {}
+[0.200019] (-) TimerEvent: {}
+[0.300919] (-) TimerEvent: {}
+[0.401728] (-) TimerEvent: {}
+[0.502571] (-) TimerEvent: {}
+[0.603408] (-) TimerEvent: {}
+[0.704398] (-) TimerEvent: {}
+[0.805224] (-) TimerEvent: {}
+[0.839228] (balance_hw_interfaces) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[0.905416] (-) TimerEvent: {}
+[1.006207] (-) TimerEvent: {}
+[1.106962] (-) TimerEvent: {}
+[1.207743] (-) TimerEvent: {}
+[1.308750] (-) TimerEvent: {}
+[1.409663] (-) TimerEvent: {}
+[1.483696] (balance_hw_interfaces) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[1.509846] (-) TimerEvent: {}
+[1.596261] (balance_hw_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.610018] (-) TimerEvent: {}
+[1.710767] (-) TimerEvent: {}
+[1.811665] (-) TimerEvent: {}
+[1.912590] (-) TimerEvent: {}
+[2.013344] (-) TimerEvent: {}
+[2.114174] (-) TimerEvent: {}
+[2.125149] (balance_hw_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[2.161916] (balance_hw_interfaces) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[2.166598] (balance_hw_interfaces) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[2.169593] (balance_hw_interfaces) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[2.214374] (-) TimerEvent: {}
+[2.225177] (balance_hw_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[2.314576] (-) TimerEvent: {}
+[2.415349] (-) TimerEvent: {}
+[2.516151] (-) TimerEvent: {}
+[2.616948] (-) TimerEvent: {}
+[2.717781] (-) TimerEvent: {}
+[2.732933] (balance_hw_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[2.769953] (balance_hw_interfaces) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[2.771144] (balance_hw_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[2.772906] (balance_hw_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[2.807060] (balance_hw_interfaces) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[2.817941] (-) TimerEvent: {}
+[2.918627] (-) TimerEvent: {}
+[3.019404] (-) TimerEvent: {}
+[3.120158] (-) TimerEvent: {}
+[3.220818] (-) TimerEvent: {}
+[3.321448] (-) TimerEvent: {}
+[3.422063] (-) TimerEvent: {}
+[3.499210] (balance_hw_interfaces) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[3.522280] (-) TimerEvent: {}
+[3.622951] (-) TimerEvent: {}
+[3.723709] (-) TimerEvent: {}
+[3.824732] (-) TimerEvent: {}
+[3.925570] (-) TimerEvent: {}
+[4.026257] (-) TimerEvent: {}
+[4.126947] (-) TimerEvent: {}
+[4.212941] (balance_hw_interfaces) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)\n'}
+[4.227135] (-) TimerEvent: {}
+[4.266004] (balance_hw_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[4.327307] (-) TimerEvent: {}
+[4.427931] (-) TimerEvent: {}
+[4.528709] (-) TimerEvent: {}
+[4.629395] (-) TimerEvent: {}
+[4.711951] (balance_hw_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[4.729566] (-) TimerEvent: {}
+[4.830203] (-) TimerEvent: {}
+[4.930799] (-) TimerEvent: {}
+[5.031472] (-) TimerEvent: {}
+[5.081166] (balance_hw_interfaces) StdoutLine: {'line': b'-- Found rosidl_adapter: 4.6.7 (/opt/ros/jazzy/share/rosidl_adapter/cmake)\n'}
+[5.131695] (-) TimerEvent: {}
+[5.232447] (-) TimerEvent: {}
+[5.333167] (-) TimerEvent: {}
+[5.433836] (-) TimerEvent: {}
+[5.534441] (-) TimerEvent: {}
+[5.635053] (-) TimerEvent: {}
+[5.735727] (-) TimerEvent: {}
+[5.836494] (-) TimerEvent: {}
+[5.937253] (-) TimerEvent: {}
+[6.038151] (-) TimerEvent: {}
+[6.139172] (-) TimerEvent: {}
+[6.239860] (-) TimerEvent: {}
+[6.340548] (-) TimerEvent: {}
+[6.441226] (-) TimerEvent: {}
+[6.541848] (-) TimerEvent: {}
+[6.642558] (-) TimerEvent: {}
+[6.743327] (-) TimerEvent: {}
+[6.844020] (-) TimerEvent: {}
+[6.944677] (-) TimerEvent: {}
+[7.045352] (-) TimerEvent: {}
+[7.146045] (-) TimerEvent: {}
+[7.246814] (-) TimerEvent: {}
+[7.347501] (-) TimerEvent: {}
+[7.448231] (-) TimerEvent: {}
+[7.549005] (-) TimerEvent: {}
+[7.649762] (-) TimerEvent: {}
+[7.750514] (-) TimerEvent: {}
+[7.851297] (-) TimerEvent: {}
+[7.952032] (-) TimerEvent: {}
+[7.994206] (balance_hw_interfaces) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)\n'}
+[8.052211] (-) TimerEvent: {}
+[8.152821] (-) TimerEvent: {}
+[8.253448] (-) TimerEvent: {}
+[8.354068] (-) TimerEvent: {}
+[8.454694] (-) TimerEvent: {}
+[8.555310] (-) TimerEvent: {}
+[8.655879] (-) TimerEvent: {}
+[8.756552] (-) TimerEvent: {}
+[8.857265] (-) TimerEvent: {}
+[8.958137] (-) TimerEvent: {}
+[9.058859] (-) TimerEvent: {}
+[9.159650] (-) TimerEvent: {}
+[9.260379] (-) TimerEvent: {}
+[9.361149] (-) TimerEvent: {}
+[9.461894] (-) TimerEvent: {}
+[9.562530] (-) TimerEvent: {}
+[9.663186] (-) TimerEvent: {}
+[9.763820] (-) TimerEvent: {}
+[9.864564] (-) TimerEvent: {}
+[9.965254] (-) TimerEvent: {}
+[10.058046] (balance_hw_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[10.065441] (-) TimerEvent: {}
+[10.166179] (-) TimerEvent: {}
+[10.266829] (-) TimerEvent: {}
+[10.367514] (-) TimerEvent: {}
+[10.468184] (-) TimerEvent: {}
+[10.568786] (-) TimerEvent: {}
+[10.669443] (-) TimerEvent: {}
+[10.770115] (-) TimerEvent: {}
+[10.870767] (-) TimerEvent: {}
+[10.971478] (-) TimerEvent: {}
+[11.072233] (-) TimerEvent: {}
+[11.172955] (-) TimerEvent: {}
+[11.273691] (-) TimerEvent: {}
+[11.374528] (-) TimerEvent: {}
+[11.475204] (-) TimerEvent: {}
+[11.575791] (-) TimerEvent: {}
+[11.676509] (-) TimerEvent: {}
+[11.777174] (-) TimerEvent: {}
+[11.877866] (-) TimerEvent: {}
+[11.978528] (-) TimerEvent: {}
+[12.079230] (-) TimerEvent: {}
+[12.179960] (-) TimerEvent: {}
+[12.280843] (-) TimerEvent: {}
+[12.381733] (-) TimerEvent: {}
+[12.482532] (-) TimerEvent: {}
+[12.583205] (-) TimerEvent: {}
+[12.679729] (balance_hw_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[12.683399] (-) TimerEvent: {}
+[12.709455] (balance_hw_interfaces) StdoutLine: {'line': b'-- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)\n'}
+[12.783551] (-) TimerEvent: {}
+[12.884180] (-) TimerEvent: {}
+[12.984837] (-) TimerEvent: {}
+[13.085535] (-) TimerEvent: {}
+[13.186168] (-) TimerEvent: {}
+[13.286776] (-) TimerEvent: {}
+[13.329892] (balance_hw_interfaces) StdoutLine: {'line': b'-- Found PythonExtra: /usr/bin/python3  \n'}
+[13.386952] (-) TimerEvent: {}
+[13.487629] (-) TimerEvent: {}
+[13.588308] (-) TimerEvent: {}
+[13.688885] (-) TimerEvent: {}
+[13.789561] (-) TimerEvent: {}
+[13.890211] (-) TimerEvent: {}
+[13.990931] (-) TimerEvent: {}
+[14.091542] (-) TimerEvent: {}
+[14.192163] (-) TimerEvent: {}
+[14.292735] (-) TimerEvent: {}
+[14.393318] (-) TimerEvent: {}
+[14.493980] (-) TimerEvent: {}
+[14.594822] (-) TimerEvent: {}
+[14.695601] (-) TimerEvent: {}
+[14.796458] (-) TimerEvent: {}
+[14.897208] (-) TimerEvent: {}
+[14.997874] (-) TimerEvent: {}
+[15.098542] (-) TimerEvent: {}
+[15.199188] (-) TimerEvent: {}
+[15.299892] (-) TimerEvent: {}
+[15.400717] (-) TimerEvent: {}
+[15.501347] (-) TimerEvent: {}
+[15.601998] (-) TimerEvent: {}
+[15.702660] (-) TimerEvent: {}
+[15.803356] (-) TimerEvent: {}
+[15.806187] (balance_hw_interfaces) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed \n'}
+[15.903527] (-) TimerEvent: {}
+[15.984728] (balance_hw_interfaces) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.17.4 (/opt/ros/jazzy/share/ament_lint_auto/cmake)\n'}
+[16.003712] (-) TimerEvent: {}
+[16.104410] (-) TimerEvent: {}
+[16.205137] (-) TimerEvent: {}
+[16.214052] (balance_hw_interfaces) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[16.226574] (balance_hw_interfaces) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[16.251642] (balance_hw_interfaces) StdoutLine: {'line': b'-- Configuring done (16.1s)\n'}
+[16.305260] (-) TimerEvent: {}
+[16.405824] (-) TimerEvent: {}
+[16.469968] (balance_hw_interfaces) StdoutLine: {'line': b'-- Generating done (0.2s)\n'}
+[16.506012] (-) TimerEvent: {}
+[16.523371] (balance_hw_interfaces) StdoutLine: {'line': b'-- Build files have been written to: /home/mmcgraw/Projects/balance_bot/build/balance_hw_interfaces\n'}
+[16.560903] (balance_hw_interfaces) CommandEnded: {'returncode': 0}
+[16.567809] (balance_hw_interfaces) JobProgress: {'identifier': 'balance_hw_interfaces', 'progress': 'build'}
+[16.567953] (balance_hw_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/mmcgraw/Projects/balance_bot/build/balance_hw_interfaces', '--', '-j4', '-l4'], 'cwd': '/home/mmcgraw/Projects/balance_bot/build/balance_hw_interfaces', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'mmcgraw', 'SSH_CLIENT': '2601:602:867f:a290:b46b:93db:f869:aeb2 55284 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib', 'HOME': '/home/mmcgraw', 'OLDPWD': '/home/mmcgraw/Projects/balance_bot/src', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'mmcgraw', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '2', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/mmcgraw/Projects/balance_bot/build/balance_hw_interfaces', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '2601:602:867f:a290:b46b:93db:f869:aeb2 55284 2601:602:867f:a290:da3a:ddff:feb7:2f83 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy'}), 'shell': False}
+[16.606222] (-) TimerEvent: {}
+[16.708282] (-) TimerEvent: {}
+[16.809037] (-) TimerEvent: {}
+[16.859356] (balance_hw_interfaces) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating type hashes for ROS interfaces\x1b[0m\n'}
+[16.903624] (balance_hw_interfaces) StdoutLine: {'line': b'[  2%] Built target ament_cmake_python_copy_balance_hw_interfaces\n'}
+[16.910579] (-) TimerEvent: {}
+[17.013451] (-) TimerEvent: {}
+[17.115598] (-) TimerEvent: {}
+[17.216722] (-) TimerEvent: {}
+[17.317910] (-) TimerEvent: {}
+[17.418547] (-) TimerEvent: {}
+[17.519673] (-) TimerEvent: {}
+[17.620847] (-) TimerEvent: {}
+[17.722034] (-) TimerEvent: {}
+[17.823241] (-) TimerEvent: {}
+[17.880240] (balance_hw_interfaces) StdoutLine: {'line': b'[  2%] Built target balance_hw_interfaces__rosidl_generator_type_description\n'}
+[17.919620] (balance_hw_interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[17.923431] (-) TimerEvent: {}
+[17.925169] (balance_hw_interfaces) StdoutLine: {'line': b'creating balance_hw_interfaces.egg-info\n'}
+[17.934848] (balance_hw_interfaces) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[17.990344] (balance_hw_interfaces) StdoutLine: {'line': b'[  8%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[18.023645] (-) TimerEvent: {}
+[18.037533] (balance_hw_interfaces) StdoutLine: {'line': b'writing balance_hw_interfaces.egg-info/PKG-INFO\n'}
+[18.038641] (balance_hw_interfaces) StdoutLine: {'line': b'writing dependency_links to balance_hw_interfaces.egg-info/dependency_links.txt\n'}
+[18.040488] (balance_hw_interfaces) StdoutLine: {'line': b'writing top-level names to balance_hw_interfaces.egg-info/top_level.txt\n'}
+[18.041188] (balance_hw_interfaces) StdoutLine: {'line': b"writing manifest file 'balance_hw_interfaces.egg-info/SOURCES.txt'\n"}
+[18.123953] (-) TimerEvent: {}
+[18.228271] (-) TimerEvent: {}
+[18.329190] (-) TimerEvent: {}
+[18.422022] (balance_hw_interfaces) StdoutLine: {'line': b"reading manifest file 'balance_hw_interfaces.egg-info/SOURCES.txt'\n"}
+[18.424363] (balance_hw_interfaces) StdoutLine: {'line': b"writing manifest file 'balance_hw_interfaces.egg-info/SOURCES.txt'\n"}
+[18.429486] (-) TimerEvent: {}
+[18.532889] (-) TimerEvent: {}
+[18.590017] (balance_hw_interfaces) StdoutLine: {'line': b'[  8%] Built target ament_cmake_python_build_balance_hw_interfaces_egg\n'}
+[18.633051] (-) TimerEvent: {}
+[18.733792] (-) TimerEvent: {}
+[18.834625] (-) TimerEvent: {}
+[18.935676] (-) TimerEvent: {}
+[19.036516] (-) TimerEvent: {}
+[19.137515] (-) TimerEvent: {}
+[19.238419] (-) TimerEvent: {}
+[19.340312] (-) TimerEvent: {}
+[19.428222] (balance_hw_interfaces) StdoutLine: {'line': b'[  8%] Built target balance_hw_interfaces__cpp\n'}
+[19.440544] (-) TimerEvent: {}
+[19.542731] (-) TimerEvent: {}
+[19.552794] (balance_hw_interfaces) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/balance_hw_interfaces__rosidl_generator_c.dir/rosidl_generator_c/balance_hw_interfaces/srv/detail/set_direction__description.c.o\x1b[0m\n'}
+[19.555114] (balance_hw_interfaces) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/balance_hw_interfaces__rosidl_generator_c.dir/rosidl_generator_c/balance_hw_interfaces/srv/detail/set_direction__functions.c.o\x1b[0m\n'}
+[19.558821] (balance_hw_interfaces) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding C object CMakeFiles/balance_hw_interfaces__rosidl_generator_c.dir/rosidl_generator_c/balance_hw_interfaces/srv/detail/set_direction__type_support.c.o\x1b[0m\n'}
+[19.642937] (-) TimerEvent: {}
+[19.743837] (-) TimerEvent: {}
+[19.844575] (-) TimerEvent: {}
+[19.945516] (-) TimerEvent: {}
+[20.030481] (balance_hw_interfaces) StdoutLine: {'line': b'[ 20%] \x1b[32m\x1b[1mLinking C shared library libbalance_hw_interfaces__rosidl_generator_c.so\x1b[0m\n'}
+[20.045720] (-) TimerEvent: {}
+[20.146485] (-) TimerEvent: {}
+[20.237057] (balance_hw_interfaces) StdoutLine: {'line': b'[ 20%] Built target balance_hw_interfaces__rosidl_generator_c\n'}
+[20.247345] (-) TimerEvent: {}
+[20.291768] (balance_hw_interfaces) StdoutLine: {'line': b'[ 23%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[20.300567] (balance_hw_interfaces) StdoutLine: {'line': b'[ 26%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[20.309565] (balance_hw_interfaces) StdoutLine: {'line': b'[ 29%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[20.350230] (-) TimerEvent: {}
+[20.354459] (balance_hw_interfaces) StdoutLine: {'line': b'[ 32%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[20.450387] (-) TimerEvent: {}
+[20.554238] (-) TimerEvent: {}
+[20.655050] (-) TimerEvent: {}
+[20.756205] (-) TimerEvent: {}
+[20.860233] (-) TimerEvent: {}
+[20.961007] (-) TimerEvent: {}
+[21.061946] (-) TimerEvent: {}
+[21.162723] (-) TimerEvent: {}
+[21.264212] (-) TimerEvent: {}
+[21.367513] (-) TimerEvent: {}
+[21.468306] (-) TimerEvent: {}
+[21.569245] (-) TimerEvent: {}
+[21.640719] (balance_hw_interfaces) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/balance_hw_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/balance_hw_interfaces/srv/set_direction__type_support.cpp.o\x1b[0m\n'}
+[21.669504] (-) TimerEvent: {}
+[21.770704] (-) TimerEvent: {}
+[21.827966] (balance_hw_interfaces) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/balance_hw_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/balance_hw_interfaces/srv/set_direction__type_support.cpp.o\x1b[0m\n'}
+[21.870964] (-) TimerEvent: {}
+[21.973387] (-) TimerEvent: {}
+[22.004905] (balance_hw_interfaces) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding C object CMakeFiles/balance_hw_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/balance_hw_interfaces/srv/detail/set_direction__type_support.c.o\x1b[0m\n'}
+[22.075245] (-) TimerEvent: {}
+[22.080456] (balance_hw_interfaces) StdoutLine: {'line': b'[ 44%] \x1b[32m\x1b[1mLinking CXX shared library libbalance_hw_interfaces__rosidl_typesupport_c.so\x1b[0m\n'}
+[22.175501] (-) TimerEvent: {}
+[22.208124] (balance_hw_interfaces) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding CXX object CMakeFiles/balance_hw_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/balance_hw_interfaces/srv/detail/set_direction__type_support_c.cpp.o\x1b[0m\n'}
+[22.275738] (-) TimerEvent: {}
+[22.324466] (balance_hw_interfaces) StdoutLine: {'line': b'[ 50%] \x1b[32m\x1b[1mLinking C shared library libbalance_hw_interfaces__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[22.335263] (balance_hw_interfaces) StdoutLine: {'line': b'[ 50%] Built target balance_hw_interfaces__rosidl_typesupport_c\n'}
+[22.375940] (-) TimerEvent: {}
+[22.401887] (balance_hw_interfaces) StdoutLine: {'line': b'[ 52%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[22.476202] (-) TimerEvent: {}
+[22.566773] (balance_hw_interfaces) StdoutLine: {'line': b'[ 52%] Built target balance_hw_interfaces__rosidl_typesupport_introspection_c\n'}
+[22.577269] (-) TimerEvent: {}
+[22.629394] (balance_hw_interfaces) StdoutLine: {'line': b'[ 55%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[22.680276] (-) TimerEvent: {}
+[22.782144] (-) TimerEvent: {}
+[22.885123] (-) TimerEvent: {}
+[22.987264] (-) TimerEvent: {}
+[23.090588] (-) TimerEvent: {}
+[23.195618] (-) TimerEvent: {}
+[23.296890] (-) TimerEvent: {}
+[23.399614] (-) TimerEvent: {}
+[23.502288] (-) TimerEvent: {}
+[23.603147] (-) TimerEvent: {}
+[23.706612] (-) TimerEvent: {}
+[23.807450] (-) TimerEvent: {}
+[23.910660] (-) TimerEvent: {}
+[24.014483] (-) TimerEvent: {}
+[24.116332] (-) TimerEvent: {}
+[24.222300] (-) TimerEvent: {}
+[24.258438] (balance_hw_interfaces) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/balance_hw_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/balance_hw_interfaces/srv/detail/set_direction__type_support.cpp.o\x1b[0m\n'}
+[24.322705] (-) TimerEvent: {}
+[24.330538] (balance_hw_interfaces) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object CMakeFiles/balance_hw_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/balance_hw_interfaces/srv/detail/dds_fastrtps/set_direction__type_support.cpp.o\x1b[0m\n'}
+[24.422905] (-) TimerEvent: {}
+[24.527277] (-) TimerEvent: {}
+[24.631279] (-) TimerEvent: {}
+[24.732627] (-) TimerEvent: {}
+[24.841361] (-) TimerEvent: {}
+[24.946639] (-) TimerEvent: {}
+[25.052125] (-) TimerEvent: {}
+[25.056037] (balance_hw_interfaces) StdoutLine: {'line': b'[ 64%] \x1b[32m\x1b[1mLinking CXX shared library libbalance_hw_interfaces__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[25.152281] (-) TimerEvent: {}
+[25.253801] (-) TimerEvent: {}
+[25.358285] (-) TimerEvent: {}
+[25.460527] (-) TimerEvent: {}
+[25.538325] (balance_hw_interfaces) StdoutLine: {'line': b'[ 64%] Built target balance_hw_interfaces__rosidl_typesupport_cpp\n'}
+[25.560738] (-) TimerEvent: {}
+[25.662959] (-) TimerEvent: {}
+[25.764641] (-) TimerEvent: {}
+[25.866562] (-) TimerEvent: {}
+[25.946448] (balance_hw_interfaces) StdoutLine: {'line': b'[ 67%] \x1b[32m\x1b[1mLinking CXX shared library libbalance_hw_interfaces__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[25.966846] (-) TimerEvent: {}
+[26.068732] (-) TimerEvent: {}
+[26.170385] (-) TimerEvent: {}
+[26.272390] (-) TimerEvent: {}
+[26.373484] (-) TimerEvent: {}
+[26.382055] (balance_hw_interfaces) StdoutLine: {'line': b'[ 67%] Built target balance_hw_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[26.473742] (-) TimerEvent: {}
+[26.574695] (-) TimerEvent: {}
+[26.675520] (-) TimerEvent: {}
+[26.779260] (-) TimerEvent: {}
+[26.883595] (-) TimerEvent: {}
+[26.985246] (-) TimerEvent: {}
+[26.994036] (balance_hw_interfaces) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX shared library libbalance_hw_interfaces__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[27.085460] (-) TimerEvent: {}
+[27.186189] (-) TimerEvent: {}
+[27.286879] (-) TimerEvent: {}
+[27.387634] (-) TimerEvent: {}
+[27.488445] (-) TimerEvent: {}
+[27.588120] (balance_hw_interfaces) StdoutLine: {'line': b'[ 70%] Built target balance_hw_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[27.588895] (-) TimerEvent: {}
+[27.689506] (-) TimerEvent: {}
+[27.790271] (-) TimerEvent: {}
+[27.891012] (-) TimerEvent: {}
+[27.923218] (balance_hw_interfaces) StdoutLine: {'line': b'[ 73%] \x1b[32m\x1b[1mLinking CXX shared library libbalance_hw_interfaces__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[27.991231] (-) TimerEvent: {}
+[28.092154] (-) TimerEvent: {}
+[28.193126] (-) TimerEvent: {}
+[28.285250] (balance_hw_interfaces) StdoutLine: {'line': b'[ 73%] Built target balance_hw_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[28.293252] (-) TimerEvent: {}
+[28.385447] (balance_hw_interfaces) StdoutLine: {'line': b'[ 73%] Built target balance_hw_interfaces\n'}
+[28.393425] (-) TimerEvent: {}
+[28.485377] (balance_hw_interfaces) StdoutLine: {'line': b'[ 76%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[28.493602] (-) TimerEvent: {}
+[28.594209] (-) TimerEvent: {}
+[28.694840] (-) TimerEvent: {}
+[28.795508] (-) TimerEvent: {}
+[28.896115] (-) TimerEvent: {}
+[28.996730] (-) TimerEvent: {}
+[29.097430] (-) TimerEvent: {}
+[29.198116] (-) TimerEvent: {}
+[29.298751] (-) TimerEvent: {}
+[29.399362] (-) TimerEvent: {}
+[29.499942] (-) TimerEvent: {}
+[29.600554] (-) TimerEvent: {}
+[29.701261] (-) TimerEvent: {}
+[29.801886] (-) TimerEvent: {}
+[29.902582] (-) TimerEvent: {}
+[30.003547] (-) TimerEvent: {}
+[30.096442] (balance_hw_interfaces) StdoutLine: {'line': b'[ 76%] Built target balance_hw_interfaces__py\n'}
+[30.103758] (-) TimerEvent: {}
+[30.193403] (balance_hw_interfaces) StdoutLine: {'line': b'[ 79%] \x1b[32mBuilding C object CMakeFiles/balance_hw_interfaces__rosidl_generator_py.dir/rosidl_generator_py/balance_hw_interfaces/srv/_set_direction_s.c.o\x1b[0m\n'}
+[30.203929] (-) TimerEvent: {}
+[30.304607] (-) TimerEvent: {}
+[30.405233] (-) TimerEvent: {}
+[30.505885] (-) TimerEvent: {}
+[30.606599] (-) TimerEvent: {}
+[30.707352] (-) TimerEvent: {}
+[30.808068] (-) TimerEvent: {}
+[30.908765] (-) TimerEvent: {}
+[31.009690] (-) TimerEvent: {}
+[31.110497] (-) TimerEvent: {}
+[31.124918] (balance_hw_interfaces) StdoutLine: {'line': b'[ 82%] \x1b[32m\x1b[1mLinking C shared library libbalance_hw_interfaces__rosidl_generator_py.so\x1b[0m\n'}
+[31.210703] (-) TimerEvent: {}
+[31.311454] (-) TimerEvent: {}
+[31.362649] (balance_hw_interfaces) StdoutLine: {'line': b'[ 82%] Built target balance_hw_interfaces__rosidl_generator_py\n'}
+[31.412304] (-) TimerEvent: {}
+[31.468327] (balance_hw_interfaces) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/balance_hw_interfaces_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/balance_hw_interfaces/_balance_hw_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[31.469420] (balance_hw_interfaces) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/balance_hw_interfaces_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/balance_hw_interfaces/_balance_hw_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[31.470920] (balance_hw_interfaces) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding C object CMakeFiles/balance_hw_interfaces_s__rosidl_typesupport_c.dir/rosidl_generator_py/balance_hw_interfaces/_balance_hw_interfaces_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[31.512561] (-) TimerEvent: {}
+[31.613395] (-) TimerEvent: {}
+[31.714153] (-) TimerEvent: {}
+[31.817285] (-) TimerEvent: {}
+[31.918116] (-) TimerEvent: {}
+[32.018895] (-) TimerEvent: {}
+[32.034387] (balance_hw_interfaces) StdoutLine: {'line': b'[ 94%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/balance_hw_interfaces/balance_hw_interfaces_s__rosidl_typesupport_c.so\x1b[0m\n'}
+[32.048691] (balance_hw_interfaces) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/balance_hw_interfaces/balance_hw_interfaces_s__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[32.119347] (-) TimerEvent: {}
+[32.120608] (balance_hw_interfaces) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/balance_hw_interfaces/balance_hw_interfaces_s__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[32.213720] (balance_hw_interfaces) StdoutLine: {'line': b'[100%] Built target balance_hw_interfaces_s__rosidl_typesupport_c\n'}
+[32.219554] (-) TimerEvent: {}
+[32.230456] (balance_hw_interfaces) StdoutLine: {'line': b'[100%] Built target balance_hw_interfaces_s__rosidl_typesupport_introspection_c\n'}
+[32.298156] (balance_hw_interfaces) StdoutLine: {'line': b'[100%] Built target balance_hw_interfaces_s__rosidl_typesupport_fastrtps_c\n'}
+[32.319766] (-) TimerEvent: {}
+[32.352469] (balance_hw_interfaces) CommandEnded: {'returncode': 0}
+[32.354662] (balance_hw_interfaces) JobProgress: {'identifier': 'balance_hw_interfaces', 'progress': 'install'}
+[32.393149] (balance_hw_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/mmcgraw/Projects/balance_bot/build/balance_hw_interfaces'], 'cwd': '/home/mmcgraw/Projects/balance_bot/build/balance_hw_interfaces', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'mmcgraw', 'SSH_CLIENT': '2601:602:867f:a290:b46b:93db:f869:aeb2 55284 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib', 'HOME': '/home/mmcgraw', 'OLDPWD': '/home/mmcgraw/Projects/balance_bot/src', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'mmcgraw', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '2', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/mmcgraw/Projects/balance_bot/build/balance_hw_interfaces', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '2601:602:867f:a290:b46b:93db:f869:aeb2 55284 2601:602:867f:a290:da3a:ddff:feb7:2f83 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy'}), 'shell': False}
+[32.419936] (-) TimerEvent: {}
+[32.433862] (balance_hw_interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[32.435146] (balance_hw_interfaces) StdoutLine: {'line': b'-- Installing: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/share/ament_index/resource_index/rosidl_interfaces/balance_hw_interfaces\n'}
+[32.437039] (balance_hw_interfaces) StdoutLine: {'line': b'-- Installing: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/share/balance_hw_interfaces/srv/SetDirection.json\n'}
+[32.438372] (balance_hw_interfaces) StdoutLine: {'line': b'-- Installing: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/include/balance_hw_interfaces/balance_hw_interfaces\n'}
+[32.439322] (balance_hw_interfaces) StdoutLine: {'line': b'-- Installing: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/include/balance_hw_interfaces/balance_hw_interfaces/srv\n'}
+[32.440052] (balance_hw_interfaces) StdoutLine: {'line': b'-- Installing: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/include/balance_hw_interfaces/balance_hw_interfaces/srv/set_direction.h\n'}
+[32.441180] (balance_hw_interfaces) StdoutLine: {'line': b'-- Installing: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/include/balance_hw_interfaces/balance_hw_interfaces/srv/detail\n'}
+[32.442021] (balance_hw_interfaces) StdoutLine: {'line': b'-- Installing: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/include/balance_hw_interfaces/balance_hw_interfaces/srv/detail/set_direction__type_support.c\n'}
+[32.443348] (balance_hw_interfaces) StdoutLine: {'line': b'-- Installing: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/include/balance_hw_interfaces/balance_hw_interfaces/srv/detail/set_direction__description.c\n'}
+[32.444751] (balance_hw_interfaces) StdoutLine: {'line': b'-- Installing: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/include/balance_hw_interfaces/balance_hw_interfaces/srv/detail/set_direction__type_support.h\n'}
+[32.445972] (balance_hw_interfaces) StdoutLine: {'line': b'-- Installing: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/include/balance_hw_interfaces/balance_hw_interfaces/srv/detail/set_direction__struct.h\n'}
+[32.447234] (balance_hw_interfaces) StdoutLine: {'line': b'-- Installing: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/include/balance_hw_interfaces/balance_hw_interfaces/srv/detail/set_direction__functions.c\n'}
+[32.448631] (balance_hw_interfaces) StdoutLine: {'line': b'-- Installing: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/include/balance_hw_interfaces/balance_hw_interfaces/srv/detail/set_direction__functions.h\n'}
+[32.449962] (balance_hw_interfaces) StdoutLine: {'line': b'-- Installing: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/include/balance_hw_interfaces/balance_hw_interfaces/msg\n'}
+[32.450761] (balance_hw_interfaces) StdoutLine: {'line': b'-- Installing: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/include/balance_hw_interfaces/balance_hw_interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[32.452554] (balance_hw_interfaces) StdoutLine: {'line': b'-- Installing: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/share/balance_hw_interfaces/environment/library_path.sh\n'}
+[32.453801] (balance_hw_interfaces) StdoutLine: {'line': b'-- Installing: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/share/balance_hw_interfaces/environment/library_path.dsv\n'}
+[32.455499] (balance_hw_interfaces) StdoutLine: {'line': b'-- Installing: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/lib/libbalance_hw_interfaces__rosidl_generator_c.so\n'}
+[32.458805] (balance_hw_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/lib/libbalance_hw_interfaces__rosidl_generator_c.so" to ""\n'}
+[32.459438] (balance_hw_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/include/balance_hw_interfaces/balance_hw_interfaces\n'}
+[32.459963] (balance_hw_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/include/balance_hw_interfaces/balance_hw_interfaces/srv\n'}
+[32.460485] (balance_hw_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/include/balance_hw_interfaces/balance_hw_interfaces/srv/detail\n'}
+[32.460919] (balance_hw_interfaces) StdoutLine: {'line': b'-- Installing: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/include/balance_hw_interfaces/balance_hw_interfaces/srv/detail/set_direction__rosidl_typesupport_fastrtps_c.h\n'}
+[32.461999] (balance_hw_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/include/balance_hw_interfaces/balance_hw_interfaces/msg\n'}
+[32.462597] (balance_hw_interfaces) StdoutLine: {'line': b'-- Installing: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/include/balance_hw_interfaces/balance_hw_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[32.464157] (balance_hw_interfaces) StdoutLine: {'line': b'-- Installing: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/lib/libbalance_hw_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[32.467513] (balance_hw_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/lib/libbalance_hw_interfaces__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[32.468189] (balance_hw_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/include/balance_hw_interfaces/balance_hw_interfaces\n'}
+[32.468923] (balance_hw_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/include/balance_hw_interfaces/balance_hw_interfaces/srv\n'}
+[32.469564] (balance_hw_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/include/balance_hw_interfaces/balance_hw_interfaces/srv/detail\n'}
+[32.470223] (balance_hw_interfaces) StdoutLine: {'line': b'-- Installing: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/include/balance_hw_interfaces/balance_hw_interfaces/srv/detail/set_direction__type_support.c\n'}
+[32.471012] (balance_hw_interfaces) StdoutLine: {'line': b'-- Installing: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/include/balance_hw_interfaces/balance_hw_interfaces/srv/detail/set_direction__rosidl_typesupport_introspection_c.h\n'}
+[32.472354] (balance_hw_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/include/balance_hw_interfaces/balance_hw_interfaces/msg\n'}
+[32.473417] (balance_hw_interfaces) StdoutLine: {'line': b'-- Installing: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/include/balance_hw_interfaces/balance_hw_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[32.474537] (balance_hw_interfaces) StdoutLine: {'line': b'-- Installing: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/lib/libbalance_hw_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[32.477850] (balance_hw_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/lib/libbalance_hw_interfaces__rosidl_typesupport_introspection_c.so" to ""\n'}
+[32.478565] (balance_hw_interfaces) StdoutLine: {'line': b'-- Installing: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/lib/libbalance_hw_interfaces__rosidl_typesupport_c.so\n'}
+[32.481546] (balance_hw_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/lib/libbalance_hw_interfaces__rosidl_typesupport_c.so" to ""\n'}
+[32.482278] (balance_hw_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/include/balance_hw_interfaces/balance_hw_interfaces\n'}
+[32.482862] (balance_hw_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/include/balance_hw_interfaces/balance_hw_interfaces/srv\n'}
+[32.483311] (balance_hw_interfaces) StdoutLine: {'line': b'-- Installing: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/include/balance_hw_interfaces/balance_hw_interfaces/srv/set_direction.hpp\n'}
+[32.484008] (balance_hw_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/include/balance_hw_interfaces/balance_hw_interfaces/srv/detail\n'}
+[32.484596] (balance_hw_interfaces) StdoutLine: {'line': b'-- Installing: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/include/balance_hw_interfaces/balance_hw_interfaces/srv/detail/set_direction__traits.hpp\n'}
+[32.485936] (balance_hw_interfaces) StdoutLine: {'line': b'-- Installing: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/include/balance_hw_interfaces/balance_hw_interfaces/srv/detail/set_direction__type_support.hpp\n'}
+[32.487195] (balance_hw_interfaces) StdoutLine: {'line': b'-- Installing: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/include/balance_hw_interfaces/balance_hw_interfaces/srv/detail/set_direction__builder.hpp\n'}
+[32.488455] (balance_hw_interfaces) StdoutLine: {'line': b'-- Installing: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/include/balance_hw_interfaces/balance_hw_interfaces/srv/detail/set_direction__struct.hpp\n'}
+[32.489710] (balance_hw_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/include/balance_hw_interfaces/balance_hw_interfaces/msg\n'}
+[32.490357] (balance_hw_interfaces) StdoutLine: {'line': b'-- Installing: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/include/balance_hw_interfaces/balance_hw_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[32.491629] (balance_hw_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/include/balance_hw_interfaces/balance_hw_interfaces\n'}
+[32.492286] (balance_hw_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/include/balance_hw_interfaces/balance_hw_interfaces/srv\n'}
+[32.492833] (balance_hw_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/include/balance_hw_interfaces/balance_hw_interfaces/srv/detail\n'}
+[32.493380] (balance_hw_interfaces) StdoutLine: {'line': b'-- Installing: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/include/balance_hw_interfaces/balance_hw_interfaces/srv/detail/set_direction__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[32.494450] (balance_hw_interfaces) StdoutLine: {'line': b'-- Installing: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/include/balance_hw_interfaces/balance_hw_interfaces/srv/detail/dds_fastrtps\n'}
+[32.495250] (balance_hw_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/include/balance_hw_interfaces/balance_hw_interfaces/msg\n'}
+[32.495816] (balance_hw_interfaces) StdoutLine: {'line': b'-- Installing: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/include/balance_hw_interfaces/balance_hw_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[32.497440] (balance_hw_interfaces) StdoutLine: {'line': b'-- Installing: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/lib/libbalance_hw_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[32.501706] (balance_hw_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/lib/libbalance_hw_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[32.502415] (balance_hw_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/include/balance_hw_interfaces/balance_hw_interfaces\n'}
+[32.502967] (balance_hw_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/include/balance_hw_interfaces/balance_hw_interfaces/srv\n'}
+[32.503399] (balance_hw_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/include/balance_hw_interfaces/balance_hw_interfaces/srv/detail\n'}
+[32.503900] (balance_hw_interfaces) StdoutLine: {'line': b'-- Installing: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/include/balance_hw_interfaces/balance_hw_interfaces/srv/detail/set_direction__type_support.cpp\n'}
+[32.504996] (balance_hw_interfaces) StdoutLine: {'line': b'-- Installing: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/include/balance_hw_interfaces/balance_hw_interfaces/srv/detail/set_direction__rosidl_typesupport_introspection_cpp.hpp\n'}
+[32.506673] (balance_hw_interfaces) StdoutLine: {'line': b'-- Installing: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/lib/libbalance_hw_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[32.510185] (balance_hw_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/lib/libbalance_hw_interfaces__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[32.510914] (balance_hw_interfaces) StdoutLine: {'line': b'-- Installing: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/lib/libbalance_hw_interfaces__rosidl_typesupport_cpp.so\n'}
+[32.514215] (balance_hw_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/lib/libbalance_hw_interfaces__rosidl_typesupport_cpp.so" to ""\n'}
+[32.514891] (balance_hw_interfaces) StdoutLine: {'line': b'-- Installing: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/share/balance_hw_interfaces/environment/pythonpath.sh\n'}
+[32.515976] (balance_hw_interfaces) StdoutLine: {'line': b'-- Installing: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/share/balance_hw_interfaces/environment/pythonpath.dsv\n'}
+[32.517182] (balance_hw_interfaces) StdoutLine: {'line': b'-- Installing: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/lib/python3.12/site-packages/balance_hw_interfaces-0.0.0-py3.12.egg-info\n'}
+[32.518201] (balance_hw_interfaces) StdoutLine: {'line': b'-- Installing: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/lib/python3.12/site-packages/balance_hw_interfaces-0.0.0-py3.12.egg-info/dependency_links.txt\n'}
+[32.519509] (balance_hw_interfaces) StdoutLine: {'line': b'-- Installing: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/lib/python3.12/site-packages/balance_hw_interfaces-0.0.0-py3.12.egg-info/PKG-INFO\n'}
+[32.519959] (-) TimerEvent: {}
+[32.520767] (balance_hw_interfaces) StdoutLine: {'line': b'-- Installing: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/lib/python3.12/site-packages/balance_hw_interfaces-0.0.0-py3.12.egg-info/top_level.txt\n'}
+[32.521994] (balance_hw_interfaces) StdoutLine: {'line': b'-- Installing: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/lib/python3.12/site-packages/balance_hw_interfaces-0.0.0-py3.12.egg-info/SOURCES.txt\n'}
+[32.523363] (balance_hw_interfaces) StdoutLine: {'line': b'-- Installing: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/lib/python3.12/site-packages/balance_hw_interfaces\n'}
+[32.524100] (balance_hw_interfaces) StdoutLine: {'line': b'-- Installing: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/lib/python3.12/site-packages/balance_hw_interfaces/srv\n'}
+[32.524876] (balance_hw_interfaces) StdoutLine: {'line': b'-- Installing: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/lib/python3.12/site-packages/balance_hw_interfaces/srv/_set_direction_s.c\n'}
+[32.526215] (balance_hw_interfaces) StdoutLine: {'line': b'-- Installing: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/lib/python3.12/site-packages/balance_hw_interfaces/srv/_set_direction.py\n'}
+[32.527514] (balance_hw_interfaces) StdoutLine: {'line': b'-- Installing: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/lib/python3.12/site-packages/balance_hw_interfaces/srv/__init__.py\n'}
+[32.528691] (balance_hw_interfaces) StdoutLine: {'line': b'-- Installing: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/lib/python3.12/site-packages/balance_hw_interfaces/balance_hw_interfaces_s__rosidl_typesupport_fastrtps_c.so\n'}
+[32.530666] (balance_hw_interfaces) StdoutLine: {'line': b'-- Installing: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/lib/python3.12/site-packages/balance_hw_interfaces/_balance_hw_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[32.532123] (balance_hw_interfaces) StdoutLine: {'line': b'-- Installing: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/lib/python3.12/site-packages/balance_hw_interfaces/_balance_hw_interfaces_s.ep.rosidl_typesupport_c.c\n'}
+[32.533575] (balance_hw_interfaces) StdoutLine: {'line': b'-- Installing: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/lib/python3.12/site-packages/balance_hw_interfaces/balance_hw_interfaces_s__rosidl_typesupport_introspection_c.so\n'}
+[32.535537] (balance_hw_interfaces) StdoutLine: {'line': b'-- Installing: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/lib/python3.12/site-packages/balance_hw_interfaces/balance_hw_interfaces_s__rosidl_typesupport_c.so\n'}
+[32.537332] (balance_hw_interfaces) StdoutLine: {'line': b'-- Installing: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/lib/python3.12/site-packages/balance_hw_interfaces/__init__.py\n'}
+[32.538446] (balance_hw_interfaces) StdoutLine: {'line': b'-- Installing: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/lib/python3.12/site-packages/balance_hw_interfaces/_balance_hw_interfaces_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[32.620276] (-) TimerEvent: {}
+[32.721224] (-) TimerEvent: {}
+[32.822333] (-) TimerEvent: {}
+[32.923441] (-) TimerEvent: {}
+[32.985618] (balance_hw_interfaces) StdoutLine: {'line': b"Listing '/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/lib/python3.12/site-packages/balance_hw_interfaces'...\n"}
+[32.987269] (balance_hw_interfaces) StdoutLine: {'line': b"Compiling '/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/lib/python3.12/site-packages/balance_hw_interfaces/__init__.py'...\n"}
+[32.988462] (balance_hw_interfaces) StdoutLine: {'line': b"Listing '/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/lib/python3.12/site-packages/balance_hw_interfaces/srv'...\n"}
+[32.989775] (balance_hw_interfaces) StdoutLine: {'line': b"Compiling '/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/lib/python3.12/site-packages/balance_hw_interfaces/srv/__init__.py'...\n"}
+[32.990904] (balance_hw_interfaces) StdoutLine: {'line': b"Compiling '/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/lib/python3.12/site-packages/balance_hw_interfaces/srv/_set_direction.py'...\n"}
+[33.018621] (balance_hw_interfaces) StdoutLine: {'line': b'-- Installing: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/lib/python3.12/site-packages/balance_hw_interfaces/balance_hw_interfaces_s__rosidl_typesupport_fastrtps_c.so\n'}
+[33.021644] (balance_hw_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/lib/python3.12/site-packages/balance_hw_interfaces/balance_hw_interfaces_s__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[33.023375] (balance_hw_interfaces) StdoutLine: {'line': b'-- Installing: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/lib/python3.12/site-packages/balance_hw_interfaces/balance_hw_interfaces_s__rosidl_typesupport_introspection_c.so\n'}
+[33.023900] (-) TimerEvent: {}
+[33.027359] (balance_hw_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/lib/python3.12/site-packages/balance_hw_interfaces/balance_hw_interfaces_s__rosidl_typesupport_introspection_c.so" to ""\n'}
+[33.029457] (balance_hw_interfaces) StdoutLine: {'line': b'-- Installing: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/lib/python3.12/site-packages/balance_hw_interfaces/balance_hw_interfaces_s__rosidl_typesupport_c.so\n'}
+[33.033417] (balance_hw_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/lib/python3.12/site-packages/balance_hw_interfaces/balance_hw_interfaces_s__rosidl_typesupport_c.so" to ""\n'}
+[33.034284] (balance_hw_interfaces) StdoutLine: {'line': b'-- Installing: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/lib/libbalance_hw_interfaces__rosidl_generator_py.so\n'}
+[33.037901] (balance_hw_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/lib/libbalance_hw_interfaces__rosidl_generator_py.so" to ""\n'}
+[33.038649] (balance_hw_interfaces) StdoutLine: {'line': b'-- Installing: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/share/balance_hw_interfaces/srv/SetDirection.idl\n'}
+[33.039684] (balance_hw_interfaces) StdoutLine: {'line': b'-- Installing: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/share/balance_hw_interfaces/srv/SetDirection.srv\n'}
+[33.041368] (balance_hw_interfaces) StdoutLine: {'line': b'-- Installing: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/share/ament_index/resource_index/package_run_dependencies/balance_hw_interfaces\n'}
+[33.043258] (balance_hw_interfaces) StdoutLine: {'line': b'-- Installing: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/share/ament_index/resource_index/parent_prefix_path/balance_hw_interfaces\n'}
+[33.044756] (balance_hw_interfaces) StdoutLine: {'line': b'-- Installing: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/share/balance_hw_interfaces/environment/ament_prefix_path.sh\n'}
+[33.046016] (balance_hw_interfaces) StdoutLine: {'line': b'-- Installing: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/share/balance_hw_interfaces/environment/ament_prefix_path.dsv\n'}
+[33.047320] (balance_hw_interfaces) StdoutLine: {'line': b'-- Installing: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/share/balance_hw_interfaces/environment/path.sh\n'}
+[33.048551] (balance_hw_interfaces) StdoutLine: {'line': b'-- Installing: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/share/balance_hw_interfaces/environment/path.dsv\n'}
+[33.049922] (balance_hw_interfaces) StdoutLine: {'line': b'-- Installing: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/share/balance_hw_interfaces/local_setup.bash\n'}
+[33.051376] (balance_hw_interfaces) StdoutLine: {'line': b'-- Installing: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/share/balance_hw_interfaces/local_setup.sh\n'}
+[33.052816] (balance_hw_interfaces) StdoutLine: {'line': b'-- Installing: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/share/balance_hw_interfaces/local_setup.zsh\n'}
+[33.054064] (balance_hw_interfaces) StdoutLine: {'line': b'-- Installing: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/share/balance_hw_interfaces/local_setup.dsv\n'}
+[33.055355] (balance_hw_interfaces) StdoutLine: {'line': b'-- Installing: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/share/balance_hw_interfaces/package.dsv\n'}
+[33.057023] (balance_hw_interfaces) StdoutLine: {'line': b'-- Installing: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/share/ament_index/resource_index/packages/balance_hw_interfaces\n'}
+[33.058824] (balance_hw_interfaces) StdoutLine: {'line': b'-- Installing: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/share/balance_hw_interfaces/cmake/export_balance_hw_interfaces__rosidl_generator_cExport.cmake\n'}
+[33.060587] (balance_hw_interfaces) StdoutLine: {'line': b'-- Installing: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/share/balance_hw_interfaces/cmake/export_balance_hw_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[33.062378] (balance_hw_interfaces) StdoutLine: {'line': b'-- Installing: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/share/balance_hw_interfaces/cmake/export_balance_hw_interfaces__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[33.064001] (balance_hw_interfaces) StdoutLine: {'line': b'-- Installing: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/share/balance_hw_interfaces/cmake/export_balance_hw_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[33.065702] (balance_hw_interfaces) StdoutLine: {'line': b'-- Installing: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/share/balance_hw_interfaces/cmake/balance_hw_interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[33.067366] (balance_hw_interfaces) StdoutLine: {'line': b'-- Installing: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/share/balance_hw_interfaces/cmake/balance_hw_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[33.069037] (balance_hw_interfaces) StdoutLine: {'line': b'-- Installing: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/share/balance_hw_interfaces/cmake/balance_hw_interfaces__rosidl_typesupport_cExport.cmake\n'}
+[33.070570] (balance_hw_interfaces) StdoutLine: {'line': b'-- Installing: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/share/balance_hw_interfaces/cmake/balance_hw_interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[33.072230] (balance_hw_interfaces) StdoutLine: {'line': b'-- Installing: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/share/balance_hw_interfaces/cmake/export_balance_hw_interfaces__rosidl_generator_cppExport.cmake\n'}
+[33.073874] (balance_hw_interfaces) StdoutLine: {'line': b'-- Installing: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/share/balance_hw_interfaces/cmake/export_balance_hw_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[33.075519] (balance_hw_interfaces) StdoutLine: {'line': b'-- Installing: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/share/balance_hw_interfaces/cmake/export_balance_hw_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[33.077207] (balance_hw_interfaces) StdoutLine: {'line': b'-- Installing: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/share/balance_hw_interfaces/cmake/balance_hw_interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[33.078784] (balance_hw_interfaces) StdoutLine: {'line': b'-- Installing: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/share/balance_hw_interfaces/cmake/balance_hw_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[33.080490] (balance_hw_interfaces) StdoutLine: {'line': b'-- Installing: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/share/balance_hw_interfaces/cmake/balance_hw_interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[33.082232] (balance_hw_interfaces) StdoutLine: {'line': b'-- Installing: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/share/balance_hw_interfaces/cmake/balance_hw_interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[33.083876] (balance_hw_interfaces) StdoutLine: {'line': b'-- Installing: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/share/balance_hw_interfaces/cmake/export_balance_hw_interfaces__rosidl_generator_pyExport.cmake\n'}
+[33.085480] (balance_hw_interfaces) StdoutLine: {'line': b'-- Installing: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/share/balance_hw_interfaces/cmake/export_balance_hw_interfaces__rosidl_generator_pyExport-noconfig.cmake\n'}
+[33.087002] (balance_hw_interfaces) StdoutLine: {'line': b'-- Installing: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/share/balance_hw_interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[33.088376] (balance_hw_interfaces) StdoutLine: {'line': b'-- Installing: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/share/balance_hw_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[33.089843] (balance_hw_interfaces) StdoutLine: {'line': b'-- Installing: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/share/balance_hw_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[33.091289] (balance_hw_interfaces) StdoutLine: {'line': b'-- Installing: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/share/balance_hw_interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[33.092757] (balance_hw_interfaces) StdoutLine: {'line': b'-- Installing: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/share/balance_hw_interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[33.094233] (balance_hw_interfaces) StdoutLine: {'line': b'-- Installing: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/share/balance_hw_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[33.095697] (balance_hw_interfaces) StdoutLine: {'line': b'-- Installing: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/share/balance_hw_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[33.097353] (balance_hw_interfaces) StdoutLine: {'line': b'-- Installing: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/share/balance_hw_interfaces/cmake/balance_hw_interfacesConfig.cmake\n'}
+[33.098496] (balance_hw_interfaces) StdoutLine: {'line': b'-- Installing: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/share/balance_hw_interfaces/cmake/balance_hw_interfacesConfig-version.cmake\n'}
+[33.099851] (balance_hw_interfaces) StdoutLine: {'line': b'-- Installing: /home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/share/balance_hw_interfaces/package.xml\n'}
+[33.108098] (balance_hw_interfaces) CommandEnded: {'returncode': 0}
+[33.124121] (-) TimerEvent: {}
+[33.224981] (-) TimerEvent: {}
+[33.326179] (-) TimerEvent: {}
+[33.426973] (-) TimerEvent: {}
+[33.527541] (-) TimerEvent: {}
+[33.573387] (balance_hw_interfaces) JobEnded: {'identifier': 'balance_hw_interfaces', 'rc': 0}
+[33.577716] (-) EventReactorShutdown: {}

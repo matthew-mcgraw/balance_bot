@@ -1,0 +1,5 @@
+uint16 pwm_a    #0...1000 finer resolution than 0.100
+uint16 pwm_b
+---
+bool success
+string message

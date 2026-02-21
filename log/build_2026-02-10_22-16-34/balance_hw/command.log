@@ -1,0 +1,2 @@
+Invoking command in '/home/mmcgraw/Projects/balance_bot/build/balance_hw': /usr/bin/cmake --build /home/mmcgraw/Projects/balance_bot/build/balance_hw -- -j4 -l4
+Invoked command in '/home/mmcgraw/Projects/balance_bot/build/balance_hw' returned '2': /usr/bin/cmake --build /home/mmcgraw/Projects/balance_bot/build/balance_hw -- -j4 -l4

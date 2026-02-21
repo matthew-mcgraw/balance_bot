@@ -1,0 +1,11 @@
+[0.074s] Invoking command in '/home/mmcgraw/Projects/balance_bot/build/balance_hw': AMENT_PREFIX_PATH=/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces:/opt/ros/jazzy LD_LIBRARY_PATH=/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/mmcgraw/Projects/balance_bot/build/balance_hw -- -j4 -l4
+[0.414s] [ 50%] [32mBuilding CXX object CMakeFiles/motor_enable_node.dir/src/motor_enable_node.cpp.o[0m
+[38.708s] [100%] [32m[1mLinking CXX executable motor_enable_node[0m
+[40.569s] /usr/bin/ld: CMakeFiles/motor_enable_node.dir/src/motor_enable_node.cpp.o: in function `MotorEnableNode::MotorEnableNode()':
+[40.570s] motor_enable_node.cpp:(.text._ZN15MotorEnableNodeC2Ev[_ZN15MotorEnableNodeC5Ev]+0x2108): undefined reference to `MotorEnableNode::on_cmd_vel(std::shared_ptr<geometry_msgs::msg::Twist_<std::allocator<void> > >)'
+[40.571s] /usr/bin/ld: motor_enable_node.cpp:(.text._ZN15MotorEnableNodeC2Ev[_ZN15MotorEnableNodeC5Ev]+0x210c): undefined reference to `MotorEnableNode::on_cmd_vel(std::shared_ptr<geometry_msgs::msg::Twist_<std::allocator<void> > >)'
+[40.824s] collect2: error: ld returned 1 exit status
+[40.831s] gmake[2]: *** [CMakeFiles/motor_enable_node.dir/build.make:195: motor_enable_node] Error 1
+[40.832s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/motor_enable_node.dir/all] Error 2
+[40.833s] gmake: *** [Makefile:146: all] Error 2
+[40.841s] Invoked command in '/home/mmcgraw/Projects/balance_bot/build/balance_hw' returned '2': AMENT_PREFIX_PATH=/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces:/opt/ros/jazzy LD_LIBRARY_PATH=/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/mmcgraw/Projects/balance_bot/build/balance_hw -- -j4 -l4

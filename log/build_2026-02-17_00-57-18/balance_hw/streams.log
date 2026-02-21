@@ -1,0 +1,11 @@
+[0.070s] Invoking command in '/home/mmcgraw/Projects/balance_bot/build/balance_hw': CMAKE_PREFIX_PATH=/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces:/home/mmcgraw/Projects/balance_bot/install/balance_hw:/opt/ros/jazzy /usr/bin/cmake --build /home/mmcgraw/Projects/balance_bot/build/balance_hw -- -j4 -l4
+[0.380s] [ 50%] [32mBuilding CXX object CMakeFiles/motor_enable_node.dir/src/motor_enable_node.cpp.o[0m
+[10.874s] [01m[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/motor_enable_node.cpp:[m[K In destructor ‘[01m[Kvirtual MotorEnableNode::[01;32m[K~MotorEnableNode[m[K()[m[K’:
+[10.874s] [01m[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/motor_enable_node.cpp:145:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kmotor_mode[m[K’ was not declared in this scope; did you mean ‘[01m[Kmotor_mode_[m[K’?
+[10.875s]   145 |             if ([01;31m[Kmotor_mode[m[K == "pwm"){
+[10.875s]       |                 [01;31m[K^~~~~~~~~~[m[K
+[10.876s]       |                 [32m[Kmotor_mode_[m[K
+[16.241s] gmake[2]: *** [CMakeFiles/motor_enable_node.dir/build.make:76: CMakeFiles/motor_enable_node.dir/src/motor_enable_node.cpp.o] Error 1
+[16.242s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/motor_enable_node.dir/all] Error 2
+[16.243s] gmake: *** [Makefile:146: all] Error 2
+[16.251s] Invoked command in '/home/mmcgraw/Projects/balance_bot/build/balance_hw' returned '2': CMAKE_PREFIX_PATH=/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces:/home/mmcgraw/Projects/balance_bot/install/balance_hw:/opt/ros/jazzy /usr/bin/cmake --build /home/mmcgraw/Projects/balance_bot/build/balance_hw -- -j4 -l4

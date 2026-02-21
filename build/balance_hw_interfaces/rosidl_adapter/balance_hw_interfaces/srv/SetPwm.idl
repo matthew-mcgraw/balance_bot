@@ -1,0 +1,21 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from balance_hw_interfaces/srv/SetPwm.srv
+// generated code does not contain a copyright notice
+
+
+module balance_hw_interfaces {
+  module srv {
+    struct SetPwm_Request {
+      @verbatim (language="comment", text=
+        "0...1000 finer resolution than 0.100")
+      uint16 pwm_a;
+
+      uint16 pwm_b;
+    };
+    struct SetPwm_Response {
+      boolean success;
+
+      string message;
+    };
+  };
+};

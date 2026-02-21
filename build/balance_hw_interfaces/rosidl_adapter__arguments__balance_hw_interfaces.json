@@ -1,0 +1,7 @@
+{
+  "package_name": "balance_hw_interfaces",
+  "non_idl_tuples": [
+    "/home/mmcgraw/Projects/balance_bot/src/balance_hw_interfaces:srv/SetDirection.srv",
+    "/home/mmcgraw/Projects/balance_bot/src/balance_hw_interfaces:srv/SetPwm.srv"
+  ]
+}

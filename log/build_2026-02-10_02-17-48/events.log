@@ -1,0 +1,296 @@
+[0.000000] (-) TimerEvent: {}
+[0.000932] (balance_hw) JobQueued: {'identifier': 'balance_hw', 'dependencies': OrderedDict()}
+[0.001781] (balance_hw) JobStarted: {'identifier': 'balance_hw'}
+[0.032786] (balance_hw) JobProgress: {'identifier': 'balance_hw', 'progress': 'cmake'}
+[0.040792] (balance_hw) JobProgress: {'identifier': 'balance_hw', 'progress': 'build'}
+[0.043682] (balance_hw) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/mmcgraw/Projects/balance_bot/build/balance_hw', '--', '-j4', '-l4'], 'cwd': '/home/mmcgraw/Projects/balance_bot/build/balance_hw', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'mmcgraw', 'SSH_CLIENT': '2601:602:867f:a290:cd8c:1c22:7225:229d 49561 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib', 'HOME': '/home/mmcgraw', 'OLDPWD': '/home/mmcgraw/Projects', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'mmcgraw', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '2703', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/mmcgraw/Projects/balance_bot/build/balance_hw', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '2601:602:867f:a290:cd8c:1c22:7225:229d 49561 2601:602:867f:a290:da3a:ddff:feb7:2f83 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy'}), 'shell': False}
+[0.099282] (-) TimerEvent: {}
+[0.197343] (balance_hw) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.199415] (-) TimerEvent: {}
+[0.300100] (-) TimerEvent: {}
+[0.400892] (-) TimerEvent: {}
+[0.502089] (-) TimerEvent: {}
+[0.603298] (-) TimerEvent: {}
+[0.736752] (-) TimerEvent: {}
+[0.837806] (-) TimerEvent: {}
+[0.938906] (-) TimerEvent: {}
+[1.039607] (-) TimerEvent: {}
+[1.140209] (-) TimerEvent: {}
+[1.240936] (-) TimerEvent: {}
+[1.253725] (balance_hw) StdoutLine: {'line': b'-- Found rclcpp: 28.1.13 (/opt/ros/jazzy/share/rclcpp/cmake)\n'}
+[1.341129] (-) TimerEvent: {}
+[1.393022] (balance_hw) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[1.433227] (balance_hw) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[1.441286] (-) TimerEvent: {}
+[1.483751] (balance_hw) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.540731] (balance_hw) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.541345] (-) TimerEvent: {}
+[1.641924] (-) TimerEvent: {}
+[1.742624] (-) TimerEvent: {}
+[1.781378] (balance_hw) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[1.787559] (balance_hw) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.842799] (-) TimerEvent: {}
+[1.943420] (-) TimerEvent: {}
+[2.038631] (balance_hw) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[2.043613] (-) TimerEvent: {}
+[2.144238] (-) TimerEvent: {}
+[2.244940] (-) TimerEvent: {}
+[2.263152] (balance_hw) StdoutLine: {'line': b'-- Found std_msgs: 5.3.6 (/opt/ros/jazzy/share/std_msgs/cmake)\n'}
+[2.325361] (balance_hw) StdoutLine: {'line': b'-- Found std_srvs: 5.3.6 (/opt/ros/jazzy/share/std_srvs/cmake)\n'}
+[2.345104] (-) TimerEvent: {}
+[2.383185] (balance_hw) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.17.3 (/opt/ros/jazzy/share/ament_lint_auto/cmake)\n'}
+[2.445250] (-) TimerEvent: {}
+[2.545931] (-) TimerEvent: {}
+[2.646618] (-) TimerEvent: {}
+[2.747338] (-) TimerEvent: {}
+[2.826698] (balance_hw) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[2.827650] (balance_hw) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[2.828192] (balance_hw) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[2.832151] (balance_hw) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.839918] (balance_hw) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[2.840615] (balance_hw) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[2.842182] (balance_hw) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.847459] (-) TimerEvent: {}
+[2.851931] (balance_hw) StdoutLine: {'line': b'-- Configuring done (2.7s)\n'}
+[2.947680] (-) TimerEvent: {}
+[3.018144] (balance_hw) StdoutLine: {'line': b'-- Generating done (0.1s)\n'}
+[3.047895] (-) TimerEvent: {}
+[3.078509] (balance_hw) StdoutLine: {'line': b'-- Build files have been written to: /home/mmcgraw/Projects/balance_bot/build/balance_hw\n'}
+[3.148079] (-) TimerEvent: {}
+[3.248878] (-) TimerEvent: {}
+[3.295813] (balance_hw) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/motor_enable_node.dir/src/motor_enable_node.cpp.o\x1b[0m\n'}
+[3.349111] (-) TimerEvent: {}
+[3.449821] (-) TimerEvent: {}
+[3.550637] (-) TimerEvent: {}
+[3.651329] (-) TimerEvent: {}
+[3.752157] (-) TimerEvent: {}
+[3.852870] (-) TimerEvent: {}
+[3.953476] (-) TimerEvent: {}
+[4.054137] (-) TimerEvent: {}
+[4.154815] (-) TimerEvent: {}
+[4.255466] (-) TimerEvent: {}
+[4.356099] (-) TimerEvent: {}
+[4.456746] (-) TimerEvent: {}
+[4.557379] (-) TimerEvent: {}
+[4.658110] (-) TimerEvent: {}
+[4.758994] (-) TimerEvent: {}
+[4.859666] (-) TimerEvent: {}
+[4.960305] (-) TimerEvent: {}
+[5.060997] (-) TimerEvent: {}
+[5.161758] (-) TimerEvent: {}
+[5.262483] (-) TimerEvent: {}
+[5.363290] (-) TimerEvent: {}
+[5.464069] (-) TimerEvent: {}
+[5.564882] (-) TimerEvent: {}
+[5.665782] (-) TimerEvent: {}
+[5.766481] (-) TimerEvent: {}
+[5.867228] (-) TimerEvent: {}
+[5.968086] (-) TimerEvent: {}
+[6.068950] (-) TimerEvent: {}
+[6.169817] (-) TimerEvent: {}
+[6.270671] (-) TimerEvent: {}
+[6.371405] (-) TimerEvent: {}
+[6.472281] (-) TimerEvent: {}
+[6.573194] (-) TimerEvent: {}
+[6.674629] (-) TimerEvent: {}
+[6.775370] (-) TimerEvent: {}
+[6.876126] (-) TimerEvent: {}
+[6.976907] (-) TimerEvent: {}
+[7.077919] (-) TimerEvent: {}
+[7.178909] (-) TimerEvent: {}
+[7.279628] (-) TimerEvent: {}
+[7.380373] (-) TimerEvent: {}
+[7.481153] (-) TimerEvent: {}
+[7.581913] (-) TimerEvent: {}
+[7.682643] (-) TimerEvent: {}
+[7.783334] (-) TimerEvent: {}
+[7.884174] (-) TimerEvent: {}
+[7.984922] (-) TimerEvent: {}
+[8.085658] (-) TimerEvent: {}
+[8.186355] (-) TimerEvent: {}
+[8.287148] (-) TimerEvent: {}
+[8.388106] (-) TimerEvent: {}
+[8.488960] (-) TimerEvent: {}
+[8.589682] (-) TimerEvent: {}
+[8.690399] (-) TimerEvent: {}
+[8.791153] (-) TimerEvent: {}
+[8.891948] (-) TimerEvent: {}
+[8.992648] (-) TimerEvent: {}
+[9.093352] (-) TimerEvent: {}
+[9.194126] (-) TimerEvent: {}
+[9.294898] (-) TimerEvent: {}
+[9.395635] (-) TimerEvent: {}
+[9.496310] (-) TimerEvent: {}
+[9.597053] (-) TimerEvent: {}
+[9.697778] (-) TimerEvent: {}
+[9.798625] (-) TimerEvent: {}
+[9.899337] (-) TimerEvent: {}
+[10.000092] (-) TimerEvent: {}
+[10.100901] (-) TimerEvent: {}
+[10.201655] (-) TimerEvent: {}
+[10.302360] (-) TimerEvent: {}
+[10.403148] (-) TimerEvent: {}
+[10.503940] (-) TimerEvent: {}
+[10.604708] (-) TimerEvent: {}
+[10.705633] (-) TimerEvent: {}
+[10.806830] (-) TimerEvent: {}
+[10.907569] (-) TimerEvent: {}
+[11.008250] (-) TimerEvent: {}
+[11.109006] (-) TimerEvent: {}
+[11.209728] (-) TimerEvent: {}
+[11.310556] (-) TimerEvent: {}
+[11.411593] (-) TimerEvent: {}
+[11.512334] (-) TimerEvent: {}
+[11.613184] (-) TimerEvent: {}
+[11.714017] (-) TimerEvent: {}
+[11.814782] (-) TimerEvent: {}
+[11.915547] (-) TimerEvent: {}
+[12.016258] (-) TimerEvent: {}
+[12.117025] (-) TimerEvent: {}
+[12.217779] (-) TimerEvent: {}
+[12.318546] (-) TimerEvent: {}
+[12.419258] (-) TimerEvent: {}
+[12.520040] (-) TimerEvent: {}
+[12.620773] (-) TimerEvent: {}
+[12.721612] (-) TimerEvent: {}
+[12.822334] (-) TimerEvent: {}
+[12.923104] (-) TimerEvent: {}
+[13.023888] (-) TimerEvent: {}
+[13.124639] (-) TimerEvent: {}
+[13.199715] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/motor_enable_node.cpp:188:35:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kexample_interfaces\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Krcl_interfaces\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[13.200939] (balance_hw) StderrLine: {'line': b'  188 |             const std::shared_ptr<\x1b[01;31m\x1b[Kexample_interfaces\x1b[m\x1b[K::srv::SetInt64::Request> req,\n'}
+[13.201445] (balance_hw) StderrLine: {'line': b'      |                                   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.201952] (balance_hw) StderrLine: {'line': b'      |                                   \x1b[32m\x1b[Krcl_interfaces\x1b[m\x1b[K\n'}
+[13.202429] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/motor_enable_node.cpp:188:77:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[13.202989] (balance_hw) StderrLine: {'line': b'  188 |             const std::shared_ptr<example_interfaces::srv::SetInt64::Request\x1b[01;31m\x1b[K>\x1b[m\x1b[K req,\n'}
+[13.203460] (balance_hw) StderrLine: {'line': b'      |                                                                             \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[13.224840] (-) TimerEvent: {}
+[13.238474] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/motor_enable_node.cpp:188:35:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kexample_interfaces\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Krcl_interfaces\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[13.239342] (balance_hw) StderrLine: {'line': b'  188 |             const std::shared_ptr<\x1b[01;31m\x1b[Kexample_interfaces\x1b[m\x1b[K::srv::SetInt64::Request> req,\n'}
+[13.240036] (balance_hw) StderrLine: {'line': b'      |                                   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.240440] (balance_hw) StderrLine: {'line': b'      |                                   \x1b[32m\x1b[Krcl_interfaces\x1b[m\x1b[K\n'}
+[13.240966] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/motor_enable_node.cpp:188:77:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[13.241441] (balance_hw) StderrLine: {'line': b'  188 |             const std::shared_ptr<example_interfaces::srv::SetInt64::Request\x1b[01;31m\x1b[K>\x1b[m\x1b[K req,\n'}
+[13.241968] (balance_hw) StderrLine: {'line': b'      |                                                                             \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[13.277177] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/motor_enable_node.cpp:188:35:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kexample_interfaces\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Krcl_interfaces\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[13.278669] (balance_hw) StderrLine: {'line': b'  188 |             const std::shared_ptr<\x1b[01;31m\x1b[Kexample_interfaces\x1b[m\x1b[K::srv::SetInt64::Request> req,\n'}
+[13.279322] (balance_hw) StderrLine: {'line': b'      |                                   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.279792] (balance_hw) StderrLine: {'line': b'      |                                   \x1b[32m\x1b[Krcl_interfaces\x1b[m\x1b[K\n'}
+[13.280192] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/motor_enable_node.cpp:188:77:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[13.280695] (balance_hw) StderrLine: {'line': b'  188 |             const std::shared_ptr<example_interfaces::srv::SetInt64::Request\x1b[01;31m\x1b[K>\x1b[m\x1b[K req,\n'}
+[13.281158] (balance_hw) StderrLine: {'line': b'      |                                                                             \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[13.281753] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/motor_enable_node.cpp:188:19:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid template-id\n'}
+[13.282238] (balance_hw) StderrLine: {'line': b'  188 |             const \x1b[01;31m\x1b[Kstd\x1b[m\x1b[K::shared_ptr<example_interfaces::srv::SetInt64::Request> req,\n'}
+[13.282776] (balance_hw) StderrLine: {'line': b'      |                   \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[13.283330] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/motor_enable_node.cpp:188:35:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kexample_interfaces\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[13.283912] (balance_hw) StderrLine: {'line': b'  188 |             const std::shared_ptr<\x1b[01;31m\x1b[Kexample_interfaces\x1b[m\x1b[K::srv::SetInt64::Request> req,\n'}
+[13.284403] (balance_hw) StderrLine: {'line': b'      |                                   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.285053] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/motor_enable_node.cpp:188:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kmissing template argument list after \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr\x1b[m\x1b[K\xe2\x80\x99; template placeholder not permitted in parameter\n'}
+[13.285647] (balance_hw) StderrLine: {'line': b'  188 |             \x1b[01;31m\x1b[Kconst\x1b[m\x1b[K std::shared_ptr<example_interfaces::srv::SetInt64::Request> req,\n'}
+[13.286183] (balance_hw) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[13.286751] (balance_hw) StderrLine: {'line': b'      |                  \x1b[32m\x1b[K<>\x1b[m\x1b[K\n'}
+[13.287371] (balance_hw) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/13/bits/shared_ptr.h:53\x1b[m\x1b[K,\n'}
+[13.287941] (balance_hw) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/13/memory:80\x1b[m\x1b[K,\n'}
+[13.288549] (balance_hw) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:169\x1b[m\x1b[K,\n'}
+[13.289165] (balance_hw) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/motor_enable_node.cpp:1\x1b[m\x1b[K:\n'}
+[13.289914] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/shared_ptr_base.h:395:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> class std::shared_ptr\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[13.290388] (balance_hw) StderrLine: {'line': b'  395 |     class \x1b[01;36m\x1b[Kshared_ptr\x1b[m\x1b[K;\n'}
+[13.290765] (balance_hw) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.318148] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/motor_enable_node.cpp:189:29:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kexample_interfaces\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Krcl_interfaces\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[13.319025] (balance_hw) StderrLine: {'line': b'  189 |             std::shared_ptr<\x1b[01;31m\x1b[Kexample_interfaces\x1b[m\x1b[K::srv::SetInt64::Response> res){\n'}
+[13.319566] (balance_hw) StderrLine: {'line': b'      |                             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.319962] (balance_hw) StderrLine: {'line': b'      |                             \x1b[32m\x1b[Krcl_interfaces\x1b[m\x1b[K\n'}
+[13.320344] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/motor_enable_node.cpp:189:72:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[13.320850] (balance_hw) StderrLine: {'line': b'  189 |             std::shared_ptr<example_interfaces::srv::SetInt64::Response\x1b[01;31m\x1b[K>\x1b[m\x1b[K res){\n'}
+[13.321292] (balance_hw) StderrLine: {'line': b'      |                                                                        \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[13.325026] (-) TimerEvent: {}
+[13.356265] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/motor_enable_node.cpp:189:29:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kexample_interfaces\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Krcl_interfaces\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[13.357178] (balance_hw) StderrLine: {'line': b'  189 |             std::shared_ptr<\x1b[01;31m\x1b[Kexample_interfaces\x1b[m\x1b[K::srv::SetInt64::Response> res){\n'}
+[13.357789] (balance_hw) StderrLine: {'line': b'      |                             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.358156] (balance_hw) StderrLine: {'line': b'      |                             \x1b[32m\x1b[Krcl_interfaces\x1b[m\x1b[K\n'}
+[13.358593] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/motor_enable_node.cpp:189:72:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[13.359175] (balance_hw) StderrLine: {'line': b'  189 |             std::shared_ptr<example_interfaces::srv::SetInt64::Response\x1b[01;31m\x1b[K>\x1b[m\x1b[K res){\n'}
+[13.359703] (balance_hw) StderrLine: {'line': b'      |                                                                        \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[13.394164] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/motor_enable_node.cpp:189:29:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kexample_interfaces\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Krcl_interfaces\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[13.395245] (balance_hw) StderrLine: {'line': b'  189 |             std::shared_ptr<\x1b[01;31m\x1b[Kexample_interfaces\x1b[m\x1b[K::srv::SetInt64::Response> res){\n'}
+[13.395898] (balance_hw) StderrLine: {'line': b'      |                             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.396441] (balance_hw) StderrLine: {'line': b'      |                             \x1b[32m\x1b[Krcl_interfaces\x1b[m\x1b[K\n'}
+[13.396965] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/motor_enable_node.cpp:189:72:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[13.397400] (balance_hw) StderrLine: {'line': b'  189 |             std::shared_ptr<example_interfaces::srv::SetInt64::Response\x1b[01;31m\x1b[K>\x1b[m\x1b[K res){\n'}
+[13.398004] (balance_hw) StderrLine: {'line': b'      |                                                                        \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[13.398427] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/motor_enable_node.cpp:189:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid template-id\n'}
+[13.398921] (balance_hw) StderrLine: {'line': b'  189 |             \x1b[01;31m\x1b[Kstd\x1b[m\x1b[K::shared_ptr<example_interfaces::srv::SetInt64::Response> res){\n'}
+[13.399348] (balance_hw) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[13.399898] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/motor_enable_node.cpp:189:29:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kexample_interfaces\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[13.400346] (balance_hw) StderrLine: {'line': b'  189 |             std::shared_ptr<\x1b[01;31m\x1b[Kexample_interfaces\x1b[m\x1b[K::srv::SetInt64::Response> res){\n'}
+[13.400871] (balance_hw) StderrLine: {'line': b'      |                             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.401303] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/motor_enable_node.cpp:189:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kmissing template argument list after \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr\x1b[m\x1b[K\xe2\x80\x99; template placeholder not permitted in parameter\n'}
+[13.401793] (balance_hw) StderrLine: {'line': b'  189 |             \x1b[01;31m\x1b[Kstd\x1b[m\x1b[K::shared_ptr<example_interfaces::srv::SetInt64::Response> res){\n'}
+[13.402200] (balance_hw) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[13.402638] (balance_hw) StderrLine: {'line': b'      |                \x1b[32m\x1b[K<>\x1b[m\x1b[K\n'}
+[13.403078] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/shared_ptr_base.h:395:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> class std::shared_ptr\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[13.403472] (balance_hw) StderrLine: {'line': b'  395 |     class \x1b[01;36m\x1b[Kshared_ptr\x1b[m\x1b[K;\n'}
+[13.403987] (balance_hw) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.425206] (-) TimerEvent: {}
+[13.496805] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/motor_enable_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid MotorEnableNode::\x1b[01;32m\x1b[Kon_motors_direction\x1b[m\x1b[K(...)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[13.497614] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/motor_enable_node.cpp:191:40:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kreq\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[13.498532] (balance_hw) StderrLine: {'line': b'  191 |                 const auto direction = \x1b[01;31m\x1b[Kreq\x1b[m\x1b[K->data;\n'}
+[13.499127] (balance_hw) StderrLine: {'line': b'      |                                        \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[13.519695] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/motor_enable_node.cpp:220:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kres\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[13.520626] (balance_hw) StderrLine: {'line': b'  220 |                     \x1b[01;31m\x1b[Kres\x1b[m\x1b[K->success = false;\n'}
+[13.521239] (balance_hw) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[13.525405] (-) TimerEvent: {}
+[13.541763] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/motor_enable_node.cpp:225:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kres\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[13.542438] (balance_hw) StderrLine: {'line': b'  225 |                 \x1b[01;31m\x1b[Kres\x1b[m\x1b[K->success = ok_ain1 && ok_ain2 && ok_bin3 && ok_bin4;\n'}
+[13.542977] (balance_hw) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[13.625661] (-) TimerEvent: {}
+[13.726366] (-) TimerEvent: {}
+[13.827118] (-) TimerEvent: {}
+[13.927877] (-) TimerEvent: {}
+[14.028643] (-) TimerEvent: {}
+[14.129332] (-) TimerEvent: {}
+[14.230086] (-) TimerEvent: {}
+[14.330849] (-) TimerEvent: {}
+[14.431604] (-) TimerEvent: {}
+[14.532333] (-) TimerEvent: {}
+[14.633080] (-) TimerEvent: {}
+[14.733882] (-) TimerEvent: {}
+[14.834647] (-) TimerEvent: {}
+[14.935330] (-) TimerEvent: {}
+[15.036191] (-) TimerEvent: {}
+[15.137213] (-) TimerEvent: {}
+[15.237961] (-) TimerEvent: {}
+[15.338662] (-) TimerEvent: {}
+[15.439398] (-) TimerEvent: {}
+[15.540158] (-) TimerEvent: {}
+[15.640916] (-) TimerEvent: {}
+[15.741647] (-) TimerEvent: {}
+[15.842407] (-) TimerEvent: {}
+[15.943165] (-) TimerEvent: {}
+[16.043934] (-) TimerEvent: {}
+[16.144676] (-) TimerEvent: {}
+[16.245368] (-) TimerEvent: {}
+[16.346091] (-) TimerEvent: {}
+[16.446927] (-) TimerEvent: {}
+[16.548025] (-) TimerEvent: {}
+[16.648717] (-) TimerEvent: {}
+[16.749540] (-) TimerEvent: {}
+[16.850349] (-) TimerEvent: {}
+[16.951605] (-) TimerEvent: {}
+[17.052681] (-) TimerEvent: {}
+[17.153778] (-) TimerEvent: {}
+[17.255032] (-) TimerEvent: {}
+[17.356155] (-) TimerEvent: {}
+[17.415179] (balance_hw) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/motor_enable_node.dir/build.make:76: CMakeFiles/motor_enable_node.dir/src/motor_enable_node.cpp.o] Error 1\n'}
+[17.416405] (balance_hw) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/motor_enable_node.dir/all] Error 2\n'}
+[17.417091] (balance_hw) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[17.425032] (balance_hw) CommandEnded: {'returncode': 2}
+[17.456401] (-) TimerEvent: {}
+[17.557649] (-) TimerEvent: {}
+[17.658766] (-) TimerEvent: {}
+[17.759972] (-) TimerEvent: {}
+[17.861192] (-) TimerEvent: {}
+[17.962389] (-) TimerEvent: {}
+[18.063638] (-) TimerEvent: {}
+[18.107765] (balance_hw) JobEnded: {'identifier': 'balance_hw', 'rc': 2}
+[18.111944] (-) EventReactorShutdown: {}

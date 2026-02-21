@@ -1,0 +1,85 @@
+[01m[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/motor_enable_node.cpp:188:35:[m[K [01;31m[Kerror: [m[K‘[01m[Kexample_interfaces[m[K’ was not declared in this scope; did you mean ‘[01m[Krcl_interfaces[m[K’?
+  188 |             const std::shared_ptr<[01;31m[Kexample_interfaces[m[K::srv::SetInt64::Request> req,
+      |                                   [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+      |                                   [32m[Krcl_interfaces[m[K
+[01m[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/motor_enable_node.cpp:188:77:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  188 |             const std::shared_ptr<example_interfaces::srv::SetInt64::Request[01;31m[K>[m[K req,
+      |                                                                             [01;31m[K^[m[K
+[01m[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/motor_enable_node.cpp:188:35:[m[K [01;31m[Kerror: [m[K‘[01m[Kexample_interfaces[m[K’ was not declared in this scope; did you mean ‘[01m[Krcl_interfaces[m[K’?
+  188 |             const std::shared_ptr<[01;31m[Kexample_interfaces[m[K::srv::SetInt64::Request> req,
+      |                                   [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+      |                                   [32m[Krcl_interfaces[m[K
+[01m[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/motor_enable_node.cpp:188:77:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  188 |             const std::shared_ptr<example_interfaces::srv::SetInt64::Request[01;31m[K>[m[K req,
+      |                                                                             [01;31m[K^[m[K
+[01m[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/motor_enable_node.cpp:188:35:[m[K [01;31m[Kerror: [m[K‘[01m[Kexample_interfaces[m[K’ was not declared in this scope; did you mean ‘[01m[Krcl_interfaces[m[K’?
+  188 |             const std::shared_ptr<[01;31m[Kexample_interfaces[m[K::srv::SetInt64::Request> req,
+      |                                   [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+      |                                   [32m[Krcl_interfaces[m[K
+[01m[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/motor_enable_node.cpp:188:77:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  188 |             const std::shared_ptr<example_interfaces::srv::SetInt64::Request[01;31m[K>[m[K req,
+      |                                                                             [01;31m[K^[m[K
+[01m[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/motor_enable_node.cpp:188:19:[m[K [01;31m[Kerror: [m[Kinvalid template-id
+  188 |             const [01;31m[Kstd[m[K::shared_ptr<example_interfaces::srv::SetInt64::Request> req,
+      |                   [01;31m[K^~~[m[K
+[01m[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/motor_enable_node.cpp:188:35:[m[K [01;31m[Kerror: [m[K‘[01m[Kexample_interfaces[m[K’ has not been declared
+  188 |             const std::shared_ptr<[01;31m[Kexample_interfaces[m[K::srv::SetInt64::Request> req,
+      |                                   [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/motor_enable_node.cpp:188:13:[m[K [01;31m[Kerror: [m[Kmissing template argument list after ‘[01m[Kstd::shared_ptr[m[K’; template placeholder not permitted in parameter
+  188 |             [01;31m[Kconst[m[K std::shared_ptr<example_interfaces::srv::SetInt64::Request> req,
+      |             [01;31m[K^~~~~[m[K
+      |                  [32m[K<>[m[K
+In file included from [01m[K/usr/include/c++/13/bits/shared_ptr.h:53[m[K,
+                 from [01m[K/usr/include/c++/13/memory:80[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:169[m[K,
+                 from [01m[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/motor_enable_node.cpp:1[m[K:
+[01m[K/usr/include/c++/13/bits/shared_ptr_base.h:395:11:[m[K [01;36m[Knote: [m[K‘[01m[Ktemplate<class _Tp> class std::shared_ptr[m[K’ declared here
+  395 |     class [01;36m[Kshared_ptr[m[K;
+      |           [01;36m[K^~~~~~~~~~[m[K
+[01m[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/motor_enable_node.cpp:189:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kexample_interfaces[m[K’ was not declared in this scope; did you mean ‘[01m[Krcl_interfaces[m[K’?
+  189 |             std::shared_ptr<[01;31m[Kexample_interfaces[m[K::srv::SetInt64::Response> res){
+      |                             [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+      |                             [32m[Krcl_interfaces[m[K
+[01m[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/motor_enable_node.cpp:189:72:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  189 |             std::shared_ptr<example_interfaces::srv::SetInt64::Response[01;31m[K>[m[K res){
+      |                                                                        [01;31m[K^[m[K
+[01m[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/motor_enable_node.cpp:189:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kexample_interfaces[m[K’ was not declared in this scope; did you mean ‘[01m[Krcl_interfaces[m[K’?
+  189 |             std::shared_ptr<[01;31m[Kexample_interfaces[m[K::srv::SetInt64::Response> res){
+      |                             [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+      |                             [32m[Krcl_interfaces[m[K
+[01m[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/motor_enable_node.cpp:189:72:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  189 |             std::shared_ptr<example_interfaces::srv::SetInt64::Response[01;31m[K>[m[K res){
+      |                                                                        [01;31m[K^[m[K
+[01m[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/motor_enable_node.cpp:189:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kexample_interfaces[m[K’ was not declared in this scope; did you mean ‘[01m[Krcl_interfaces[m[K’?
+  189 |             std::shared_ptr<[01;31m[Kexample_interfaces[m[K::srv::SetInt64::Response> res){
+      |                             [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+      |                             [32m[Krcl_interfaces[m[K
+[01m[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/motor_enable_node.cpp:189:72:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  189 |             std::shared_ptr<example_interfaces::srv::SetInt64::Response[01;31m[K>[m[K res){
+      |                                                                        [01;31m[K^[m[K
+[01m[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/motor_enable_node.cpp:189:13:[m[K [01;31m[Kerror: [m[Kinvalid template-id
+  189 |             [01;31m[Kstd[m[K::shared_ptr<example_interfaces::srv::SetInt64::Response> res){
+      |             [01;31m[K^~~[m[K
+[01m[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/motor_enable_node.cpp:189:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kexample_interfaces[m[K’ has not been declared
+  189 |             std::shared_ptr<[01;31m[Kexample_interfaces[m[K::srv::SetInt64::Response> res){
+      |                             [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/motor_enable_node.cpp:189:13:[m[K [01;31m[Kerror: [m[Kmissing template argument list after ‘[01m[Kstd::shared_ptr[m[K’; template placeholder not permitted in parameter
+  189 |             [01;31m[Kstd[m[K::shared_ptr<example_interfaces::srv::SetInt64::Response> res){
+      |             [01;31m[K^~~[m[K
+      |                [32m[K<>[m[K
+[01m[K/usr/include/c++/13/bits/shared_ptr_base.h:395:11:[m[K [01;36m[Knote: [m[K‘[01m[Ktemplate<class _Tp> class std::shared_ptr[m[K’ declared here
+  395 |     class [01;36m[Kshared_ptr[m[K;
+      |           [01;36m[K^~~~~~~~~~[m[K
+[01m[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/motor_enable_node.cpp:[m[K In member function ‘[01m[Kvoid MotorEnableNode::[01;32m[Kon_motors_direction[m[K(...)[m[K’:
+[01m[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/motor_enable_node.cpp:191:40:[m[K [01;31m[Kerror: [m[K‘[01m[Kreq[m[K’ was not declared in this scope
+  191 |                 const auto direction = [01;31m[Kreq[m[K->data;
+      |                                        [01;31m[K^~~[m[K
+[01m[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/motor_enable_node.cpp:220:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kres[m[K’ was not declared in this scope
+  220 |                     [01;31m[Kres[m[K->success = false;
+      |                     [01;31m[K^~~[m[K
+[01m[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/motor_enable_node.cpp:225:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kres[m[K’ was not declared in this scope
+  225 |                 [01;31m[Kres[m[K->success = ok_ain1 && ok_ain2 && ok_bin3 && ok_bin4;
+      |                 [01;31m[K^~~[m[K
+gmake[2]: *** [CMakeFiles/motor_enable_node.dir/build.make:76: CMakeFiles/motor_enable_node.dir/src/motor_enable_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/motor_enable_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

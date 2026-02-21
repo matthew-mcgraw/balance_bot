@@ -1,0 +1,4 @@
+Invoking command in '/home/mmcgraw/Projects/balance_bot/build/balance_hw': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake --build /home/mmcgraw/Projects/balance_bot/build/balance_hw -- -j4 -l4
+Invoked command in '/home/mmcgraw/Projects/balance_bot/build/balance_hw' returned '0': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake --build /home/mmcgraw/Projects/balance_bot/build/balance_hw -- -j4 -l4
+Invoking command in '/home/mmcgraw/Projects/balance_bot/build/balance_hw': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake --install /home/mmcgraw/Projects/balance_bot/build/balance_hw
+Invoked command in '/home/mmcgraw/Projects/balance_bot/build/balance_hw' returned '0': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake --install /home/mmcgraw/Projects/balance_bot/build/balance_hw

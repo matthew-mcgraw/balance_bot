@@ -1,0 +1,4 @@
+int8 direction      # -1 back, 0 stop, 1 forward
+---
+bool success
+string message

@@ -1,0 +1,48 @@
+{
+  "package_name": "balance_hw_interfaces",
+  "output_dir": "/home/mmcgraw/Projects/balance_bot/build/balance_hw_interfaces/rosidl_generator_c/balance_hw_interfaces",
+  "template_dir": "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource",
+  "idl_tuples": [
+    "/home/mmcgraw/Projects/balance_bot/build/balance_hw_interfaces/rosidl_adapter/balance_hw_interfaces:srv/SetDirection.idl",
+    "/home/mmcgraw/Projects/balance_bot/build/balance_hw_interfaces/rosidl_adapter/balance_hw_interfaces:srv/SetPwm.idl"
+  ],
+  "ros_interface_files": [
+    "/home/mmcgraw/Projects/balance_bot/src/balance_hw_interfaces/srv/SetDirection.srv",
+    "/home/mmcgraw/Projects/balance_bot/src/balance_hw_interfaces/srv/SetPwm.srv"
+  ],
+  "ros_interface_dependencies": [
+    "service_msgs:/opt/ros/jazzy/share/service_msgs/msg/ServiceEventInfo.idl",
+    "builtin_interfaces:/opt/ros/jazzy/share/builtin_interfaces/msg/Duration.idl",
+    "builtin_interfaces:/opt/ros/jazzy/share/builtin_interfaces/msg/Time.idl"
+  ],
+  "target_dependencies": [
+    "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c",
+    "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../../../lib/python3.12/site-packages/rosidl_generator_c/__init__.py",
+    "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/action__type_support.h.em",
+    "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/action__type_support.c.em",
+    "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/empty__description.c.em",
+    "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/full__description.c.em",
+    "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/idl.h.em",
+    "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/idl__description.c.em",
+    "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/idl__functions.c.em",
+    "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/idl__functions.h.em",
+    "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/idl__struct.h.em",
+    "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/idl__type_support.c.em",
+    "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/idl__type_support.h.em",
+    "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/msg__functions.c.em",
+    "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/msg__functions.h.em",
+    "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/msg__struct.h.em",
+    "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/msg__type_support.h.em",
+    "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/srv__type_support.c.em",
+    "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/srv__type_support.h.em",
+    "/home/mmcgraw/Projects/balance_bot/build/balance_hw_interfaces/rosidl_adapter/balance_hw_interfaces/srv/SetDirection.idl",
+    "/home/mmcgraw/Projects/balance_bot/build/balance_hw_interfaces/rosidl_adapter/balance_hw_interfaces/srv/SetPwm.idl",
+    "/opt/ros/jazzy/share/service_msgs/msg/ServiceEventInfo.idl",
+    "/opt/ros/jazzy/share/builtin_interfaces/msg/Duration.idl",
+    "/opt/ros/jazzy/share/builtin_interfaces/msg/Time.idl"
+  ],
+  "type_description_tuples": [
+    "srv/SetDirection.idl:/home/mmcgraw/Projects/balance_bot/build/balance_hw_interfaces/rosidl_generator_type_description/balance_hw_interfaces/srv/SetDirection.json",
+    "srv/SetPwm.idl:/home/mmcgraw/Projects/balance_bot/build/balance_hw_interfaces/rosidl_generator_type_description/balance_hw_interfaces/srv/SetPwm.json"
+  ]
+}

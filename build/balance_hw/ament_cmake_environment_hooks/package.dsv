@@ -1,0 +1,4 @@
+source;share/balance_hw/local_setup.bash
+source;share/balance_hw/local_setup.dsv
+source;share/balance_hw/local_setup.sh
+source;share/balance_hw/local_setup.zsh

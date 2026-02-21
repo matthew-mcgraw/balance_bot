@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "balance_hw_interfaces__py",
+		"source" : "/home/mmcgraw/Projects/balance_bot/build/balance_hw_interfaces/balance_hw_interfaces__py"
+	}
+}
