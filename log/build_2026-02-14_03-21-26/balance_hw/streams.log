@@ -1,6 +1,0 @@
-[0.073s] Invoking command in '/home/mmcgraw/Projects/balance_bot/build/balance_hw': CMAKE_PREFIX_PATH=/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces:/home/mmcgraw/Projects/balance_bot/install/balance_hw:/opt/ros/jazzy /usr/bin/cmake --build /home/mmcgraw/Projects/balance_bot/build/balance_hw -- -j4 -l4
-[0.386s] [ 50%] [32mBuilding CXX object CMakeFiles/motor_enable_node.dir/src/motor_enable_node.cpp.o[0m
-[11.006s] gmake[2]: *** [CMakeFiles/motor_enable_node.dir/build.make:76: CMakeFiles/motor_enable_node.dir/src/motor_enable_node.cpp.o] Interrupt
-[11.011s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/motor_enable_node.dir/all] Interrupt
-[11.014s] gmake: *** [Makefile:146: all] Interrupt
-[11.056s] Invoked command in '/home/mmcgraw/Projects/balance_bot/build/balance_hw' returned '-2': CMAKE_PREFIX_PATH=/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces:/home/mmcgraw/Projects/balance_bot/install/balance_hw:/opt/ros/jazzy /usr/bin/cmake --build /home/mmcgraw/Projects/balance_bot/build/balance_hw -- -j4 -l4

@@ -1,9 +1,0 @@
-[ 50%] Built target motor_enable_node
-[ 75%] [32mBuilding CXX object CMakeFiles/imu_node.dir/src/imu.cpp.o[0m
-[01m[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/imu.cpp:31:2:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ after class definition
-   31 | }
-      |  [01;31m[K^[m[K
-      |  [32m[K;[m[K
-gmake[2]: *** [CMakeFiles/imu_node.dir/build.make:76: CMakeFiles/imu_node.dir/src/imu.cpp.o] Error 1
-gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/imu_node.dir/all] Error 2
-gmake: *** [Makefile:146: all] Error 2

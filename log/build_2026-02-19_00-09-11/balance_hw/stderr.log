@@ -1,7 +1,0 @@
-[01m[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/motor_enable_node.cpp:[m[K In lambda function:
-[01m[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/motor_enable_node.cpp:154:35:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcmd_timeout_ms_[m[K’ is used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wuninitialized-Wuninitialized]8;;[m[K]
-  154 |                     const int64_t [01;35m[Kcmd_timeout_ms_[m[K = static_cast<int64_t>(cmd_timeout_ms_) * 1000000LL;
-      |                                   [01;35m[K^~~~~~~~~~~~~~~[m[K
-[01m[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/motor_enable_node.cpp:154:35:[m[K [01;36m[Knote: [m[K‘[01m[Kcmd_timeout_ms_[m[K’ was declared here
-  154 |                     const int64_t [01;36m[Kcmd_timeout_ms_[m[K = static_cast<int64_t>(cmd_timeout_ms_) * 1000000LL;
-      |                                   [01;36m[K^~~~~~~~~~~~~~~[m[K
