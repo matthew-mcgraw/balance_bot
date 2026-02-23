@@ -1,0 +1,38 @@
+[0.071s] Invoking command in '/home/mmcgraw/Projects/balance_bot/build/balance_hw': CMAKE_PREFIX_PATH=/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces:/home/mmcgraw/Projects/balance_bot/install/balance_hw:/opt/ros/jazzy /usr/bin/cmake --build /home/mmcgraw/Projects/balance_bot/build/balance_hw -- -j4 -l4
+[0.366s] [ 50%] Built target motor_enable_node
+[0.398s] [ 75%] [32mBuilding CXX object CMakeFiles/imu_node.dir/src/imu.cpp.o[0m
+[10.300s] [01m[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/imu.cpp:159:9:[m[K [01;31m[Kerror: [m[Knon-static data member ‘[01m[Kg[m[K’ declared ‘[01m[Kconstexpr[m[K’
+[10.301s]   159 |         [01;31m[Kconstexpr[m[K double g{9.807};
+[10.302s]       |         [01;31m[K^~~~~~~~~[m[K
+[10.302s] [01m[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/imu.cpp:160:9:[m[K [01;31m[Kerror: [m[Knon-static data member ‘[01m[Kaccel_lsb_per_g[m[K’ declared ‘[01m[Kconstexpr[m[K’
+[10.303s]   160 |         [01;31m[Kconstexpr[m[K double accel_lsb_per_g{16384.0};
+[10.303s]       |         [01;31m[K^~~~~~~~~[m[K
+[10.304s] [01m[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/imu.cpp:161:9:[m[K [01;31m[Kerror: [m[Knon-static data member ‘[01m[Kgyro_lsb_per_dps[m[K’ declared ‘[01m[Kconstexpr[m[K’
+[10.304s]   161 |         [01;31m[Kconstexpr[m[K double gyro_lsb_per_dps{131.0};
+[10.305s]       |         [01;31m[K^~~~~~~~~[m[K
+[10.305s] [01m[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/imu.cpp:162:9:[m[K [01;31m[Kerror: [m[Knon-static data member ‘[01m[Kdeg2rad[m[K’ declared ‘[01m[Kconstexpr[m[K’
+[10.306s]   162 |         [01;31m[Kconstexpr[m[K double deg2rad{3.14159/180.0};
+[10.306s]       |         [01;31m[K^~~~~~~~~[m[K
+[10.371s] [01m[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/imu.cpp:[m[K In constructor ‘[01m[KIMU_Node::[01;32m[KIMU_Node[m[K()[m[K’:
+[10.371s] [01m[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/imu.cpp:95:56:[m[K [01;31m[Kerror: [m[K‘[01m[Kax_raw[m[K’ was not declared in this scope
+[10.372s]    95 |             const double ax_corr = static_cast<double>([01;31m[Kax_raw[m[K) - bias_ax_;
+[10.373s]       |                                                        [01;31m[K^~~~~~[m[K
+[10.396s] [01m[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/imu.cpp:96:56:[m[K [01;31m[Kerror: [m[K‘[01m[Kay_raw[m[K’ was not declared in this scope
+[10.396s]    96 |             const double ay_corr = static_cast<double>([01;31m[Kay_raw[m[K) - bias_ay_;
+[10.397s]       |                                                        [01;31m[K^~~~~~[m[K
+[10.419s] [01m[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/imu.cpp:97:56:[m[K [01;31m[Kerror: [m[K‘[01m[Kaz_raw[m[K’ was not declared in this scope
+[10.420s]    97 |             const double az_corr = static_cast<double>([01;31m[Kaz_raw[m[K) - bias_az_;
+[10.421s]       |                                                        [01;31m[K^~~~~~[m[K
+[10.445s] [01m[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/imu.cpp:99:56:[m[K [01;31m[Kerror: [m[K‘[01m[Kgx_raw[m[K’ was not declared in this scope
+[10.446s]    99 |             const double gx_corr = static_cast<double>([01;31m[Kgx_raw[m[K) - bias_gx_;
+[10.447s]       |                                                        [01;31m[K^~~~~~[m[K
+[10.469s] [01m[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/imu.cpp:100:56:[m[K [01;31m[Kerror: [m[K‘[01m[Kgy_raw[m[K’ was not declared in this scope
+[10.470s]   100 |             const double gy_corr = static_cast<double>([01;31m[Kgy_raw[m[K) - bias_gy_;
+[10.470s]       |                                                        [01;31m[K^~~~~~[m[K
+[10.494s] [01m[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/imu.cpp:101:56:[m[K [01;31m[Kerror: [m[K‘[01m[Kgz_raw[m[K’ was not declared in this scope
+[10.494s]   101 |             const double gz_corr = static_cast<double>([01;31m[Kgz_raw[m[K) - bias_gz_;
+[10.495s]       |                                                        [01;31m[K^~~~~~[m[K
+[13.475s] gmake[2]: *** [CMakeFiles/imu_node.dir/build.make:76: CMakeFiles/imu_node.dir/src/imu.cpp.o] Error 1
+[13.476s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/imu_node.dir/all] Error 2
+[13.477s] gmake: *** [Makefile:146: all] Error 2
+[13.486s] Invoked command in '/home/mmcgraw/Projects/balance_bot/build/balance_hw' returned '2': CMAKE_PREFIX_PATH=/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces:/home/mmcgraw/Projects/balance_bot/install/balance_hw:/opt/ros/jazzy /usr/bin/cmake --build /home/mmcgraw/Projects/balance_bot/build/balance_hw -- -j4 -l4

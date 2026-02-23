@@ -1,0 +1,17 @@
+[ 50%] Built target motor_enable_node
+[ 75%] [32mBuilding CXX object CMakeFiles/imu_node.dir/src/imu.cpp.o[0m
+[01m[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/imu.cpp:158:9:[m[K [01;31m[Kerror: [m[Knon-static data member ‘[01m[Kg[m[K’ declared ‘[01m[Kconstexpr[m[K’
+  158 |         [01;31m[Kconstexpr[m[K double g{9.807};
+      |         [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/imu.cpp:159:9:[m[K [01;31m[Kerror: [m[Knon-static data member ‘[01m[Kaccel_lsb_per_g[m[K’ declared ‘[01m[Kconstexpr[m[K’
+  159 |         [01;31m[Kconstexpr[m[K double accel_lsb_per_g{16384.0};
+      |         [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/imu.cpp:160:9:[m[K [01;31m[Kerror: [m[Knon-static data member ‘[01m[Kgyro_lsb_per_dps[m[K’ declared ‘[01m[Kconstexpr[m[K’
+  160 |         [01;31m[Kconstexpr[m[K double gyro_lsb_per_dps{131.0};
+      |         [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/imu.cpp:161:9:[m[K [01;31m[Kerror: [m[Knon-static data member ‘[01m[Kdeg2rad[m[K’ declared ‘[01m[Kconstexpr[m[K’
+  161 |         [01;31m[Kconstexpr[m[K double deg2rad{3.14159/180.0};
+      |         [01;31m[K^~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/imu_node.dir/build.make:76: CMakeFiles/imu_node.dir/src/imu.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/imu_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

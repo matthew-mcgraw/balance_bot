@@ -1,0 +1,179 @@
+[0.000000] (-) TimerEvent: {}
+[0.000979] (-) JobUnselected: {'identifier': 'balance_hw_interfaces'}
+[0.001896] (balance_hw) JobQueued: {'identifier': 'balance_hw', 'dependencies': OrderedDict({'balance_hw_interfaces': '/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces'})}
+[0.002401] (balance_hw) JobStarted: {'identifier': 'balance_hw'}
+[0.084977] (balance_hw) JobProgress: {'identifier': 'balance_hw', 'progress': 'cmake'}
+[0.099286] (-) TimerEvent: {}
+[0.104064] (balance_hw) JobProgress: {'identifier': 'balance_hw', 'progress': 'build'}
+[0.109163] (balance_hw) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/mmcgraw/Projects/balance_bot/build/balance_hw', '--', '-j4', '-l4'], 'cwd': '/home/mmcgraw/Projects/balance_bot/build/balance_hw', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'mmcgraw', 'SSH_CLIENT': '10.0.0.93 63364 22', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/mmcgraw/.vscode-server/cli/servers/Stable-c9d77990917f3102ada88be140d28b038d1dd7c7/server/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib', 'BROWSER': '/home/mmcgraw/.vscode-server/cli/servers/Stable-c9d77990917f3102ada88be140d28b038d1dd7c7/server/bin/helpers/browser.sh', 'HOME': '/home/mmcgraw', 'OLDPWD': '/home/mmcgraw/.vscode-server', 'TERM_PROGRAM_VERSION': '1.108.2', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-eccb672c-2ba9-4f19-beae-758ca50b49c4.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/mmcgraw/.vscode-server/cli/servers/Stable-c9d77990917f3102ada88be140d28b038d1dd7c7/server/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/mmcgraw/.vscode-server/cli/servers/Stable-c9d77990917f3102ada88be140d28b038d1dd7c7/server/node', 'SSL_CERT_FILE': '/usr/lib/ssl/cert.pem', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'mmcgraw', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '5', 'PATH': '/home/mmcgraw/.vscode-server/cli/servers/Stable-c9d77990917f3102ada88be140d28b038d1dd7c7/server/bin/remote-cli:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'SSL_CERT_DIR': '/usr/lib/ssl/certs', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-d70b8b057b.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/mmcgraw/Projects/balance_bot/build/balance_hw', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '10.0.0.93 63364 10.0.0.36 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces:/opt/ros/jazzy'}), 'shell': False}
+[0.199550] (-) TimerEvent: {}
+[0.301178] (-) TimerEvent: {}
+[0.401980] (-) TimerEvent: {}
+[0.502742] (-) TimerEvent: {}
+[0.603409] (-) TimerEvent: {}
+[0.700374] (balance_hw) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/imu_node.dir/src/imu.cpp.o\x1b[0m\n'}
+[0.702800] (balance_hw) StdoutLine: {'line': b'[ 75%] Built target motor_enable_node\n'}
+[0.703782] (-) TimerEvent: {}
+[0.804378] (-) TimerEvent: {}
+[0.905730] (-) TimerEvent: {}
+[1.006459] (-) TimerEvent: {}
+[1.107139] (-) TimerEvent: {}
+[1.207821] (-) TimerEvent: {}
+[1.308495] (-) TimerEvent: {}
+[1.409121] (-) TimerEvent: {}
+[1.509868] (-) TimerEvent: {}
+[1.610549] (-) TimerEvent: {}
+[1.711170] (-) TimerEvent: {}
+[1.811970] (-) TimerEvent: {}
+[1.912702] (-) TimerEvent: {}
+[2.013395] (-) TimerEvent: {}
+[2.114122] (-) TimerEvent: {}
+[2.214880] (-) TimerEvent: {}
+[2.315575] (-) TimerEvent: {}
+[2.416300] (-) TimerEvent: {}
+[2.517018] (-) TimerEvent: {}
+[2.617734] (-) TimerEvent: {}
+[2.718530] (-) TimerEvent: {}
+[2.819248] (-) TimerEvent: {}
+[2.919958] (-) TimerEvent: {}
+[3.020622] (-) TimerEvent: {}
+[3.121347] (-) TimerEvent: {}
+[3.222122] (-) TimerEvent: {}
+[3.322824] (-) TimerEvent: {}
+[3.423777] (-) TimerEvent: {}
+[3.524684] (-) TimerEvent: {}
+[3.625471] (-) TimerEvent: {}
+[3.726161] (-) TimerEvent: {}
+[3.826951] (-) TimerEvent: {}
+[3.927638] (-) TimerEvent: {}
+[4.029602] (-) TimerEvent: {}
+[4.130317] (-) TimerEvent: {}
+[4.231184] (-) TimerEvent: {}
+[4.331995] (-) TimerEvent: {}
+[4.432702] (-) TimerEvent: {}
+[4.533379] (-) TimerEvent: {}
+[4.634117] (-) TimerEvent: {}
+[4.734860] (-) TimerEvent: {}
+[4.835766] (-) TimerEvent: {}
+[4.936477] (-) TimerEvent: {}
+[5.037242] (-) TimerEvent: {}
+[5.138107] (-) TimerEvent: {}
+[5.238849] (-) TimerEvent: {}
+[5.339683] (-) TimerEvent: {}
+[5.440409] (-) TimerEvent: {}
+[5.541156] (-) TimerEvent: {}
+[5.641892] (-) TimerEvent: {}
+[5.742726] (-) TimerEvent: {}
+[5.843489] (-) TimerEvent: {}
+[5.944185] (-) TimerEvent: {}
+[6.045168] (-) TimerEvent: {}
+[6.146390] (-) TimerEvent: {}
+[6.247108] (-) TimerEvent: {}
+[6.347861] (-) TimerEvent: {}
+[6.448572] (-) TimerEvent: {}
+[6.549344] (-) TimerEvent: {}
+[6.650497] (-) TimerEvent: {}
+[6.751162] (-) TimerEvent: {}
+[6.851904] (-) TimerEvent: {}
+[6.952611] (-) TimerEvent: {}
+[7.053282] (-) TimerEvent: {}
+[7.154119] (-) TimerEvent: {}
+[7.254848] (-) TimerEvent: {}
+[7.355578] (-) TimerEvent: {}
+[7.456262] (-) TimerEvent: {}
+[7.556992] (-) TimerEvent: {}
+[7.657727] (-) TimerEvent: {}
+[7.759052] (-) TimerEvent: {}
+[7.859800] (-) TimerEvent: {}
+[7.960523] (-) TimerEvent: {}
+[8.061222] (-) TimerEvent: {}
+[8.161970] (-) TimerEvent: {}
+[8.262691] (-) TimerEvent: {}
+[8.363462] (-) TimerEvent: {}
+[8.464197] (-) TimerEvent: {}
+[8.564983] (-) TimerEvent: {}
+[8.665771] (-) TimerEvent: {}
+[8.766501] (-) TimerEvent: {}
+[8.867185] (-) TimerEvent: {}
+[8.967931] (-) TimerEvent: {}
+[9.068710] (-) TimerEvent: {}
+[9.169488] (-) TimerEvent: {}
+[9.270199] (-) TimerEvent: {}
+[9.370971] (-) TimerEvent: {}
+[9.471750] (-) TimerEvent: {}
+[9.572583] (-) TimerEvent: {}
+[9.673269] (-) TimerEvent: {}
+[9.774035] (-) TimerEvent: {}
+[9.874922] (-) TimerEvent: {}
+[9.975603] (-) TimerEvent: {}
+[10.076363] (-) TimerEvent: {}
+[10.177117] (-) TimerEvent: {}
+[10.277999] (-) TimerEvent: {}
+[10.378751] (-) TimerEvent: {}
+[10.479544] (-) TimerEvent: {}
+[10.580269] (-) TimerEvent: {}
+[10.681035] (-) TimerEvent: {}
+[10.781802] (-) TimerEvent: {}
+[10.882566] (-) TimerEvent: {}
+[10.983264] (-) TimerEvent: {}
+[11.084067] (-) TimerEvent: {}
+[11.184848] (-) TimerEvent: {}
+[11.285570] (-) TimerEvent: {}
+[11.386268] (-) TimerEvent: {}
+[11.487010] (-) TimerEvent: {}
+[11.587810] (-) TimerEvent: {}
+[11.688566] (-) TimerEvent: {}
+[11.789263] (-) TimerEvent: {}
+[11.890034] (-) TimerEvent: {}
+[11.925185] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/imu.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KIMU_Node::\x1b[01;32m\x1b[KIMU_Node\x1b[m\x1b[K()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[11.926073] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/imu.cpp:32:63:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kfound \xe2\x80\x98\x1b[01m\x1b[K:\x1b[m\x1b[K\xe2\x80\x99 in nested-name-specifier, expected \xe2\x80\x98\x1b[01m\x1b[K::\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.926683] (balance_hw) StderrLine: {'line': b'   32 |             imu_pub_ = this->create_publisher<sensor_msgs::msg\x1b[01;31m\x1b[K:\x1b[m\x1b[KImu>("/imu/data_raw", 10);\n'}
+[11.927273] (balance_hw) StderrLine: {'line': b'      |                                                               \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[11.927980] (balance_hw) StderrLine: {'line': b'      |                                                               \x1b[32m\x1b[K::\x1b[m\x1b[K\n'}
+[11.990233] (-) TimerEvent: {}
+[12.090974] (-) TimerEvent: {}
+[12.191703] (-) TimerEvent: {}
+[12.292468] (-) TimerEvent: {}
+[12.393151] (-) TimerEvent: {}
+[12.493929] (-) TimerEvent: {}
+[12.594604] (-) TimerEvent: {}
+[12.695300] (-) TimerEvent: {}
+[12.796192] (-) TimerEvent: {}
+[12.896924] (-) TimerEvent: {}
+[12.997649] (-) TimerEvent: {}
+[13.098336] (-) TimerEvent: {}
+[13.199071] (-) TimerEvent: {}
+[13.299800] (-) TimerEvent: {}
+[13.400527] (-) TimerEvent: {}
+[13.501209] (-) TimerEvent: {}
+[13.602029] (-) TimerEvent: {}
+[13.702794] (-) TimerEvent: {}
+[13.803534] (-) TimerEvent: {}
+[13.904265] (-) TimerEvent: {}
+[14.005007] (-) TimerEvent: {}
+[14.105727] (-) TimerEvent: {}
+[14.206482] (-) TimerEvent: {}
+[14.307189] (-) TimerEvent: {}
+[14.408087] (-) TimerEvent: {}
+[14.508866] (-) TimerEvent: {}
+[14.609564] (-) TimerEvent: {}
+[14.710251] (-) TimerEvent: {}
+[14.811021] (-) TimerEvent: {}
+[14.911758] (-) TimerEvent: {}
+[15.012484] (-) TimerEvent: {}
+[15.113154] (-) TimerEvent: {}
+[15.213863] (-) TimerEvent: {}
+[15.314569] (-) TimerEvent: {}
+[15.415209] (-) TimerEvent: {}
+[15.515962] (-) TimerEvent: {}
+[15.616727] (-) TimerEvent: {}
+[15.717508] (-) TimerEvent: {}
+[15.812869] (balance_hw) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/imu_node.dir/build.make:76: CMakeFiles/imu_node.dir/src/imu.cpp.o] Error 1\n'}
+[15.813897] (balance_hw) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/imu_node.dir/all] Error 2\n'}
+[15.814954] (balance_hw) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[15.817669] (-) TimerEvent: {}
+[15.823131] (balance_hw) CommandEnded: {'returncode': 2}
+[15.917862] (-) TimerEvent: {}
+[16.018751] (-) TimerEvent: {}
+[16.092301] (balance_hw) JobEnded: {'identifier': 'balance_hw', 'rc': 2}
+[16.104723] (-) EventReactorShutdown: {}

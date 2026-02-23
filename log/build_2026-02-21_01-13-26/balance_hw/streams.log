@@ -1,0 +1,54 @@
+[0.071s] Invoking command in '/home/mmcgraw/Projects/balance_bot/build/balance_hw': AMENT_PREFIX_PATH=/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces:/opt/ros/jazzy LD_LIBRARY_PATH=/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/mmcgraw/Projects/balance_bot/build/balance_hw -- -j4 -l4
+[0.367s] [ 50%] Built target motor_enable_node
+[0.398s] [ 75%] [32mBuilding CXX object CMakeFiles/imu_node.dir/src/imu.cpp.o[0m
+[10.741s] In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:27[m[K,
+[10.742s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:171[m[K,
+[10.743s]                  from [01m[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/imu.cpp:1[m[K:
+[10.743s] [01m[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/imu.cpp:[m[K In constructor ‘[01m[KIMU_Node::[01;32m[KIMU_Node[m[K()[m[K’:
+[10.744s] [01m[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/imu.cpp:22:40:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KIMU_Node::get_logger(int, const char [36], const uint8_t&)[m[K’
+[10.744s]    22 |                 RCLCPP_FATAL([01;31m[Kget_logger(0, "Failed to set I2C_SLAVE addr=0x%02X", i2c_addr_)[m[K);
+[10.745s]       |                              [01;31m[K~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[10.745s] In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[10.746s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[10.746s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:172[m[K:
+[10.747s] [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/node.hpp:144:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::Logger rclcpp::Node::[01;32m[Kget_logger[m[K() const[m[K’
+[10.747s]   144 |   [01;36m[Kget_logger[m[K() const;
+[10.748s]       |   [01;36m[K^~~~~~~~~~[m[K
+[10.749s] [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/node.hpp:144:3:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 3 provided
+[10.749s] [01m[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/imu.cpp:22:40:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KIMU_Node::get_logger(int, const char [36], const uint8_t&)[m[K’
+[10.749s]    22 |                 RCLCPP_FATAL([01;31m[Kget_logger(0, "Failed to set I2C_SLAVE addr=0x%02X", i2c_addr_)[m[K);
+[10.750s]       |                              [01;31m[K~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[10.750s] [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/node.hpp:144:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::Logger rclcpp::Node::[01;32m[Kget_logger[m[K() const[m[K’
+[10.751s]   144 |   [01;36m[Kget_logger[m[K() const;
+[10.752s]       |   [01;36m[K^~~~~~~~~~[m[K
+[10.752s] [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/node.hpp:144:3:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 3 provided
+[10.753s] [01m[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/imu.cpp:22:17:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[10.753s]    22 |                 [01;31m[KRCLCPP_FATAL[m[K(get_logger(0, "Failed to set I2C_SLAVE addr=0x%02X", i2c_addr_));
+[10.754s]       |                 [01;31m[K^~~~~~~~~~~~[m[K
+[10.754s] In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/logging.hpp:24[m[K:
+[10.755s] [01m[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/imu.cpp:22:40:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KIMU_Node::get_logger(int, const char [36], const uint8_t&)[m[K’
+[10.756s]    22 |                 RCLCPP_FATAL([01;31m[Kget_logger(0, "Failed to set I2C_SLAVE addr=0x%02X", i2c_addr_)[m[K);
+[10.756s]       |                              [01;31m[K~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[10.757s] [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/node.hpp:144:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::Logger rclcpp::Node::[01;32m[Kget_logger[m[K() const[m[K’
+[10.757s]   144 |   [01;36m[Kget_logger[m[K() const;
+[10.758s]       |   [01;36m[K^~~~~~~~~~[m[K
+[10.759s] [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/node.hpp:144:3:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 3 provided
+[10.759s] [01m[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/imu.cpp:22:40:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KIMU_Node::get_logger(int, const char [36], const uint8_t&)[m[K’
+[10.760s]    22 |                 RCLCPP_FATAL([01;31m[Kget_logger(0, "Failed to set I2C_SLAVE addr=0x%02X", i2c_addr_)[m[K);
+[10.760s]       |                              [01;31m[K~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[10.761s] [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/node.hpp:144:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::Logger rclcpp::Node::[01;32m[Kget_logger[m[K() const[m[K’
+[10.761s]   144 |   [01;36m[Kget_logger[m[K() const;
+[10.762s]       |   [01;36m[K^~~~~~~~~~[m[K
+[10.762s] [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/node.hpp:144:3:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 3 provided
+[10.763s] [01m[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/imu.cpp:22:17:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K)[m[K’ token
+[10.763s]    22 |                 [01;31m[KRCLCPP_FATAL[m[K(get_logger(0, "Failed to set I2C_SLAVE addr=0x%02X", i2c_addr_));
+[10.764s]       |                 [01;31m[K^~~~~~~~~~~~[m[K
+[10.773s] [01m[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/imu.cpp:[m[K In destructor ‘[01m[Kvirtual IMU_Node::[01;32m[K~IMU_Node[m[K()[m[K’:
+[10.773s] [01m[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/imu.cpp:37:25:[m[K [01;31m[Kerror: [m[K‘[01m[Ki2c_fd[m[K’ was not declared in this scope; did you mean ‘[01m[Ki2c_fd_[m[K’?
+[10.774s]    37 |                 ::close([01;31m[Ki2c_fd[m[K);
+[10.774s]       |                         [01;31m[K^~~~~~[m[K
+[10.775s]       |                         [32m[Ki2c_fd_[m[K
+[13.191s] gmake[2]: *** [CMakeFiles/imu_node.dir/build.make:76: CMakeFiles/imu_node.dir/src/imu.cpp.o] Error 1
+[13.192s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/imu_node.dir/all] Error 2
+[13.193s] gmake: *** [Makefile:146: all] Error 2
+[13.202s] Invoked command in '/home/mmcgraw/Projects/balance_bot/build/balance_hw' returned '2': AMENT_PREFIX_PATH=/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces:/opt/ros/jazzy LD_LIBRARY_PATH=/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/mmcgraw/Projects/balance_bot/build/balance_hw -- -j4 -l4

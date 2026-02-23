@@ -1,0 +1,29 @@
+[0.100s] Invoking command in '/home/mmcgraw/Projects/balance_bot/build/balance_hw': CMAKE_PREFIX_PATH=/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces:/home/mmcgraw/Projects/balance_bot/install/balance_hw:/opt/ros/jazzy /usr/bin/cmake --build /home/mmcgraw/Projects/balance_bot/build/balance_hw -- -j4 -l4
+[0.698s] [ 25%] [32mBuilding CXX object CMakeFiles/imu_node.dir/src/imu.cpp.o[0m
+[0.700s] [ 75%] Built target motor_enable_node
+[15.813s] [100%] [32m[1mLinking CXX executable imu_node[0m
+[16.876s] [100%] Built target imu_node
+[16.930s] Invoked command in '/home/mmcgraw/Projects/balance_bot/build/balance_hw' returned '0': CMAKE_PREFIX_PATH=/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces:/home/mmcgraw/Projects/balance_bot/install/balance_hw:/opt/ros/jazzy /usr/bin/cmake --build /home/mmcgraw/Projects/balance_bot/build/balance_hw -- -j4 -l4
+[16.983s] Invoking command in '/home/mmcgraw/Projects/balance_bot/build/balance_hw': CMAKE_PREFIX_PATH=/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces:/home/mmcgraw/Projects/balance_bot/install/balance_hw:/opt/ros/jazzy /usr/bin/cmake --install /home/mmcgraw/Projects/balance_bot/build/balance_hw
+[17.025s] -- Install configuration: ""
+[17.028s] -- Up-to-date: /home/mmcgraw/Projects/balance_bot/install/balance_hw/lib/balance_hw/motor_enable_node
+[17.031s] -- Installing: /home/mmcgraw/Projects/balance_bot/install/balance_hw/lib/balance_hw/imu_node
+[17.037s] -- Set non-toolchain portion of runtime path of "/home/mmcgraw/Projects/balance_bot/install/balance_hw/lib/balance_hw/imu_node" to ""
+[17.039s] -- Up-to-date: /home/mmcgraw/Projects/balance_bot/install/balance_hw/share/balance_hw/config
+[17.040s] -- Up-to-date: /home/mmcgraw/Projects/balance_bot/install/balance_hw/share/balance_hw/config/robot.yaml
+[17.041s] -- Up-to-date: /home/mmcgraw/Projects/balance_bot/install/balance_hw/share/ament_index/resource_index/package_run_dependencies/balance_hw
+[17.041s] -- Up-to-date: /home/mmcgraw/Projects/balance_bot/install/balance_hw/share/ament_index/resource_index/parent_prefix_path/balance_hw
+[17.042s] -- Up-to-date: /home/mmcgraw/Projects/balance_bot/install/balance_hw/share/balance_hw/environment/ament_prefix_path.sh
+[17.043s] -- Up-to-date: /home/mmcgraw/Projects/balance_bot/install/balance_hw/share/balance_hw/environment/ament_prefix_path.dsv
+[17.043s] -- Up-to-date: /home/mmcgraw/Projects/balance_bot/install/balance_hw/share/balance_hw/environment/path.sh
+[17.044s] -- Up-to-date: /home/mmcgraw/Projects/balance_bot/install/balance_hw/share/balance_hw/environment/path.dsv
+[17.044s] -- Up-to-date: /home/mmcgraw/Projects/balance_bot/install/balance_hw/share/balance_hw/local_setup.bash
+[17.045s] -- Up-to-date: /home/mmcgraw/Projects/balance_bot/install/balance_hw/share/balance_hw/local_setup.sh
+[17.045s] -- Up-to-date: /home/mmcgraw/Projects/balance_bot/install/balance_hw/share/balance_hw/local_setup.zsh
+[17.045s] -- Up-to-date: /home/mmcgraw/Projects/balance_bot/install/balance_hw/share/balance_hw/local_setup.dsv
+[17.046s] -- Installing: /home/mmcgraw/Projects/balance_bot/install/balance_hw/share/balance_hw/package.dsv
+[17.049s] -- Up-to-date: /home/mmcgraw/Projects/balance_bot/install/balance_hw/share/ament_index/resource_index/packages/balance_hw
+[17.050s] -- Up-to-date: /home/mmcgraw/Projects/balance_bot/install/balance_hw/share/balance_hw/cmake/balance_hwConfig.cmake
+[17.050s] -- Up-to-date: /home/mmcgraw/Projects/balance_bot/install/balance_hw/share/balance_hw/cmake/balance_hwConfig-version.cmake
+[17.051s] -- Up-to-date: /home/mmcgraw/Projects/balance_bot/install/balance_hw/share/balance_hw/package.xml
+[17.057s] Invoked command in '/home/mmcgraw/Projects/balance_bot/build/balance_hw' returned '0': CMAKE_PREFIX_PATH=/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces:/home/mmcgraw/Projects/balance_bot/install/balance_hw:/opt/ros/jazzy /usr/bin/cmake --install /home/mmcgraw/Projects/balance_bot/build/balance_hw

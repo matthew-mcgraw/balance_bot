@@ -1,0 +1,17 @@
+[0.071s] Invoking command in '/home/mmcgraw/Projects/balance_bot/build/balance_hw': CMAKE_PREFIX_PATH=/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces:/home/mmcgraw/Projects/balance_bot/install/balance_hw:/opt/ros/jazzy /usr/bin/cmake --build /home/mmcgraw/Projects/balance_bot/build/balance_hw -- -j4 -l4
+[0.364s] [ 50%] Built target motor_enable_node
+[0.393s] [ 75%] [32mBuilding CXX object CMakeFiles/imu_node.dir/src/imu.cpp.o[0m
+[10.467s] [01m[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/imu.cpp:[m[K In constructor ‘[01m[KIMU_Node::[01;32m[KIMU_Node[m[K()[m[K’:
+[10.467s] [01m[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/imu.cpp:33:20:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kthis[m[K’
+[10.468s]    33 |             timer_ [01;31m[Kthis[m[K->create_wall_timer(
+[10.468s]       |                    [01;31m[K^~~~[m[K
+[10.469s] [01m[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/imu.cpp:33:13:[m[K [01;35m[Kwarning: [m[Kstatement has no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+[10.469s]    33 |             [01;35m[Ktimer_[m[K this->create_wall_timer(
+[10.470s]       |             [01;35m[K^~~~~~[m[K
+[10.470s] [01m[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/imu.cpp:47:13:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K)[m[K’ token
+[10.471s]    47 |             [01;31m[K)[m[K;
+[10.471s]       |             [01;31m[K^[m[K
+[12.887s] gmake[2]: *** [CMakeFiles/imu_node.dir/build.make:76: CMakeFiles/imu_node.dir/src/imu.cpp.o] Error 1
+[12.888s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/imu_node.dir/all] Error 2
+[12.889s] gmake: *** [Makefile:146: all] Error 2
+[12.899s] Invoked command in '/home/mmcgraw/Projects/balance_bot/build/balance_hw' returned '2': CMAKE_PREFIX_PATH=/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces:/home/mmcgraw/Projects/balance_bot/install/balance_hw:/opt/ros/jazzy /usr/bin/cmake --build /home/mmcgraw/Projects/balance_bot/build/balance_hw -- -j4 -l4

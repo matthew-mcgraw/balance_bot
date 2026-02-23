@@ -1,0 +1,25 @@
+[ 25%] [32mBuilding CXX object CMakeFiles/imu_node.dir/src/imu.cpp.o[0m
+[ 75%] Built target motor_enable_node
+[100%] [32m[1mLinking CXX executable imu_node[0m
+[100%] Built target imu_node
+-- Install configuration: ""
+-- Up-to-date: /home/mmcgraw/Projects/balance_bot/install/balance_hw/lib/balance_hw/motor_enable_node
+-- Installing: /home/mmcgraw/Projects/balance_bot/install/balance_hw/lib/balance_hw/imu_node
+-- Set non-toolchain portion of runtime path of "/home/mmcgraw/Projects/balance_bot/install/balance_hw/lib/balance_hw/imu_node" to ""
+-- Up-to-date: /home/mmcgraw/Projects/balance_bot/install/balance_hw/share/balance_hw/config
+-- Up-to-date: /home/mmcgraw/Projects/balance_bot/install/balance_hw/share/balance_hw/config/robot.yaml
+-- Up-to-date: /home/mmcgraw/Projects/balance_bot/install/balance_hw/share/ament_index/resource_index/package_run_dependencies/balance_hw
+-- Up-to-date: /home/mmcgraw/Projects/balance_bot/install/balance_hw/share/ament_index/resource_index/parent_prefix_path/balance_hw
+-- Up-to-date: /home/mmcgraw/Projects/balance_bot/install/balance_hw/share/balance_hw/environment/ament_prefix_path.sh
+-- Up-to-date: /home/mmcgraw/Projects/balance_bot/install/balance_hw/share/balance_hw/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/mmcgraw/Projects/balance_bot/install/balance_hw/share/balance_hw/environment/path.sh
+-- Up-to-date: /home/mmcgraw/Projects/balance_bot/install/balance_hw/share/balance_hw/environment/path.dsv
+-- Up-to-date: /home/mmcgraw/Projects/balance_bot/install/balance_hw/share/balance_hw/local_setup.bash
+-- Up-to-date: /home/mmcgraw/Projects/balance_bot/install/balance_hw/share/balance_hw/local_setup.sh
+-- Up-to-date: /home/mmcgraw/Projects/balance_bot/install/balance_hw/share/balance_hw/local_setup.zsh
+-- Up-to-date: /home/mmcgraw/Projects/balance_bot/install/balance_hw/share/balance_hw/local_setup.dsv
+-- Installing: /home/mmcgraw/Projects/balance_bot/install/balance_hw/share/balance_hw/package.dsv
+-- Up-to-date: /home/mmcgraw/Projects/balance_bot/install/balance_hw/share/ament_index/resource_index/packages/balance_hw
+-- Up-to-date: /home/mmcgraw/Projects/balance_bot/install/balance_hw/share/balance_hw/cmake/balance_hwConfig.cmake
+-- Up-to-date: /home/mmcgraw/Projects/balance_bot/install/balance_hw/share/balance_hw/cmake/balance_hwConfig-version.cmake
+-- Up-to-date: /home/mmcgraw/Projects/balance_bot/install/balance_hw/share/balance_hw/package.xml

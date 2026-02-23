@@ -210,6 +210,43 @@ motor_enable_node/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_enable_node.dir/build.make CMakeFiles/motor_enable_node.dir/build
 .PHONY : motor_enable_node/fast
 
+#=============================================================================
+# Target rules for targets named imu_node
+
+# Build rule for target.
+imu_node: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 imu_node
+.PHONY : imu_node
+
+# fast build rule for target.
+imu_node/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu_node.dir/build.make CMakeFiles/imu_node.dir/build
+.PHONY : imu_node/fast
+
+src/imu.o: src/imu.cpp.o
+.PHONY : src/imu.o
+
+# target to build an object file
+src/imu.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu_node.dir/build.make CMakeFiles/imu_node.dir/src/imu.cpp.o
+.PHONY : src/imu.cpp.o
+
+src/imu.i: src/imu.cpp.i
+.PHONY : src/imu.i
+
+# target to preprocess a source file
+src/imu.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu_node.dir/build.make CMakeFiles/imu_node.dir/src/imu.cpp.i
+.PHONY : src/imu.cpp.i
+
+src/imu.s: src/imu.cpp.s
+.PHONY : src/imu.s
+
+# target to generate assembly for a file
+src/imu.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu_node.dir/build.make CMakeFiles/imu_node.dir/src/imu.cpp.s
+.PHONY : src/imu.cpp.s
+
 src/motor_enable_node.o: src/motor_enable_node.cpp.o
 .PHONY : src/motor_enable_node.o
 
@@ -249,7 +286,11 @@ help:
 	@echo "... test"
 	@echo "... balance_hw_uninstall"
 	@echo "... uninstall"
+	@echo "... imu_node"
 	@echo "... motor_enable_node"
+	@echo "... src/imu.o"
+	@echo "... src/imu.i"
+	@echo "... src/imu.s"
 	@echo "... src/motor_enable_node.o"
 	@echo "... src/motor_enable_node.i"
 	@echo "... src/motor_enable_node.s"

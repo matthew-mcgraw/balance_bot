@@ -1,4 +1,5 @@
 /home/mmcgraw/Projects/balance_bot/install/balance_hw/lib/balance_hw/motor_enable_node
+/home/mmcgraw/Projects/balance_bot/install/balance_hw/lib/balance_hw/imu_node
 /home/mmcgraw/Projects/balance_bot/install/balance_hw/share/balance_hw/config/robot.yaml
 /home/mmcgraw/Projects/balance_bot/install/balance_hw/share/ament_index/resource_index/package_run_dependencies/balance_hw
 /home/mmcgraw/Projects/balance_bot/install/balance_hw/share/ament_index/resource_index/parent_prefix_path/balance_hw

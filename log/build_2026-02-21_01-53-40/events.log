@@ -1,0 +1,186 @@
+[0.000000] (-) TimerEvent: {}
+[0.000874] (-) JobUnselected: {'identifier': 'balance_hw_interfaces'}
+[0.001769] (balance_hw) JobQueued: {'identifier': 'balance_hw', 'dependencies': OrderedDict({'balance_hw_interfaces': '/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces'})}
+[0.002293] (balance_hw) JobStarted: {'identifier': 'balance_hw'}
+[0.054585] (balance_hw) JobProgress: {'identifier': 'balance_hw', 'progress': 'cmake'}
+[0.058675] (balance_hw) JobProgress: {'identifier': 'balance_hw', 'progress': 'build'}
+[0.061531] (balance_hw) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/mmcgraw/Projects/balance_bot/build/balance_hw', '--', '-j4', '-l4'], 'cwd': '/home/mmcgraw/Projects/balance_bot/build/balance_hw', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'mmcgraw', 'SSH_CLIENT': '10.0.0.93 60326 22', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/mmcgraw/.vscode-server/cli/servers/Stable-e3550cfac4b63ca4eafca7b601f0d2885817fd1f/server/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib', 'BROWSER': '/home/mmcgraw/.vscode-server/cli/servers/Stable-e3550cfac4b63ca4eafca7b601f0d2885817fd1f/server/bin/helpers/browser.sh', 'HOME': '/home/mmcgraw', 'TERM_PROGRAM_VERSION': '1.103.0', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-a0163ddb-a88f-4d9b-b4ff-71891494be5c.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/mmcgraw/.vscode-server/cli/servers/Stable-e3550cfac4b63ca4eafca7b601f0d2885817fd1f/server/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/mmcgraw/.vscode-server/cli/servers/Stable-e3550cfac4b63ca4eafca7b601f0d2885817fd1f/server/node', 'SSL_CERT_FILE': '/usr/lib/ssl/cert.pem', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'COLCON_PREFIX_PATH': '/home/mmcgraw/Projects/balance_bot/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'mmcgraw', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '1', 'PATH': '/home/mmcgraw/.vscode-server/cli/servers/Stable-e3550cfac4b63ca4eafca7b601f0d2885817fd1f/server/bin/remote-cli:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'SSL_CERT_DIR': '/usr/lib/ssl/certs', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-d70b8b057b.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/mmcgraw/Projects/balance_bot/install/balance_hw:/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/mmcgraw/Projects/balance_bot/build/balance_hw', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '10.0.0.93 60326 10.0.0.36 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces:/home/mmcgraw/Projects/balance_bot/install/balance_hw:/opt/ros/jazzy'}), 'shell': False}
+[0.099315] (-) TimerEvent: {}
+[0.200108] (-) TimerEvent: {}
+[0.301995] (-) TimerEvent: {}
+[0.372314] (balance_hw) StdoutLine: {'line': b'[ 50%] Built target motor_enable_node\n'}
+[0.401421] (balance_hw) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/imu_node.dir/src/imu.cpp.o\x1b[0m\n'}
+[0.402152] (-) TimerEvent: {}
+[0.502741] (-) TimerEvent: {}
+[0.603394] (-) TimerEvent: {}
+[0.704246] (-) TimerEvent: {}
+[0.804966] (-) TimerEvent: {}
+[0.905579] (-) TimerEvent: {}
+[1.006251] (-) TimerEvent: {}
+[1.106899] (-) TimerEvent: {}
+[1.207553] (-) TimerEvent: {}
+[1.308227] (-) TimerEvent: {}
+[1.408879] (-) TimerEvent: {}
+[1.509548] (-) TimerEvent: {}
+[1.610235] (-) TimerEvent: {}
+[1.710916] (-) TimerEvent: {}
+[1.811600] (-) TimerEvent: {}
+[1.912293] (-) TimerEvent: {}
+[2.012965] (-) TimerEvent: {}
+[2.113669] (-) TimerEvent: {}
+[2.214589] (-) TimerEvent: {}
+[2.315369] (-) TimerEvent: {}
+[2.416079] (-) TimerEvent: {}
+[2.516755] (-) TimerEvent: {}
+[2.617509] (-) TimerEvent: {}
+[2.718309] (-) TimerEvent: {}
+[2.818993] (-) TimerEvent: {}
+[2.919685] (-) TimerEvent: {}
+[3.020440] (-) TimerEvent: {}
+[3.121328] (-) TimerEvent: {}
+[3.222129] (-) TimerEvent: {}
+[3.322890] (-) TimerEvent: {}
+[3.424180] (-) TimerEvent: {}
+[3.525342] (-) TimerEvent: {}
+[3.626790] (-) TimerEvent: {}
+[3.730977] (-) TimerEvent: {}
+[3.831755] (-) TimerEvent: {}
+[3.932558] (-) TimerEvent: {}
+[4.033435] (-) TimerEvent: {}
+[4.134222] (-) TimerEvent: {}
+[4.235079] (-) TimerEvent: {}
+[4.335926] (-) TimerEvent: {}
+[4.437354] (-) TimerEvent: {}
+[4.538187] (-) TimerEvent: {}
+[4.640692] (-) TimerEvent: {}
+[4.741557] (-) TimerEvent: {}
+[4.843350] (-) TimerEvent: {}
+[4.944087] (-) TimerEvent: {}
+[5.044841] (-) TimerEvent: {}
+[5.145554] (-) TimerEvent: {}
+[5.247414] (-) TimerEvent: {}
+[5.348271] (-) TimerEvent: {}
+[5.449003] (-) TimerEvent: {}
+[5.549717] (-) TimerEvent: {}
+[5.650873] (-) TimerEvent: {}
+[5.751692] (-) TimerEvent: {}
+[5.852433] (-) TimerEvent: {}
+[5.953195] (-) TimerEvent: {}
+[6.053965] (-) TimerEvent: {}
+[6.154690] (-) TimerEvent: {}
+[6.255447] (-) TimerEvent: {}
+[6.356187] (-) TimerEvent: {}
+[6.456916] (-) TimerEvent: {}
+[6.557596] (-) TimerEvent: {}
+[6.658315] (-) TimerEvent: {}
+[6.759061] (-) TimerEvent: {}
+[6.859754] (-) TimerEvent: {}
+[6.960483] (-) TimerEvent: {}
+[7.061214] (-) TimerEvent: {}
+[7.161936] (-) TimerEvent: {}
+[7.262676] (-) TimerEvent: {}
+[7.363436] (-) TimerEvent: {}
+[7.464163] (-) TimerEvent: {}
+[7.564910] (-) TimerEvent: {}
+[7.665622] (-) TimerEvent: {}
+[7.766403] (-) TimerEvent: {}
+[7.867146] (-) TimerEvent: {}
+[7.967866] (-) TimerEvent: {}
+[8.068535] (-) TimerEvent: {}
+[8.169348] (-) TimerEvent: {}
+[8.270076] (-) TimerEvent: {}
+[8.370922] (-) TimerEvent: {}
+[8.471909] (-) TimerEvent: {}
+[8.572671] (-) TimerEvent: {}
+[8.673433] (-) TimerEvent: {}
+[8.774205] (-) TimerEvent: {}
+[8.875011] (-) TimerEvent: {}
+[8.975714] (-) TimerEvent: {}
+[9.076462] (-) TimerEvent: {}
+[9.177208] (-) TimerEvent: {}
+[9.277970] (-) TimerEvent: {}
+[9.378662] (-) TimerEvent: {}
+[9.479387] (-) TimerEvent: {}
+[9.580175] (-) TimerEvent: {}
+[9.680945] (-) TimerEvent: {}
+[9.781654] (-) TimerEvent: {}
+[9.882426] (-) TimerEvent: {}
+[9.983264] (-) TimerEvent: {}
+[10.083957] (-) TimerEvent: {}
+[10.184726] (-) TimerEvent: {}
+[10.285484] (-) TimerEvent: {}
+[10.386270] (-) TimerEvent: {}
+[10.486970] (-) TimerEvent: {}
+[10.587665] (-) TimerEvent: {}
+[10.688386] (-) TimerEvent: {}
+[10.789121] (-) TimerEvent: {}
+[10.889883] (-) TimerEvent: {}
+[10.990583] (-) TimerEvent: {}
+[11.091384] (-) TimerEvent: {}
+[11.192102] (-) TimerEvent: {}
+[11.292850] (-) TimerEvent: {}
+[11.393571] (-) TimerEvent: {}
+[11.494333] (-) TimerEvent: {}
+[11.595084] (-) TimerEvent: {}
+[11.695794] (-) TimerEvent: {}
+[11.796529] (-) TimerEvent: {}
+[11.897326] (-) TimerEvent: {}
+[11.998099] (-) TimerEvent: {}
+[12.098863] (-) TimerEvent: {}
+[12.199538] (-) TimerEvent: {}
+[12.300313] (-) TimerEvent: {}
+[12.401078] (-) TimerEvent: {}
+[12.501888] (-) TimerEvent: {}
+[12.602586] (-) TimerEvent: {}
+[12.703377] (-) TimerEvent: {}
+[12.804160] (-) TimerEvent: {}
+[12.904894] (-) TimerEvent: {}
+[13.005620] (-) TimerEvent: {}
+[13.106513] (-) TimerEvent: {}
+[13.207254] (-) TimerEvent: {}
+[13.307966] (-) TimerEvent: {}
+[13.408759] (-) TimerEvent: {}
+[13.509605] (-) TimerEvent: {}
+[13.610414] (-) TimerEvent: {}
+[13.711148] (-) TimerEvent: {}
+[13.811967] (-) TimerEvent: {}
+[13.912885] (-) TimerEvent: {}
+[14.001186] (balance_hw) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable imu_node\x1b[0m\n'}
+[14.013091] (-) TimerEvent: {}
+[14.113780] (-) TimerEvent: {}
+[14.214609] (-) TimerEvent: {}
+[14.315630] (-) TimerEvent: {}
+[14.416755] (-) TimerEvent: {}
+[14.517546] (-) TimerEvent: {}
+[14.618370] (-) TimerEvent: {}
+[14.719324] (-) TimerEvent: {}
+[14.746201] (balance_hw) StdoutLine: {'line': b'[100%] Built target imu_node\n'}
+[14.799399] (balance_hw) CommandEnded: {'returncode': 0}
+[14.801320] (balance_hw) JobProgress: {'identifier': 'balance_hw', 'progress': 'install'}
+[14.819514] (-) TimerEvent: {}
+[14.848658] (balance_hw) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/mmcgraw/Projects/balance_bot/build/balance_hw'], 'cwd': '/home/mmcgraw/Projects/balance_bot/build/balance_hw', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'mmcgraw', 'SSH_CLIENT': '10.0.0.93 60326 22', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/mmcgraw/.vscode-server/cli/servers/Stable-e3550cfac4b63ca4eafca7b601f0d2885817fd1f/server/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib', 'BROWSER': '/home/mmcgraw/.vscode-server/cli/servers/Stable-e3550cfac4b63ca4eafca7b601f0d2885817fd1f/server/bin/helpers/browser.sh', 'HOME': '/home/mmcgraw', 'TERM_PROGRAM_VERSION': '1.103.0', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-a0163ddb-a88f-4d9b-b4ff-71891494be5c.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/mmcgraw/.vscode-server/cli/servers/Stable-e3550cfac4b63ca4eafca7b601f0d2885817fd1f/server/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/mmcgraw/.vscode-server/cli/servers/Stable-e3550cfac4b63ca4eafca7b601f0d2885817fd1f/server/node', 'SSL_CERT_FILE': '/usr/lib/ssl/cert.pem', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'COLCON_PREFIX_PATH': '/home/mmcgraw/Projects/balance_bot/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'mmcgraw', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '1', 'PATH': '/home/mmcgraw/.vscode-server/cli/servers/Stable-e3550cfac4b63ca4eafca7b601f0d2885817fd1f/server/bin/remote-cli:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'SSL_CERT_DIR': '/usr/lib/ssl/certs', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-d70b8b057b.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/mmcgraw/Projects/balance_bot/install/balance_hw:/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/mmcgraw/Projects/balance_bot/build/balance_hw', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '10.0.0.93 60326 10.0.0.36 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces:/home/mmcgraw/Projects/balance_bot/install/balance_hw:/opt/ros/jazzy'}), 'shell': False}
+[14.885960] (balance_hw) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[14.887605] (balance_hw) StdoutLine: {'line': b'-- Up-to-date: /home/mmcgraw/Projects/balance_bot/install/balance_hw/lib/balance_hw/motor_enable_node\n'}
+[14.890111] (balance_hw) StdoutLine: {'line': b'-- Installing: /home/mmcgraw/Projects/balance_bot/install/balance_hw/lib/balance_hw/imu_node\n'}
+[14.894409] (balance_hw) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/mmcgraw/Projects/balance_bot/install/balance_hw/lib/balance_hw/imu_node" to ""\n'}
+[14.895171] (balance_hw) StdoutLine: {'line': b'-- Up-to-date: /home/mmcgraw/Projects/balance_bot/install/balance_hw/share/balance_hw/config\n'}
+[14.895693] (balance_hw) StdoutLine: {'line': b'-- Up-to-date: /home/mmcgraw/Projects/balance_bot/install/balance_hw/share/balance_hw/config/robot.yaml\n'}
+[14.896243] (balance_hw) StdoutLine: {'line': b'-- Up-to-date: /home/mmcgraw/Projects/balance_bot/install/balance_hw/share/ament_index/resource_index/package_run_dependencies/balance_hw\n'}
+[14.896724] (balance_hw) StdoutLine: {'line': b'-- Up-to-date: /home/mmcgraw/Projects/balance_bot/install/balance_hw/share/ament_index/resource_index/parent_prefix_path/balance_hw\n'}
+[14.897346] (balance_hw) StdoutLine: {'line': b'-- Up-to-date: /home/mmcgraw/Projects/balance_bot/install/balance_hw/share/balance_hw/environment/ament_prefix_path.sh\n'}
+[14.897795] (balance_hw) StdoutLine: {'line': b'-- Up-to-date: /home/mmcgraw/Projects/balance_bot/install/balance_hw/share/balance_hw/environment/ament_prefix_path.dsv\n'}
+[14.898438] (balance_hw) StdoutLine: {'line': b'-- Up-to-date: /home/mmcgraw/Projects/balance_bot/install/balance_hw/share/balance_hw/environment/path.sh\n'}
+[14.898849] (balance_hw) StdoutLine: {'line': b'-- Up-to-date: /home/mmcgraw/Projects/balance_bot/install/balance_hw/share/balance_hw/environment/path.dsv\n'}
+[14.899460] (balance_hw) StdoutLine: {'line': b'-- Up-to-date: /home/mmcgraw/Projects/balance_bot/install/balance_hw/share/balance_hw/local_setup.bash\n'}
+[14.899898] (balance_hw) StdoutLine: {'line': b'-- Up-to-date: /home/mmcgraw/Projects/balance_bot/install/balance_hw/share/balance_hw/local_setup.sh\n'}
+[14.900312] (balance_hw) StdoutLine: {'line': b'-- Up-to-date: /home/mmcgraw/Projects/balance_bot/install/balance_hw/share/balance_hw/local_setup.zsh\n'}
+[14.900658] (balance_hw) StdoutLine: {'line': b'-- Up-to-date: /home/mmcgraw/Projects/balance_bot/install/balance_hw/share/balance_hw/local_setup.dsv\n'}
+[14.901245] (balance_hw) StdoutLine: {'line': b'-- Installing: /home/mmcgraw/Projects/balance_bot/install/balance_hw/share/balance_hw/package.dsv\n'}
+[14.901708] (balance_hw) StdoutLine: {'line': b'-- Up-to-date: /home/mmcgraw/Projects/balance_bot/install/balance_hw/share/ament_index/resource_index/packages/balance_hw\n'}
+[14.902292] (balance_hw) StdoutLine: {'line': b'-- Up-to-date: /home/mmcgraw/Projects/balance_bot/install/balance_hw/share/balance_hw/cmake/balance_hwConfig.cmake\n'}
+[14.902729] (balance_hw) StdoutLine: {'line': b'-- Up-to-date: /home/mmcgraw/Projects/balance_bot/install/balance_hw/share/balance_hw/cmake/balance_hwConfig-version.cmake\n'}
+[14.903210] (balance_hw) StdoutLine: {'line': b'-- Up-to-date: /home/mmcgraw/Projects/balance_bot/install/balance_hw/share/balance_hw/package.xml\n'}
+[14.908358] (balance_hw) CommandEnded: {'returncode': 0}
+[14.919622] (-) TimerEvent: {}
+[14.986268] (balance_hw) JobEnded: {'identifier': 'balance_hw', 'rc': 0}
+[14.989779] (-) EventReactorShutdown: {}

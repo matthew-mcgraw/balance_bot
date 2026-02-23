@@ -1,0 +1,10 @@
+[ 50%] Built target motor_enable_node
+[ 75%] [32mBuilding CXX object CMakeFiles/imu_node.dir/src/imu.cpp.o[0m
+[01m[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/imu.cpp:[m[K In constructor ‘[01m[KIMU_Node::[01;32m[KIMU_Node[m[K()[m[K’:
+[01m[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/imu.cpp:22:93:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K)[m[K’ token
+   22 |                 RCLCPP_FATAL(get_logger(), "Failed to set I2C_SLAVE addr=0x%02X", i2c_addr_)[01;31m[K)[m[K;
+      |                                                                                             [01;31m[K^[m[K
+[01m[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/imu.cpp:22:93:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K)[m[K’ token
+gmake[2]: *** [CMakeFiles/imu_node.dir/build.make:76: CMakeFiles/imu_node.dir/src/imu.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/imu_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

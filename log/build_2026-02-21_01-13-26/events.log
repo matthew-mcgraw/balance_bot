@@ -1,0 +1,193 @@
+[0.000000] (-) TimerEvent: {}
+[0.001060] (-) JobUnselected: {'identifier': 'balance_hw_interfaces'}
+[0.001935] (balance_hw) JobQueued: {'identifier': 'balance_hw', 'dependencies': OrderedDict({'balance_hw_interfaces': '/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces'})}
+[0.002081] (balance_hw) JobStarted: {'identifier': 'balance_hw'}
+[0.052241] (balance_hw) JobProgress: {'identifier': 'balance_hw', 'progress': 'cmake'}
+[0.056476] (balance_hw) JobProgress: {'identifier': 'balance_hw', 'progress': 'build'}
+[0.059568] (balance_hw) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/mmcgraw/Projects/balance_bot/build/balance_hw', '--', '-j4', '-l4'], 'cwd': '/home/mmcgraw/Projects/balance_bot/build/balance_hw', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'mmcgraw', 'SSH_CLIENT': '10.0.0.93 60326 22', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/mmcgraw/.vscode-server/cli/servers/Stable-e3550cfac4b63ca4eafca7b601f0d2885817fd1f/server/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib', 'BROWSER': '/home/mmcgraw/.vscode-server/cli/servers/Stable-e3550cfac4b63ca4eafca7b601f0d2885817fd1f/server/bin/helpers/browser.sh', 'HOME': '/home/mmcgraw', 'TERM_PROGRAM_VERSION': '1.103.0', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-a0163ddb-a88f-4d9b-b4ff-71891494be5c.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/mmcgraw/.vscode-server/cli/servers/Stable-e3550cfac4b63ca4eafca7b601f0d2885817fd1f/server/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/mmcgraw/.vscode-server/cli/servers/Stable-e3550cfac4b63ca4eafca7b601f0d2885817fd1f/server/node', 'SSL_CERT_FILE': '/usr/lib/ssl/cert.pem', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'mmcgraw', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '1', 'PATH': '/home/mmcgraw/.vscode-server/cli/servers/Stable-e3550cfac4b63ca4eafca7b601f0d2885817fd1f/server/bin/remote-cli:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'SSL_CERT_DIR': '/usr/lib/ssl/certs', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-d70b8b057b.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/mmcgraw/Projects/balance_bot/build/balance_hw', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '10.0.0.93 60326 10.0.0.36 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces:/opt/ros/jazzy'}), 'shell': False}
+[0.099380] (-) TimerEvent: {}
+[0.201406] (-) TimerEvent: {}
+[0.302235] (-) TimerEvent: {}
+[0.368817] (balance_hw) StdoutLine: {'line': b'[ 50%] Built target motor_enable_node\n'}
+[0.400395] (balance_hw) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/imu_node.dir/src/imu.cpp.o\x1b[0m\n'}
+[0.402411] (-) TimerEvent: {}
+[0.503140] (-) TimerEvent: {}
+[0.603768] (-) TimerEvent: {}
+[0.704413] (-) TimerEvent: {}
+[0.805071] (-) TimerEvent: {}
+[0.905702] (-) TimerEvent: {}
+[1.006387] (-) TimerEvent: {}
+[1.107016] (-) TimerEvent: {}
+[1.207709] (-) TimerEvent: {}
+[1.308421] (-) TimerEvent: {}
+[1.409084] (-) TimerEvent: {}
+[1.509745] (-) TimerEvent: {}
+[1.610476] (-) TimerEvent: {}
+[1.711361] (-) TimerEvent: {}
+[1.812019] (-) TimerEvent: {}
+[1.912673] (-) TimerEvent: {}
+[2.013341] (-) TimerEvent: {}
+[2.114087] (-) TimerEvent: {}
+[2.214754] (-) TimerEvent: {}
+[2.315478] (-) TimerEvent: {}
+[2.416379] (-) TimerEvent: {}
+[2.517123] (-) TimerEvent: {}
+[2.617827] (-) TimerEvent: {}
+[2.718584] (-) TimerEvent: {}
+[2.819403] (-) TimerEvent: {}
+[2.920171] (-) TimerEvent: {}
+[3.020870] (-) TimerEvent: {}
+[3.121609] (-) TimerEvent: {}
+[3.222402] (-) TimerEvent: {}
+[3.323203] (-) TimerEvent: {}
+[3.423967] (-) TimerEvent: {}
+[3.524899] (-) TimerEvent: {}
+[3.626263] (-) TimerEvent: {}
+[3.727095] (-) TimerEvent: {}
+[3.827875] (-) TimerEvent: {}
+[3.928913] (-) TimerEvent: {}
+[4.029860] (-) TimerEvent: {}
+[4.130696] (-) TimerEvent: {}
+[4.231535] (-) TimerEvent: {}
+[4.332612] (-) TimerEvent: {}
+[4.435015] (-) TimerEvent: {}
+[4.536894] (-) TimerEvent: {}
+[4.637733] (-) TimerEvent: {}
+[4.738757] (-) TimerEvent: {}
+[4.840313] (-) TimerEvent: {}
+[4.941190] (-) TimerEvent: {}
+[5.042630] (-) TimerEvent: {}
+[5.143551] (-) TimerEvent: {}
+[5.245448] (-) TimerEvent: {}
+[5.347190] (-) TimerEvent: {}
+[5.448970] (-) TimerEvent: {}
+[5.552276] (-) TimerEvent: {}
+[5.653169] (-) TimerEvent: {}
+[5.753966] (-) TimerEvent: {}
+[5.854801] (-) TimerEvent: {}
+[5.955617] (-) TimerEvent: {}
+[6.056434] (-) TimerEvent: {}
+[6.157165] (-) TimerEvent: {}
+[6.257942] (-) TimerEvent: {}
+[6.358704] (-) TimerEvent: {}
+[6.459714] (-) TimerEvent: {}
+[6.560445] (-) TimerEvent: {}
+[6.661146] (-) TimerEvent: {}
+[6.761856] (-) TimerEvent: {}
+[6.862635] (-) TimerEvent: {}
+[6.963435] (-) TimerEvent: {}
+[7.064154] (-) TimerEvent: {}
+[7.164888] (-) TimerEvent: {}
+[7.265704] (-) TimerEvent: {}
+[7.366940] (-) TimerEvent: {}
+[7.467709] (-) TimerEvent: {}
+[7.568527] (-) TimerEvent: {}
+[7.669195] (-) TimerEvent: {}
+[7.769842] (-) TimerEvent: {}
+[7.870626] (-) TimerEvent: {}
+[7.971453] (-) TimerEvent: {}
+[8.072201] (-) TimerEvent: {}
+[8.172948] (-) TimerEvent: {}
+[8.273693] (-) TimerEvent: {}
+[8.374439] (-) TimerEvent: {}
+[8.475174] (-) TimerEvent: {}
+[8.575985] (-) TimerEvent: {}
+[8.677132] (-) TimerEvent: {}
+[8.777843] (-) TimerEvent: {}
+[8.878604] (-) TimerEvent: {}
+[8.979384] (-) TimerEvent: {}
+[9.080174] (-) TimerEvent: {}
+[9.180868] (-) TimerEvent: {}
+[9.281714] (-) TimerEvent: {}
+[9.382586] (-) TimerEvent: {}
+[9.484097] (-) TimerEvent: {}
+[9.584786] (-) TimerEvent: {}
+[9.685585] (-) TimerEvent: {}
+[9.786364] (-) TimerEvent: {}
+[9.887145] (-) TimerEvent: {}
+[9.987810] (-) TimerEvent: {}
+[10.088615] (-) TimerEvent: {}
+[10.189447] (-) TimerEvent: {}
+[10.290741] (-) TimerEvent: {}
+[10.391497] (-) TimerEvent: {}
+[10.492272] (-) TimerEvent: {}
+[10.593075] (-) TimerEvent: {}
+[10.693771] (-) TimerEvent: {}
+[10.742378] (balance_hw) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:27\x1b[m\x1b[K,\n'}
+[10.743624] (balance_hw) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:171\x1b[m\x1b[K,\n'}
+[10.744425] (balance_hw) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/imu.cpp:1\x1b[m\x1b[K:\n'}
+[10.745556] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/imu.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KIMU_Node::\x1b[01;32m\x1b[KIMU_Node\x1b[m\x1b[K()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[10.746123] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/imu.cpp:22:40:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[KIMU_Node::get_logger(int, const char [36], const uint8_t&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[10.746630] (balance_hw) StderrLine: {'line': b'   22 |                 RCLCPP_FATAL(\x1b[01;31m\x1b[Kget_logger(0, "Failed to set I2C_SLAVE addr=0x%02X", i2c_addr_)\x1b[m\x1b[K);\n'}
+[10.747100] (balance_hw) StderrLine: {'line': b'      |                              \x1b[01;31m\x1b[K~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.747566] (balance_hw) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[10.747937] (balance_hw) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[10.748448] (balance_hw) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:172\x1b[m\x1b[K:\n'}
+[10.748829] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/node.hpp:144:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Krclcpp::Logger rclcpp::Node::\x1b[01;32m\x1b[Kget_logger\x1b[m\x1b[K() const\x1b[m\x1b[K\xe2\x80\x99\n'}
+[10.749314] (balance_hw) StderrLine: {'line': b'  144 |   \x1b[01;36m\x1b[Kget_logger\x1b[m\x1b[K() const;\n'}
+[10.750101] (balance_hw) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.750680] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/node.hpp:144:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 0 arguments, 3 provided\n'}
+[10.751186] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/imu.cpp:22:40:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[KIMU_Node::get_logger(int, const char [36], const uint8_t&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[10.751665] (balance_hw) StderrLine: {'line': b'   22 |                 RCLCPP_FATAL(\x1b[01;31m\x1b[Kget_logger(0, "Failed to set I2C_SLAVE addr=0x%02X", i2c_addr_)\x1b[m\x1b[K);\n'}
+[10.752116] (balance_hw) StderrLine: {'line': b'      |                              \x1b[01;31m\x1b[K~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.752609] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/node.hpp:144:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Krclcpp::Logger rclcpp::Node::\x1b[01;32m\x1b[Kget_logger\x1b[m\x1b[K() const\x1b[m\x1b[K\xe2\x80\x99\n'}
+[10.753083] (balance_hw) StderrLine: {'line': b'  144 |   \x1b[01;36m\x1b[Kget_logger\x1b[m\x1b[K() const;\n'}
+[10.753635] (balance_hw) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.754256] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/node.hpp:144:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 0 arguments, 3 provided\n'}
+[10.754809] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/imu.cpp:22:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[10.755360] (balance_hw) StderrLine: {'line': b'   22 |                 \x1b[01;31m\x1b[KRCLCPP_FATAL\x1b[m\x1b[K(get_logger(0, "Failed to set I2C_SLAVE addr=0x%02X", i2c_addr_));\n'}
+[10.755917] (balance_hw) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.756562] (balance_hw) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K:\n'}
+[10.757103] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/imu.cpp:22:40:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[KIMU_Node::get_logger(int, const char [36], const uint8_t&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[10.757659] (balance_hw) StderrLine: {'line': b'   22 |                 RCLCPP_FATAL(\x1b[01;31m\x1b[Kget_logger(0, "Failed to set I2C_SLAVE addr=0x%02X", i2c_addr_)\x1b[m\x1b[K);\n'}
+[10.758313] (balance_hw) StderrLine: {'line': b'      |                              \x1b[01;31m\x1b[K~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.758868] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/node.hpp:144:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Krclcpp::Logger rclcpp::Node::\x1b[01;32m\x1b[Kget_logger\x1b[m\x1b[K() const\x1b[m\x1b[K\xe2\x80\x99\n'}
+[10.759495] (balance_hw) StderrLine: {'line': b'  144 |   \x1b[01;36m\x1b[Kget_logger\x1b[m\x1b[K() const;\n'}
+[10.760013] (balance_hw) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.760696] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/node.hpp:144:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 0 arguments, 3 provided\n'}
+[10.761250] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/imu.cpp:22:40:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[KIMU_Node::get_logger(int, const char [36], const uint8_t&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[10.761711] (balance_hw) StderrLine: {'line': b'   22 |                 RCLCPP_FATAL(\x1b[01;31m\x1b[Kget_logger(0, "Failed to set I2C_SLAVE addr=0x%02X", i2c_addr_)\x1b[m\x1b[K);\n'}
+[10.762391] (balance_hw) StderrLine: {'line': b'      |                              \x1b[01;31m\x1b[K~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.762953] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/node.hpp:144:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Krclcpp::Logger rclcpp::Node::\x1b[01;32m\x1b[Kget_logger\x1b[m\x1b[K() const\x1b[m\x1b[K\xe2\x80\x99\n'}
+[10.763482] (balance_hw) StderrLine: {'line': b'  144 |   \x1b[01;36m\x1b[Kget_logger\x1b[m\x1b[K() const;\n'}
+[10.763924] (balance_hw) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.764446] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/node.hpp:144:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 0 arguments, 3 provided\n'}
+[10.764907] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/imu.cpp:22:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected primary-expression before \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[10.765475] (balance_hw) StderrLine: {'line': b'   22 |                 \x1b[01;31m\x1b[KRCLCPP_FATAL\x1b[m\x1b[K(get_logger(0, "Failed to set I2C_SLAVE addr=0x%02X", i2c_addr_));\n'}
+[10.766066] (balance_hw) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.774857] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/imu.cpp:\x1b[m\x1b[K In destructor \xe2\x80\x98\x1b[01m\x1b[Kvirtual IMU_Node::\x1b[01;32m\x1b[K~IMU_Node\x1b[m\x1b[K()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[10.775558] (balance_hw) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/imu.cpp:37:25:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ki2c_fd\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Ki2c_fd_\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[10.775999] (balance_hw) StderrLine: {'line': b'   37 |                 ::close(\x1b[01;31m\x1b[Ki2c_fd\x1b[m\x1b[K);\n'}
+[10.776508] (balance_hw) StderrLine: {'line': b'      |                         \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[10.776896] (balance_hw) StderrLine: {'line': b'      |                         \x1b[32m\x1b[Ki2c_fd_\x1b[m\x1b[K\n'}
+[10.793972] (-) TimerEvent: {}
+[10.894748] (-) TimerEvent: {}
+[10.995522] (-) TimerEvent: {}
+[11.096212] (-) TimerEvent: {}
+[11.196898] (-) TimerEvent: {}
+[11.297635] (-) TimerEvent: {}
+[11.398378] (-) TimerEvent: {}
+[11.499107] (-) TimerEvent: {}
+[11.599829] (-) TimerEvent: {}
+[11.700572] (-) TimerEvent: {}
+[11.801239] (-) TimerEvent: {}
+[11.901927] (-) TimerEvent: {}
+[12.002701] (-) TimerEvent: {}
+[12.103451] (-) TimerEvent: {}
+[12.204181] (-) TimerEvent: {}
+[12.304863] (-) TimerEvent: {}
+[12.405627] (-) TimerEvent: {}
+[12.506385] (-) TimerEvent: {}
+[12.607132] (-) TimerEvent: {}
+[12.707811] (-) TimerEvent: {}
+[12.808584] (-) TimerEvent: {}
+[12.909356] (-) TimerEvent: {}
+[13.010078] (-) TimerEvent: {}
+[13.110818] (-) TimerEvent: {}
+[13.192753] (balance_hw) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/imu_node.dir/build.make:76: CMakeFiles/imu_node.dir/src/imu.cpp.o] Error 1\n'}
+[13.194052] (balance_hw) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/imu_node.dir/all] Error 2\n'}
+[13.195218] (balance_hw) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[13.203718] (balance_hw) CommandEnded: {'returncode': 2}
+[13.210943] (-) TimerEvent: {}
+[13.254763] (balance_hw) JobEnded: {'identifier': 'balance_hw', 'rc': 2}
+[13.266839] (-) EventReactorShutdown: {}

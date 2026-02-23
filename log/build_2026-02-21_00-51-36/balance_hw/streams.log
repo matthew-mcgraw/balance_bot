@@ -1,0 +1,41 @@
+[0.094s] Invoking command in '/home/mmcgraw/Projects/balance_bot/build/balance_hw': AMENT_PREFIX_PATH=/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces:/opt/ros/jazzy LD_LIBRARY_PATH=/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/mmcgraw/Projects/balance_bot/build/balance_hw -- -j4 -l4
+[0.388s] -- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.498s] -- Found rclcpp: 28.1.16 (/opt/ros/jazzy/share/rclcpp/cmake)
+[1.702s] -- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[1.765s] -- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[1.852s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.945s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.310s] -- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[2.323s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[2.668s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.048s] -- Found std_msgs: 5.3.6 (/opt/ros/jazzy/share/std_msgs/cmake)
+[3.138s] -- Found std_srvs: 5.3.6 (/opt/ros/jazzy/share/std_srvs/cmake)
+[3.223s] -- Found balance_hw_interfaces: 0.0.0 (/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/share/balance_hw_interfaces/cmake)
+[3.298s] -- Found geometry_msgs: 5.3.6 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+[3.405s] -- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[3.524s] -- Found ament_lint_auto: 0.17.4 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[4.019s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[4.019s] -- Configured cppcheck include dirs: 
+[4.020s] -- Configured cppcheck exclude dirs and/or files: 
+[4.028s] -- Added test 'lint_cmake' to check CMake code style
+[4.040s] -- Added test 'uncrustify' to check C / C++ code style
+[4.041s] -- Configured uncrustify additional arguments: 
+[4.046s] -- Added test 'xmllint' to check XML markup files
+[4.052s] -- Configuring done (3.7s)
+[4.206s] -- Generating done (0.1s)
+[4.230s] -- Build files have been written to: /home/mmcgraw/Projects/balance_bot/build/balance_hw
+[4.421s] [ 25%] [32mBuilding CXX object CMakeFiles/imu_node.dir/src/imu.cpp.o[0m
+[4.754s] [ 75%] Built target motor_enable_node
+[15.942s] [01m[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/imu.cpp:31:2:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ after class definition
+[15.943s]    31 | }
+[15.944s]       |  [01;31m[K^[m[K
+[15.944s]       |  [32m[K;[m[K
+[15.977s] [01m[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/imu.cpp:[m[K In constructor ‘[01m[KIMU_Node::[01;32m[KIMU_Node[m[K()[m[K’:
+[15.977s] [01m[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/imu.cpp:15:39:[m[K [01;31m[Kerror: [m[K‘[01m[Ki2c_addr[m[K’ was not declared in this scope; did you mean ‘[01m[Ki2c_addr_[m[K’?
+[15.978s]    15 |             ioctl(i2c_fd_, I2C_SLAVE, [01;31m[Ki2c_addr[m[K);
+[15.979s]       |                                       [01;31m[K^~~~~~~~[m[K
+[15.979s]       |                                       [32m[Ki2c_addr_[m[K
+[18.384s] gmake[2]: *** [CMakeFiles/imu_node.dir/build.make:76: CMakeFiles/imu_node.dir/src/imu.cpp.o] Error 1
+[18.385s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/imu_node.dir/all] Error 2
+[18.386s] gmake: *** [Makefile:146: all] Error 2
+[18.395s] Invoked command in '/home/mmcgraw/Projects/balance_bot/build/balance_hw' returned '2': AMENT_PREFIX_PATH=/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces:/opt/ros/jazzy LD_LIBRARY_PATH=/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/mmcgraw/Projects/balance_bot/build/balance_hw -- -j4 -l4

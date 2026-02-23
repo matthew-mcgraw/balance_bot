@@ -1,0 +1,30 @@
+[0.073s] Invoking command in '/home/mmcgraw/Projects/balance_bot/build/balance_hw': CMAKE_PREFIX_PATH=/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces:/home/mmcgraw/Projects/balance_bot/install/balance_hw:/opt/ros/jazzy /usr/bin/cmake --build /home/mmcgraw/Projects/balance_bot/build/balance_hw -- -j4 -l4
+[0.367s] [ 50%] Built target motor_enable_node
+[0.398s] [ 75%] [32mBuilding CXX object CMakeFiles/imu_node.dir/src/imu.cpp.o[0m
+[10.424s] In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[10.424s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:27[m[K,
+[10.425s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:171[m[K,
+[10.425s]                  from [01m[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/imu.cpp:1[m[K:
+[10.426s] [01m[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/imu.cpp:[m[K In lambda function:
+[10.426s] [01m[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/imu.cpp:90:96:[m[K [01;31m[Kerror: [m[K‘[01m[Kax[m[K’ was not declared in this scope
+[10.427s]    90 |                         "raw accel: ax: %d, ay: %d, az: %d\nraw gyro: gx: %d, gy: %d, gz: %d", [01;31m[Kax[m[K, ay, az, gx, gy, gz);
+[10.428s]       |                                                                                                [01;31m[K^~[m[K
+[10.445s] [01m[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/imu.cpp:90:100:[m[K [01;31m[Kerror: [m[K‘[01m[Kay[m[K’ was not declared in this scope
+[10.445s]    90 |                         "raw accel: ax: %d, ay: %d, az: %d\nraw gyro: gx: %d, gy: %d, gz: %d", ax, [01;31m[Kay[m[K, az, gx, gy, gz);
+[10.446s]       |                                                                                                    [01;31m[K^~[m[K
+[10.466s] [01m[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/imu.cpp:90:104:[m[K [01;31m[Kerror: [m[K‘[01m[Kaz[m[K’ was not declared in this scope
+[10.466s]    90 |                         "raw accel: ax: %d, ay: %d, az: %d\nraw gyro: gx: %d, gy: %d, gz: %d", ax, ay, [01;31m[Kaz[m[K, gx, gy, gz);
+[10.467s]       |                                                                                                        [01;31m[K^~[m[K
+[10.488s] [01m[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/imu.cpp:90:108:[m[K [01;31m[Kerror: [m[K‘[01m[Kgx[m[K’ was not declared in this scope
+[10.489s]    90 |                         "raw accel: ax: %d, ay: %d, az: %d\nraw gyro: gx: %d, gy: %d, gz: %d", ax, ay, az, [01;31m[Kgx[m[K, gy, gz);
+[10.490s]       |                                                                                                            [01;31m[K^~[m[K
+[10.509s] [01m[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/imu.cpp:90:112:[m[K [01;31m[Kerror: [m[K‘[01m[Kgy[m[K’ was not declared in this scope
+[10.510s]    90 |                         "raw accel: ax: %d, ay: %d, az: %d\nraw gyro: gx: %d, gy: %d, gz: %d", ax, ay, az, gx, [01;31m[Kgy[m[K, gz);
+[10.511s]       |                                                                                                                [01;31m[K^~[m[K
+[10.530s] [01m[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/imu.cpp:90:116:[m[K [01;31m[Kerror: [m[K‘[01m[Kgz[m[K’ was not declared in this scope
+[10.531s]    90 |                         "raw accel: ax: %d, ay: %d, az: %d\nraw gyro: gx: %d, gy: %d, gz: %d", ax, ay, az, gx, gy, [01;31m[Kgz[m[K);
+[10.531s]       |                                                                                                                    [01;31m[K^~[m[K
+[13.092s] gmake[2]: *** [CMakeFiles/imu_node.dir/build.make:76: CMakeFiles/imu_node.dir/src/imu.cpp.o] Error 1
+[13.093s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/imu_node.dir/all] Error 2
+[13.094s] gmake: *** [Makefile:146: all] Error 2
+[13.104s] Invoked command in '/home/mmcgraw/Projects/balance_bot/build/balance_hw' returned '2': CMAKE_PREFIX_PATH=/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces:/home/mmcgraw/Projects/balance_bot/install/balance_hw:/opt/ros/jazzy /usr/bin/cmake --build /home/mmcgraw/Projects/balance_bot/build/balance_hw -- -j4 -l4

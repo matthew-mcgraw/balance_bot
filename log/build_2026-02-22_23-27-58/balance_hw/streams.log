@@ -1,0 +1,12 @@
+[0.121s] Invoking command in '/home/mmcgraw/Projects/balance_bot/build/balance_hw': AMENT_PREFIX_PATH=/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces:/opt/ros/jazzy LD_LIBRARY_PATH=/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/mmcgraw/Projects/balance_bot/build/balance_hw -- -j4 -l4
+[0.698s] [ 25%] [32mBuilding CXX object CMakeFiles/imu_node.dir/src/imu.cpp.o[0m
+[0.701s] [ 75%] Built target motor_enable_node
+[11.923s] [01m[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/imu.cpp:[m[K In constructor ‘[01m[KIMU_Node::[01;32m[KIMU_Node[m[K()[m[K’:
+[11.924s] [01m[K/home/mmcgraw/Projects/balance_bot/src/balance_hw/src/imu.cpp:32:63:[m[K [01;31m[Kerror: [m[Kfound ‘[01m[K:[m[K’ in nested-name-specifier, expected ‘[01m[K::[m[K’
+[11.924s]    32 |             imu_pub_ = this->create_publisher<sensor_msgs::msg[01;31m[K:[m[KImu>("/imu/data_raw", 10);
+[11.925s]       |                                                               [01;31m[K^[m[K
+[11.926s]       |                                                               [32m[K::[m[K
+[15.811s] gmake[2]: *** [CMakeFiles/imu_node.dir/build.make:76: CMakeFiles/imu_node.dir/src/imu.cpp.o] Error 1
+[15.812s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/imu_node.dir/all] Error 2
+[15.813s] gmake: *** [Makefile:146: all] Error 2
+[15.821s] Invoked command in '/home/mmcgraw/Projects/balance_bot/build/balance_hw' returned '2': AMENT_PREFIX_PATH=/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces:/opt/ros/jazzy LD_LIBRARY_PATH=/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/mmcgraw/Projects/balance_bot/build/balance_hw -- -j4 -l4

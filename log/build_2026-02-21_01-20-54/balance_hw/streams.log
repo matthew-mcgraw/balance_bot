@@ -1,0 +1,29 @@
+[0.069s] Invoking command in '/home/mmcgraw/Projects/balance_bot/build/balance_hw': AMENT_PREFIX_PATH=/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces:/opt/ros/jazzy LD_LIBRARY_PATH=/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/mmcgraw/Projects/balance_bot/build/balance_hw -- -j4 -l4
+[0.362s] [ 50%] Built target motor_enable_node
+[0.396s] [ 75%] [32mBuilding CXX object CMakeFiles/imu_node.dir/src/imu.cpp.o[0m
+[13.772s] [100%] [32m[1mLinking CXX executable imu_node[0m
+[14.461s] [100%] Built target imu_node
+[14.514s] Invoked command in '/home/mmcgraw/Projects/balance_bot/build/balance_hw' returned '0': AMENT_PREFIX_PATH=/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces:/opt/ros/jazzy LD_LIBRARY_PATH=/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/mmcgraw/Projects/balance_bot/build/balance_hw -- -j4 -l4
+[14.562s] Invoking command in '/home/mmcgraw/Projects/balance_bot/build/balance_hw': AMENT_PREFIX_PATH=/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces:/opt/ros/jazzy LD_LIBRARY_PATH=/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/mmcgraw/Projects/balance_bot/build/balance_hw
+[14.600s] -- Install configuration: ""
+[14.601s] -- Up-to-date: /home/mmcgraw/Projects/balance_bot/install/balance_hw/lib/balance_hw/motor_enable_node
+[14.603s] -- Installing: /home/mmcgraw/Projects/balance_bot/install/balance_hw/lib/balance_hw/imu_node
+[14.607s] -- Set non-toolchain portion of runtime path of "/home/mmcgraw/Projects/balance_bot/install/balance_hw/lib/balance_hw/imu_node" to ""
+[14.607s] -- Up-to-date: /home/mmcgraw/Projects/balance_bot/install/balance_hw/share/balance_hw/config
+[14.608s] -- Up-to-date: /home/mmcgraw/Projects/balance_bot/install/balance_hw/share/balance_hw/config/robot.yaml
+[14.609s] -- Up-to-date: /home/mmcgraw/Projects/balance_bot/install/balance_hw/share/ament_index/resource_index/package_run_dependencies/balance_hw
+[14.609s] -- Up-to-date: /home/mmcgraw/Projects/balance_bot/install/balance_hw/share/ament_index/resource_index/parent_prefix_path/balance_hw
+[14.610s] -- Up-to-date: /home/mmcgraw/Projects/balance_bot/install/balance_hw/share/balance_hw/environment/ament_prefix_path.sh
+[14.610s] -- Up-to-date: /home/mmcgraw/Projects/balance_bot/install/balance_hw/share/balance_hw/environment/ament_prefix_path.dsv
+[14.611s] -- Up-to-date: /home/mmcgraw/Projects/balance_bot/install/balance_hw/share/balance_hw/environment/path.sh
+[14.611s] -- Up-to-date: /home/mmcgraw/Projects/balance_bot/install/balance_hw/share/balance_hw/environment/path.dsv
+[14.612s] -- Up-to-date: /home/mmcgraw/Projects/balance_bot/install/balance_hw/share/balance_hw/local_setup.bash
+[14.612s] -- Up-to-date: /home/mmcgraw/Projects/balance_bot/install/balance_hw/share/balance_hw/local_setup.sh
+[14.612s] -- Up-to-date: /home/mmcgraw/Projects/balance_bot/install/balance_hw/share/balance_hw/local_setup.zsh
+[14.613s] -- Up-to-date: /home/mmcgraw/Projects/balance_bot/install/balance_hw/share/balance_hw/local_setup.dsv
+[14.613s] -- Installing: /home/mmcgraw/Projects/balance_bot/install/balance_hw/share/balance_hw/package.dsv
+[14.614s] -- Up-to-date: /home/mmcgraw/Projects/balance_bot/install/balance_hw/share/ament_index/resource_index/packages/balance_hw
+[14.614s] -- Up-to-date: /home/mmcgraw/Projects/balance_bot/install/balance_hw/share/balance_hw/cmake/balance_hwConfig.cmake
+[14.615s] -- Up-to-date: /home/mmcgraw/Projects/balance_bot/install/balance_hw/share/balance_hw/cmake/balance_hwConfig-version.cmake
+[14.616s] -- Up-to-date: /home/mmcgraw/Projects/balance_bot/install/balance_hw/share/balance_hw/package.xml
+[14.621s] Invoked command in '/home/mmcgraw/Projects/balance_bot/build/balance_hw' returned '0': AMENT_PREFIX_PATH=/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces:/opt/ros/jazzy LD_LIBRARY_PATH=/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mmcgraw/Projects/balance_bot/install/balance_hw_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/mmcgraw/Projects/balance_bot/build/balance_hw
