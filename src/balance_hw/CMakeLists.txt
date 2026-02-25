@@ -44,6 +44,13 @@ ament_target_dependencies(imu_node
   sensor_msgs
 )
 
+add_executable(imu_estimator_node src/imu_estimator.cpp)
+ament_target_dependencies(imu_estimator_node
+  rclcpp
+  sensor_msgs
+  std_msgs
+)
+
 install(
   TARGETS motor_enable_node
   DESTINATION lib/${PROJECT_NAME}
@@ -51,6 +58,11 @@ install(
 
 install(
   TARGETS imu_node
+  DESTINATION lib/${PROJECT_NAME}
+)
+
+install(
+  TARGETS imu_estimator_node
   DESTINATION lib/${PROJECT_NAME}
 )
 

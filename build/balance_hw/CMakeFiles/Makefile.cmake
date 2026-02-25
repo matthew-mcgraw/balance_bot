@@ -774,4 +774,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/balance_hw_uninstall.dir/DependInfo.cmake"
   "CMakeFiles/motor_enable_node.dir/DependInfo.cmake"
   "CMakeFiles/imu_node.dir/DependInfo.cmake"
+  "CMakeFiles/imu_estimator_node.dir/DependInfo.cmake"
   )

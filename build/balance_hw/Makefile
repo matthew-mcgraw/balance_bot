@@ -223,6 +223,19 @@ imu_node/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu_node.dir/build.make CMakeFiles/imu_node.dir/build
 .PHONY : imu_node/fast
 
+#=============================================================================
+# Target rules for targets named imu_estimator_node
+
+# Build rule for target.
+imu_estimator_node: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 imu_estimator_node
+.PHONY : imu_estimator_node
+
+# fast build rule for target.
+imu_estimator_node/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu_estimator_node.dir/build.make CMakeFiles/imu_estimator_node.dir/build
+.PHONY : imu_estimator_node/fast
+
 src/imu.o: src/imu.cpp.o
 .PHONY : src/imu.o
 
@@ -246,6 +259,30 @@ src/imu.s: src/imu.cpp.s
 src/imu.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu_node.dir/build.make CMakeFiles/imu_node.dir/src/imu.cpp.s
 .PHONY : src/imu.cpp.s
+
+src/imu_estimator.o: src/imu_estimator.cpp.o
+.PHONY : src/imu_estimator.o
+
+# target to build an object file
+src/imu_estimator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu_estimator_node.dir/build.make CMakeFiles/imu_estimator_node.dir/src/imu_estimator.cpp.o
+.PHONY : src/imu_estimator.cpp.o
+
+src/imu_estimator.i: src/imu_estimator.cpp.i
+.PHONY : src/imu_estimator.i
+
+# target to preprocess a source file
+src/imu_estimator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu_estimator_node.dir/build.make CMakeFiles/imu_estimator_node.dir/src/imu_estimator.cpp.i
+.PHONY : src/imu_estimator.cpp.i
+
+src/imu_estimator.s: src/imu_estimator.cpp.s
+.PHONY : src/imu_estimator.s
+
+# target to generate assembly for a file
+src/imu_estimator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu_estimator_node.dir/build.make CMakeFiles/imu_estimator_node.dir/src/imu_estimator.cpp.s
+.PHONY : src/imu_estimator.cpp.s
 
 src/motor_enable_node.o: src/motor_enable_node.cpp.o
 .PHONY : src/motor_enable_node.o
@@ -286,11 +323,15 @@ help:
 	@echo "... test"
 	@echo "... balance_hw_uninstall"
 	@echo "... uninstall"
+	@echo "... imu_estimator_node"
 	@echo "... imu_node"
 	@echo "... motor_enable_node"
 	@echo "... src/imu.o"
 	@echo "... src/imu.i"
 	@echo "... src/imu.s"
+	@echo "... src/imu_estimator.o"
+	@echo "... src/imu_estimator.i"
+	@echo "... src/imu_estimator.s"
 	@echo "... src/motor_enable_node.o"
 	@echo "... src/motor_enable_node.i"
 	@echo "... src/motor_enable_node.s"

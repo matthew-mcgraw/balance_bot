@@ -2,6 +2,7 @@
 /home/mmcgraw/Projects/balance_bot/build/balance_hw/CMakeFiles/balance_hw_uninstall.dir
 /home/mmcgraw/Projects/balance_bot/build/balance_hw/CMakeFiles/motor_enable_node.dir
 /home/mmcgraw/Projects/balance_bot/build/balance_hw/CMakeFiles/imu_node.dir
+/home/mmcgraw/Projects/balance_bot/build/balance_hw/CMakeFiles/imu_estimator_node.dir
 /home/mmcgraw/Projects/balance_bot/build/balance_hw/CMakeFiles/test.dir
 /home/mmcgraw/Projects/balance_bot/build/balance_hw/CMakeFiles/edit_cache.dir
 /home/mmcgraw/Projects/balance_bot/build/balance_hw/CMakeFiles/rebuild_cache.dir
