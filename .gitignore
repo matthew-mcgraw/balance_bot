@@ -1,1 +1,5 @@
 *.log
+build/
+log/
+install/
+.vscode/
