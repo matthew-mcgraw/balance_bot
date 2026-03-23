@@ -1,18 +1,21 @@
 motor_enable_node:
   ros__parameters:
-    pwm_a: 13
-    a_in1: 6
-    a_in2: 26
-    pwm_b: 12
-    b_in3: 20
-    b_in4: 16
-    chip_path: "/dev/gpiochip0"
+    pwm_a: 13           # PWM pin for motor A
+    a_in1: 6            # Direction pin 1 for motor A
+    a_in2: 26           # Direction pin 2 for motor A
+    pwm_b: 12           # PWM pin for motor B
+    b_in3: 20           # Direction pin 1 for motor B
+    b_in4: 16           # Direction pin 2 for motor B
+    chip_path: "/dev/gpiochip0" # Path to the GPIO chip
     motor_mode: "pwm"
 
 pid_controller_node:
   ros__parameters:
-    kp: 0.5
-    ki: 0.0
-    kd: 0.05
-    setpoint: 0.0
+    kp: 90.0            # Proportional gain
+    ki: 0.0             # Integral gain 
+    kd: 6.0             # Derivative gain
+    setpoint: 0.0       # Desired pitch angle (0 degrees for upright balance)
+    wheel_radius: 0.045 # in meters
+    motor_stall_torque: 1.079 # in N-m, adjust based on your motor's specifications
+
     

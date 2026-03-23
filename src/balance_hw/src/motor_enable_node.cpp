@@ -206,6 +206,7 @@ class MotorEnableNode : public rclcpp::Node {
         rclcpp::Subscription<geometry_msgs::msg::Twist>::SharedPtr cmd_vel_sub_;
         double v_cmd_{0.0};
         double w_cmd_{0.0};
+        double pwm_cmd_{0.0};
         rclcpp::Time last_cmd_time_;
         rclcpp::TimerBase::SharedPtr cmd_watchdog_timer_;
         int cmd_timeout_ms_{250};
@@ -351,12 +352,54 @@ class MotorEnableNode : public rclcpp::Node {
 
         void on_cmd_vel(const geometry_msgs::msg::Twist::SharedPtr msg){
 
-            v_cmd_ = std::clamp(msg->linear.x, -1.0, 1.0);
-            w_cmd_ = std::clamp(msg->angular.z, -1.0, 1.0);
-            last_cmd_time_ = now();
+            if(motor_mode_ != "pwm"){
+                RCLCPP_WARN(get_logger(), "Received cmd_vel but not in pwm mode, ignoring");                
+                return;
+            }
+
+            pwm_cmd_ = std::clamp(msg->linear.x, -1.0, 1.0);  // Normalized torque pwm motor command, not m/s in x direction
+            set_direction(pwm_cmd_);
+            set_pwm(static_cast<int>(std::abs(pwm_cmd_) * 1000));
 
             
             
+        }
+
+        void set_direction(double v_cmd){
+            // convert v_cmd to direction and call set_input_line
+                if(v_cmd > 0.01){ //forward
+                    set_input_line(a_in1_line_, true, "a_in1");
+                    set_input_line(a_in2_line_, false, "a_in2");
+                    set_input_line(b_in3_line_, true, "b_in3");
+                    set_input_line(b_in4_line_, false, "b_in4");
+                }
+                else if(v_cmd < -0.01){ //backward
+                    set_input_line(a_in1_line_, false, "a_in1");
+                    set_input_line(a_in2_line_, true, "a_in2");
+                    set_input_line(b_in3_line_, false, "b_in3");
+                    set_input_line(b_in4_line_, true, "b_in4");
+                }
+                else{ //stop                    
+                    set_input_line(a_in1_line_, false, "a_in1");
+                    set_input_line(a_in2_line_, false, "a_in2");
+                    set_input_line(b_in3_line_, false, "b_in3");
+                    set_input_line(b_in4_line_, false, "b_in4");
+                }
+        }
+
+        void set_pwm(int pwm_value){
+
+
+
+            int pwm_a = std::clamp<int>(pwm_value, 0, 1000);
+            int pwm_b = std::clamp<int>(pwm_value, 0, 1000);
+
+            int duty_a = (pwm_period_ns_ * pwm_a) / 1000;
+            int duty_b = (pwm_period_ns_ * pwm_b) / 1000;
+
+            bool ok0 = write_sysfs_int(pwmchip_path_ + "/pwm0/duty_cycle", duty_a);
+            bool ok1 = write_sysfs_int(pwmchip_path_ + "/pwm1/duty_cycle", duty_b);
+
         }
 
 
