@@ -51,6 +51,14 @@ ament_target_dependencies(imu_estimator_node
   std_msgs
 )
 
+add_executable(pid_controller_node src/pid_controller.cpp)
+ament_target_dependencies(pid_controller_node
+  rclcpp
+  sensor_msgs
+  std_msgs
+  geometry_msgs
+)
+
 install(
   TARGETS motor_enable_node
   DESTINATION lib/${PROJECT_NAME}
@@ -63,6 +71,11 @@ install(
 
 install(
   TARGETS imu_estimator_node
+  DESTINATION lib/${PROJECT_NAME}
+)
+
+install(
+  TARGETS pid_controller_node
   DESTINATION lib/${PROJECT_NAME}
 )
 

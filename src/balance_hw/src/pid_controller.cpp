@@ -46,8 +46,7 @@ class PID_Controller : public rclcpp::Node {
         double kd_{-1.0}; // Derivative gain, can be set to 0 for a start, increase if you see excessive oscillation, but be careful as too high value can cause instability
         double setpoint_{0.0}; // Desired pitch angle (0 degrees for upright balance)
         double latest_pitch_rate_{0.0};
-        double output_{0.0};
-        int pwm_output_{0};
+        
         double motor_stall_torque_{0.0}; // in N-m, adjust based on your motor's specifications
         double wheel_radius_{0.0}; // in meters, adjust based on your robot's wheel size
 
@@ -62,24 +61,17 @@ class PID_Controller : public rclcpp::Node {
 
         void on_pitch(const std_msgs::msg::Float64::SharedPtr msg){
             const double pitch = msg->data;
-            const double error = 0.0 - pitch; // setpoint is 0.0, we want to balance at 0 degree
+            const double error = setpoint_ - pitch; // setpoint is 0.0, we want to balance at 0 degree
             
-            output_ = (kp_ * error) + (ki_ * 0.0) + (kd_ * latest_pitch_rate_);
-
-            const double pwm_output_float = (output_ * wheel_radius_) / motor_stall_torque_ ; // Scale to PWM range (0-1000)
-            pwm_output_ = static_cast<int>(std::round(pwm_output_float));
+            const double output_ = (kp_ * error) + (ki_ * 0.0) + (kd_ * latest_pitch_rate_);
+            const double pwm_output_ = (output_ * wheel_radius_) / motor_stall_torque_ ; // Scale to PWM range (0-1000)
 
             geometry_msgs::msg::Twist cmd_vel_msg;
             cmd_vel_msg.linear.x = pwm_output_; // Normalized torque pwm command, not m/s
             vel_pub_->publish(cmd_vel_msg);
 
-
-
         }
           
-
-
-
 };
 
 

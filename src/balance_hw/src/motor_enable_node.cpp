@@ -156,6 +156,9 @@ class MotorEnableNode : public rclcpp::Node {
                     if (age > timeout_ns) {
                         v_cmd_ = 0.0;
                         w_cmd_ = 0.0;
+                        pwm_cmd_ = 0.0;
+                        set_direction(0.0);
+                        set_pwm(0);
                     }
 
                     RCLCPP_INFO(get_logger(),"cmd_vel: linear.x=%.3f angular.z=%.3f",
@@ -351,11 +354,14 @@ class MotorEnableNode : public rclcpp::Node {
         }
 
         void on_cmd_vel(const geometry_msgs::msg::Twist::SharedPtr msg){
+            last_cmd_time_ = this->now();
 
             if(motor_mode_ != "pwm"){
                 RCLCPP_WARN(get_logger(), "Received cmd_vel but not in pwm mode, ignoring");                
                 return;
             }
+
+            
 
             pwm_cmd_ = std::clamp(msg->linear.x, -1.0, 1.0);  // Normalized torque pwm motor command, not m/s in x direction
             set_direction(pwm_cmd_);
