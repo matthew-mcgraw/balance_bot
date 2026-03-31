@@ -8,12 +8,13 @@ motor_enable_node:
     b_in4: 16           # Direction pin 2 for motor B
     chip_path: "/dev/gpiochip0" # Path to the GPIO chip
     motor_mode: "pwm"
+    MIN_PWM: 300         # Minimum PWM value to overcome motor stall torque
 
 pid_controller_node:
   ros__parameters:
-    kp: 40.0            # Proportional gain
+    kp: 90.0            # Proportional gain
     ki: 0.0             # Integral gain 
-    kd: 10.0             # Derivative gain
+    kd: 6.0             # Derivative gain
     setpoint: 0.0       # Desired pitch angle (0 degrees for upright balance)
     wheel_radius: 0.045 # in meters
     motor_stall_torque: 1.079 # in N-m, adjust based on your motor's specifications

@@ -33,6 +33,7 @@ class MotorEnableNode : public rclcpp::Node {
             this->declare_parameter<int>("b_in4", -1);
             this->declare_parameter<std::string>("chip_path", "");
             this->declare_parameter<std::string>("motor_mode", "");
+            this->declare_parameter<int>("MIN_PWM", 300);
 
             pwm_a_ = this->get_parameter("pwm_a").as_int();
             a_in1_ = this->get_parameter("a_in1").as_int();
@@ -42,7 +43,7 @@ class MotorEnableNode : public rclcpp::Node {
             b_in4_ = this->get_parameter("b_in4").as_int();
             chip_path_ = this->get_parameter("chip_path").as_string();
             motor_mode_ = this->get_parameter("motor_mode").as_string();
-
+            MIN_PWM_ = this->get_parameter("MIN_PWM").as_int();
             RCLCPP_INFO(get_logger(), "chip=%s pwm_a=%d pwm_b=%d", chip_path_.c_str(), pwm_a_, pwm_b_);
             RCLCPP_INFO(get_logger(), "a_in1=%d a_in2=%d b_in3=%d b_in4=%d", a_in1_, a_in2_, b_in3_, b_in4_);
 
@@ -199,6 +200,7 @@ class MotorEnableNode : public rclcpp::Node {
         int pwm_b_{-1};
         int b_in3_{-1};
         int b_in4_{-1};
+        int MIN_PWM_{300};
         std::string motor_mode_{""};
         std::string chip_path_{""};
         rclcpp::Service<std_srvs::srv::SetBool>::SharedPtr motors_enable_srv_;
@@ -394,7 +396,6 @@ class MotorEnableNode : public rclcpp::Node {
         }
 
         void set_pwm(int pwm_value){
-            const int MIN_PWM = 400;
             int pwm = std::clamp<int>(pwm_value, 0, 1000);
             if (pwm > 0 && pwm < MIN_PWM) pwm = MIN_PWM;
 
