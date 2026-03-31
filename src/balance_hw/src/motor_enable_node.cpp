@@ -394,18 +394,15 @@ class MotorEnableNode : public rclcpp::Node {
         }
 
         void set_pwm(int pwm_value){
+            const int MIN_PWM = 400;
+            int pwm = std::clamp<int>(pwm_value, 0, 1000);
+            if (pwm > 0 && pwm < MIN_PWM) pwm = MIN_PWM;
 
+            int duty_a = (pwm_period_ns_ * pwm) / 1000;
+            int duty_b = (pwm_period_ns_ * pwm) / 1000;
 
-
-            int pwm_a = std::clamp<int>(pwm_value, 0, 1000);
-            int pwm_b = std::clamp<int>(pwm_value, 0, 1000);
-
-            int duty_a = (pwm_period_ns_ * pwm_a) / 1000;
-            int duty_b = (pwm_period_ns_ * pwm_b) / 1000;
-
-            bool ok0 = write_sysfs_int(pwmchip_path_ + "/pwm0/duty_cycle", duty_a);
-            bool ok1 = write_sysfs_int(pwmchip_path_ + "/pwm1/duty_cycle", duty_b);
-
+            write_sysfs_int(pwmchip_path_ + "/pwm0/duty_cycle", duty_a);
+            write_sysfs_int(pwmchip_path_ + "/pwm1/duty_cycle", duty_b);
         }
 
 
