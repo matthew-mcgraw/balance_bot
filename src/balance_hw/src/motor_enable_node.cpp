@@ -375,13 +375,13 @@ class MotorEnableNode : public rclcpp::Node {
 
         void set_direction(double v_cmd){
             // convert v_cmd to direction and call set_input_line
-                if(v_cmd > 0.01){ //forward
+                if(v_cmd > 0.05){ //forward
                     set_input_line(a_in1_line_, true, "a_in1");
                     set_input_line(a_in2_line_, false, "a_in2");
                     set_input_line(b_in3_line_, true, "b_in3");
                     set_input_line(b_in4_line_, false, "b_in4");
                 }
-                else if(v_cmd < -0.01){ //backward
+                else if(v_cmd < -0.05){ //backward
                     set_input_line(a_in1_line_, false, "a_in1");
                     set_input_line(a_in2_line_, true, "a_in2");
                     set_input_line(b_in3_line_, false, "b_in3");
