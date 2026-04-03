@@ -43,7 +43,7 @@ ament_target_dependencies(imu_node
   rclcpp
   sensor_msgs
 )
-target_link_libraries(imu_node i2c)
+
 
 add_executable(imu_estimator_node src/imu_estimator.cpp)
 ament_target_dependencies(imu_estimator_node

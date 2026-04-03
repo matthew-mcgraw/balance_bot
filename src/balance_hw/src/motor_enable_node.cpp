@@ -292,7 +292,7 @@ class MotorEnableNode : public rclcpp::Node {
         void on_motors_direction(
             const std::shared_ptr<SetDirection::Request> req,
             std::shared_ptr<SetDirection::Response> res){
-                
+                last_cmd_time_ = this->now();
                 const auto direction = req->direction;
                 bool ok_ain1 = false;
                 bool ok_ain2 = false;
@@ -335,7 +335,7 @@ class MotorEnableNode : public rclcpp::Node {
             const std::shared_ptr<SetPwm::Request> req,
             std::shared_ptr<SetPwm::Response> res
         ){
-
+		last_cmd_time_ = this->now();
             if(motor_mode_ != "pwm"){
                 res->success = false;
                 res->message = "Not in pwm mode";
@@ -397,7 +397,7 @@ class MotorEnableNode : public rclcpp::Node {
 
         void set_pwm(int pwm_value){
             int pwm = std::clamp<int>(pwm_value, 0, 1000);
-            if (pwm > 0 && pwm < MIN_PWM_) pwm = MIN_PWM;
+            if (pwm > 0 && pwm < MIN_PWM_) pwm = MIN_PWM_;
 
             int duty_a = (pwm_period_ns_ * pwm) / 1000;
             int duty_b = (pwm_period_ns_ * pwm) / 1000;
