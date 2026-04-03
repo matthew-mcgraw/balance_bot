@@ -43,6 +43,7 @@ ament_target_dependencies(imu_node
   rclcpp
   sensor_msgs
 )
+target_link_libraries(imu_node i2c)
 
 add_executable(imu_estimator_node src/imu_estimator.cpp)
 ament_target_dependencies(imu_estimator_node
@@ -58,6 +59,13 @@ ament_target_dependencies(pid_controller_node
   std_msgs
   geometry_msgs
 )
+
+add_executable(motor_encoder_node src/motor_encoder.cpp)
+ament_target_dependencies(motor_encoder_node
+  rclcpp
+  std_msgs
+)
+target_link_libraries(motor_encoder_node gpiod)
 
 install(
   TARGETS motor_enable_node
@@ -82,6 +90,11 @@ install(
 install(
   DIRECTORY config
   DESTINATION share/${PROJECT_NAME}
+)
+
+install(
+  TARGETS motor_encoder_node
+  DESTINATION lib/${PROJECT_NAME}
 )
 
 ament_package()
