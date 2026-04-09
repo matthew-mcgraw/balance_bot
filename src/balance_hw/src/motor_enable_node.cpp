@@ -162,8 +162,9 @@ class MotorEnableNode : public rclcpp::Node {
                         set_pwm(0);
                     }
 
-                    RCLCPP_INFO(get_logger(),"cmd_vel: linear.x=%.3f angular.z=%.3f",
-                        v_cmd_, w_cmd_);
+                    RCLCPP_INFO_THROTTLE(get_logger(), *this->get_clock(), 1000,
+                                         "cmd_vel: linear.x=%.3f angular.z=%.3f",
+                                         v_cmd_, w_cmd_);
                 }
             );
 
@@ -375,13 +376,13 @@ class MotorEnableNode : public rclcpp::Node {
 
         void set_direction(double v_cmd){
             // convert v_cmd to direction and call set_input_line
-                if(v_cmd > 0.05){ //forward
+                if(v_cmd > 0.0005){ //forward
                     set_input_line(a_in1_line_, true, "a_in1");
                     set_input_line(a_in2_line_, false, "a_in2");
                     set_input_line(b_in3_line_, true, "b_in3");
                     set_input_line(b_in4_line_, false, "b_in4");
                 }
-                else if(v_cmd < -0.05){ //backward
+                else if(v_cmd < -0.0005){ //backward
                     set_input_line(a_in1_line_, false, "a_in1");
                     set_input_line(a_in2_line_, true, "a_in2");
                     set_input_line(b_in3_line_, false, "b_in3");
