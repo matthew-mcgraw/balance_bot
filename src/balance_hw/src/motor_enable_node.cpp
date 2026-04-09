@@ -256,7 +256,7 @@ class MotorEnableNode : public rclcpp::Node {
                 return false;
             }
 
-            RCLCPP_INFO(get_logger(), "GPIO line %s set %s...", label, enable ? "HIGH" : "LOW" );
+            RCLCPP_INFO_THROTTLE(get_logger(), *this->get_clock(), 1000 , "GPIO line %s set %s...", label, enable ? "HIGH" : "LOW" );
             return true;
         }
 
