@@ -67,6 +67,19 @@ ament_target_dependencies(motor_encoder_node
 )
 target_link_libraries(motor_encoder_node gpiod)
 
+add_executable(velocity_controller_node src/velocity_controller_node.cpp)
+ament_target_dependencies(velocity_controller_node
+  rclcpp
+  std_msgs
+  geometry_msgs
+)
+
+install(
+  TARGETS velocity_controller_node
+  DESTINATION lib/${PROJECT_NAME}
+)
+
+
 install(
   TARGETS motor_enable_node
   DESTINATION lib/${PROJECT_NAME}

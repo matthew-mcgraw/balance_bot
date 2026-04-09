@@ -67,42 +67,40 @@ public:
         encoder_pub_ = this->create_publisher<std_msgs::msg::Float64MultiArray>("/wheel_velocity", 10);
 
         timer_ = this->create_wall_timer(
-            std::chrono::milliseconds(5), // 200 Hz
+            std::chrono::microseconds(2500) // 400 Hz
+                [this]() {
+                    const auto age = (this->now() - last_time_).nanoseconds();
 
-            [this]()
-            {
-                const auto age = (this->now() - last_time_).nanoseconds();
+                    if (age <= 0)
+                    {
+                        last_time_ = this->now();
+                        return;
+                    }
+                    if (!encoder_pub_)
+                    {
+                        RCLCPP_FATAL(get_logger(), "encoder_pub_ is null (publisher not created)");
+                        return;
+                    }
 
-                if (age <= 0)
-                {
+                    std::lock_guard<std::mutex> lock(count_mutex_);
+                    const int64_t count_a = motor_a_count_;
+                    const int64_t count_b = motor_b_count_;
+                    motor_a_count_ = 0;
+                    motor_b_count_ = 0;
+                    auto msg = std_msgs::msg::Float64MultiArray();
+
+                    double motor_a_velocity = (static_cast<double>(count_a) / 1632) * (2 * 3.14159) / (static_cast<double>(age) / 1e9); // Convert counts to radians per second
+                    double motor_b_velocity = (static_cast<double>(count_b) / 1632) * (2 * 3.14159) / (static_cast<double>(age) / 1e9); // Convert counts to radians per second
+                    RCLCPP_INFO_THROTTLE(get_logger(), *this->get_clock(), 500,
+                                         "Motor A velocity: %.2f rad/s, Motor B velocity: %.2f rad/s", motor_a_velocity, motor_b_velocity);
+
+                    msg.data.push_back(static_cast<double>(motor_a_velocity));
+                    msg.data.push_back(static_cast<double>(motor_b_velocity));
+
+                    encoder_pub_->publish(msg);
+
                     last_time_ = this->now();
-                    return;
-                }
-                if (!encoder_pub_)
-                {
-                    RCLCPP_FATAL(get_logger(), "encoder_pub_ is null (publisher not created)");
-                    return;
-                }
-
-                std::lock_guard<std::mutex> lock(count_mutex_);
-                const int64_t count_a = motor_a_count_;
-                const int64_t count_b = motor_b_count_;
-                motor_a_count_ = 0;
-                motor_b_count_ = 0;
-                auto msg = std_msgs::msg::Float64MultiArray();
-
-                double motor_a_velocity = (static_cast<double>(count_a) / 1632) * (2 * 3.14159) / (static_cast<double>(age) / 1e9); // Convert counts to radians per second
-                double motor_b_velocity = (static_cast<double>(count_b) / 1632) * (2 * 3.14159) / (static_cast<double>(age) / 1e9); // Convert counts to radians per second
-                RCLCPP_INFO_THROTTLE(get_logger(), *this->get_clock(), 500,
-                                     "Motor A velocity: %.2f rad/s, Motor B velocity: %.2f rad/s", motor_a_velocity, motor_b_velocity);
-
-                msg.data.push_back(static_cast<double>(motor_a_velocity));
-                msg.data.push_back(static_cast<double>(motor_b_velocity));
-
-                encoder_pub_->publish(msg);
-
-                last_time_ = this->now();
-            });
+                });
     }
 
     ~MotorEncoderNode()

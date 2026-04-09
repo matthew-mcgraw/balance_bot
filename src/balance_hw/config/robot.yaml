@@ -26,3 +26,12 @@ motor_encoder_node:
     motor_b_encoder_a: 22   # GPIO pin for encoder A on Motor B (yellow wire)
     motor_b_encoder_b: 23   # GPIO pin for encoder B on Motor B (white/orange wire)
     chip_path: "/dev/gpiochip0" # Path to the GPIO chip
+
+velocity_controller_node:
+  ros__parameters:
+    wheel_radius: 0.045
+    motor_stall_torque: 1.079
+    omega_no_load: 31.4
+    kp_vel: 1.0
+    ki_vel: 0.0
+    kd_vel: 0.0
