@@ -214,7 +214,7 @@ class MotorEnableNode : public rclcpp::Node {
         double pwm_cmd_{0.0};
         rclcpp::Time last_cmd_time_;
         rclcpp::TimerBase::SharedPtr cmd_watchdog_timer_;
-        int cmd_timeout_ms_{10000};
+        int cmd_timeout_ms_{250};
 
         bool set_motor_a(bool enable){
             if (!pwm_a_line_){
