@@ -397,7 +397,7 @@ class MotorEnableNode : public rclcpp::Node {
 
         void set_pwm(int pwm_value){
             int pwm = std::clamp<int>(pwm_value, 0, 1000);
-            if (pwm > 0 && pwm < MIN_PWM_) pwm = MIN_PWM_;
+            // if (pwm > 0 && pwm < MIN_PWM_) pwm = MIN_PWM_;
 
             int duty_a = (pwm_period_ns_ * pwm) / 1000;
             int duty_b = (pwm_period_ns_ * pwm) / 1000;
