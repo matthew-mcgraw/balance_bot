@@ -75,6 +75,11 @@ ament_target_dependencies(velocity_controller_node
 )
 
 install(
+  DIRECTORY launch
+  DESTINATION share/${PROJECT_NAME}
+)
+
+install(
   TARGETS velocity_controller_node
   DESTINATION lib/${PROJECT_NAME}
 )
