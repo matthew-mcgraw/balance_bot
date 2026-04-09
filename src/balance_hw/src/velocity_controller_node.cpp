@@ -86,7 +86,7 @@ private:
 
         // average both wheel velocities for a single speed estimate
         // sign convention: positive = forward
-        measured_velocity_ = (msg->data[0] + msg->data[1]) / 2.0; // in rad/s
+        measured_velocity_ = (msg->data[0] + (-msg->data[1])) / 2.0;
 
         // compute dt
         const auto now = this->now();
