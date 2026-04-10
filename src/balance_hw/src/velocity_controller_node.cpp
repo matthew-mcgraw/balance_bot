@@ -103,6 +103,14 @@ private:
             return;
         }
 
+        if (std::abs(omega_setpoint_) < 0.05)
+        {
+            integral_ = 0.0;
+            geometry_msgs::msg::Twist cmd_msg;
+            cmd_msg.linear.x = 0.0;
+            cmd_vel_pub_->publish(cmd_msg);
+            return;
+        }
         // Velocity PID control
         // error: how far measured wheel speed is from setpoint
         const double error = omega_setpoint_ - measured_velocity_;
