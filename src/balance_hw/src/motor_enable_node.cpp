@@ -149,7 +149,7 @@ class MotorEnableNode : public rclcpp::Node {
             last_cmd_time_ = this->now();
 
             cmd_watchdog_timer_ = this->create_wall_timer(
-                std::chrono::milliseconds(50),
+                std::chrono::milliseconds(5),
                 [this]() {
                     const auto age = (this->now() - last_cmd_time_).nanoseconds();
                     const int64_t timeout_ns = static_cast<int64_t>(cmd_timeout_ms_) * 1000000LL;

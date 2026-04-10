@@ -17,12 +17,14 @@ public:
         this->declare_parameter<int>("motor_b_encoder_a", -1);
         this->declare_parameter<int>("motor_b_encoder_b", -1);
         this->declare_parameter<std::string>("chip_path", "");
+        this->declare_parameter<int>("event_time_threshold", 50000); // Minimum interval between valid events in microseconds
 
         motor_a_encoder_a_ = this->get_parameter("motor_a_encoder_a").as_int();
         motor_a_encoder_b_ = this->get_parameter("motor_a_encoder_b").as_int();
         motor_b_encoder_a_ = this->get_parameter("motor_b_encoder_a").as_int();
         motor_b_encoder_b_ = this->get_parameter("motor_b_encoder_b").as_int();
         chip_path_ = this->get_parameter("chip_path").as_string();
+        event_time_threshold_ns_ = this->get_parameter("event_time_threshold").as_int();
         RCLCPP_INFO(get_logger(), "chip=%s motor_a_encoder_a=%d motor_a_encoder_b=%d motor_b_encoder_a=%d motor_b_encoder_b=%d",
                     chip_path_.c_str(), motor_a_encoder_a_, motor_a_encoder_b_, motor_b_encoder_a_, motor_b_encoder_b_);
 
@@ -135,6 +137,7 @@ private:
     int motor_a_encoder_b_{-1};
     int motor_b_encoder_a_{-1};
     int motor_b_encoder_b_{-1};
+    const int64_t event_time_threshold_ns_{50'000}; // 50 microseconds, adjust as needed based on expected max speed and noise characteristics
     std::string chip_path_{""};
     int64_t motor_a_count_{0};
     int64_t motor_b_count_{0};
@@ -203,7 +206,7 @@ private:
 
             // ← add this block
             const int64_t event_time_ns = event.ts.tv_sec * 1000000000LL + event.ts.tv_nsec;
-            if (event_time_ns - last_event_time_ns < 50000)
+            if (event_time_ns - last_event_time_ns < event_time_threshold_ns_)
             {
                 continue; // reject as noise, too close to previous event
             }
@@ -329,7 +332,7 @@ private:
 
             // ← add this block
             const int64_t event_time_ns = event.ts.tv_sec * 1000000000LL + event.ts.tv_nsec;
-            if (event_time_ns - last_event_time_ns < 50000)
+            if (event_time_ns - last_event_time_ns < event_time_threshold_ns_)
             {
                 continue; // reject as noise, too close to previous event
             }

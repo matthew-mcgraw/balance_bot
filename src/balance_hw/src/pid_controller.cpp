@@ -12,11 +12,13 @@ public:
         this->declare_parameter<double>("ki", -1.0);
         this->declare_parameter<double>("kd", -1.0);
         this->declare_parameter<double>("setpoint", -1.0);
+        this->declare_parameter<double>("fall_detection_threshold", 0.5);
 
         kp_ = this->get_parameter("kp").as_double();
         ki_ = this->get_parameter("ki").as_double();
         kd_ = this->get_parameter("kd").as_double();
         setpoint_ = this->get_parameter("setpoint").as_double();
+        fall_detection_threshold_ = this->get_parameter("fall_detection_threshold").as_double();
 
         imu_sub_ = this->create_subscription<sensor_msgs::msg::Imu>(
             "/imu/data_raw", 50,
@@ -39,6 +41,7 @@ private:
     double kd_{-1.0};               // Derivative gain, can be set to 0 for a start, increase if you see excessive oscillation, but be careful as too high value can cause instability
     double setpoint_{0.0};          // Desired pitch angle (0 degrees for upright balance)
     double latest_pitch_rate_{0.0}; // Latest pitch rate from the IMU (gyro x), used for the derivative term in PID
+    double fall_detection_threshold_{0.5}; // in radians, if the pitch angle exceeds this threshold, we consider the robot has fallen and stop applying corrective force
 
     rclcpp::Subscription<sensor_msgs::msg::Imu>::SharedPtr imu_sub_;    // subscribe to raw IMU data to get the latest pitch rate (gyro x)
     rclcpp::Subscription<std_msgs::msg::Float64>::SharedPtr pitch_sub_; // subscribe to the estimated pitch angle to calculate the PID output
@@ -55,7 +58,7 @@ private:
         const double pitch = msg->data;
 
         // Fall detection - if pitch exceeds ~30 degrees, stop correcting
-        if (std::abs(pitch) > 0.5)
+        if (std::abs(pitch) > fall_detection_threshold_)
         {
             std_msgs::msg::Float64 zero_msg;
             zero_msg.data = 0.0;
