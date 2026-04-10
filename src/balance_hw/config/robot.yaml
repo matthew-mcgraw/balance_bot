@@ -10,6 +10,10 @@ motor_enable_node:
     motor_mode: "pwm"
     MIN_PWM: 300         # Minimum PWM value to overcome motor stall torque
 
+imu_estimator_node:
+  ros__parameters:
+    alpha: 0.95         # Complementary filter coefficient for sensor fusion
+
 pid_controller_node:
   ros__parameters:
     kp: 90.0            # Proportional gain

@@ -6,7 +6,11 @@
 class IMU_Estimator : public rclcpp::Node {
     public:
         IMU_Estimator() : rclcpp::Node("imu_estimator_node"){
+            this->declare_parameter<double>("alpha", 0.98);
 
+            alpha_ = this->get_parameter("alpha").as_double();
+
+            RCLCPP_INFO(get_logger(), "imu_estimator_node initialized with alpha=%.3f", alpha_);
 
             imu_sub_ = this->create_subscription<sensor_msgs::msg::Imu>(
                 "/imu/data_raw", 50,
