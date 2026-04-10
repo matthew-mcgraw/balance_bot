@@ -137,7 +137,7 @@ private:
     int motor_a_encoder_b_{-1};
     int motor_b_encoder_a_{-1};
     int motor_b_encoder_b_{-1};
-    const int64_t event_time_threshold_ns_{50'000}; // 50 microseconds, adjust as needed based on expected max speed and noise characteristics
+    int64_t event_time_threshold_ns_{50'000}; // 50 microseconds, adjust as needed based on expected max speed and noise characteristics
     std::string chip_path_{""};
     int64_t motor_a_count_{0};
     int64_t motor_b_count_{0};
