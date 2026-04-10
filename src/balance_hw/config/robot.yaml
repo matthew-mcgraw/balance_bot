@@ -16,9 +16,9 @@ imu_estimator_node:
 
 pid_controller_node:
   ros__parameters:
-    kp: 90.0            # Proportional gain
+    kp: 27.0            # Proportional gain
     ki: 0.0             # Integral gain 
-    kd: 6.0             # Derivative gain
+    kd: 1.8             # Derivative gain
     setpoint: 0.0       # Desired pitch angle (0 degrees for upright balance)
     wheel_radius: 0.045 # in meters
     motor_stall_torque: 1.079 # in N-m, adjust based on your motor's specifications
@@ -38,6 +38,6 @@ velocity_controller_node:
     wheel_radius: 0.045
     motor_stall_torque: 1.079
     omega_no_load: 31.4
-    kp_vel: 1.0
+    kp_vel: 1.2
     ki_vel: 0.0
-    kd_vel: 0.0
+    kd_vel: 0.0007
