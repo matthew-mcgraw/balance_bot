@@ -179,6 +179,7 @@ private:
         struct timespec timeout;
         timeout.tv_sec = 0;
         timeout.tv_nsec = 10'000'000; // 10 ms
+        int64_t last_event_time_ns = 0;
 
         // Loop until the node is shutting down. running_ is a std::atomic<bool>
         // set to false in the destructor, which causes this thread to exit cleanly.
@@ -304,6 +305,7 @@ private:
         struct timespec timeout;
         timeout.tv_sec = 0;
         timeout.tv_nsec = 10'000'000; // 10 ms
+        int64_t last_event_time_ns = 0;
 
         // Loop until the node is shutting down. running_ is a std::atomic<bool>
         // set to false in the destructor, which causes this thread to exit cleanly.
