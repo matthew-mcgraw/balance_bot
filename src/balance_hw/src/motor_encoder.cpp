@@ -200,6 +200,14 @@ private:
             // written into our local `event` struct.
             gpiod_line_event_read(motor_a_encoder_a_line_, &event);
 
+            // ← add this block
+            const int64_t event_time_ns = event.ts.tv_sec * 1000000000LL + event.ts.tv_nsec;
+            if (event_time_ns - last_event_time_ns < 50000)
+            {
+                continue; // reject as noise, too close to previous event
+            }
+            last_event_time_ns = event_time_ns;
+
             // Quadrature decoding on the RISING edge of channel A:
             // When A rises, the state of B tells us the direction of rotation.
             //
@@ -316,6 +324,14 @@ private:
             // gpiod_line_event_wait will block fresh. The event details are
             // written into our local `event` struct.
             gpiod_line_event_read(motor_b_encoder_a_line_, &event);
+
+            // ← add this block
+            const int64_t event_time_ns = event.ts.tv_sec * 1000000000LL + event.ts.tv_nsec;
+            if (event_time_ns - last_event_time_ns < 50000)
+            {
+                continue; // reject as noise, too close to previous event
+            }
+            last_event_time_ns = event_time_ns;
 
             // Quadrature decoding on the RISING edge of channel A:
             // When A rises, the state of B tells us the direction of rotation.
