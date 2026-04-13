@@ -36,12 +36,17 @@ public:
     }
 
 private:
-    double kp_{-1.0};               // Proportional gain, adjust based on your robot's response (start with a high value and decrease if the system oscillates)
-    double ki_{-1.0};               // Integral gain, can be set to 0 for a start, increase if you see steady-state error (robot not perfectly balanced), but be careful as too high value can cause instability
-    double kd_{-1.0};               // Derivative gain, can be set to 0 for a start, increase if you see excessive oscillation, but be careful as too high value can cause instability
-    double setpoint_{0.0};          // Desired pitch angle (0 degrees for upright balance)
-    double latest_pitch_rate_{0.0}; // Latest pitch rate from the IMU (gyro x), used for the derivative term in PID
+    double kp_{-1.0};                      // Proportional gain, adjust based on your robot's response (start with a high value and decrease if the system oscillates)
+    double ki_{-1.0};                      // Integral gain, can be set to 0 for a start, increase if you see steady-state error (robot not perfectly balanced), but be careful as too high value can cause instability
+    double kd_{-1.0};                      // Derivative gain, can be set to 0 for a start, increase if you see excessive oscillation, but be careful as too high value can cause instability
+    double setpoint_{0.0};                 // Desired pitch angle (0 degrees for upright balance)
+    double latest_pitch_rate_{0.0};        // Latest pitch rate from the IMU (gyro x), used for the derivative term in PID
     double fall_detection_threshold_{0.5}; // in radians, if the pitch angle exceeds this threshold, we consider the robot has fallen and stop applying corrective force
+
+    // add to private members
+    double integral_{0.0};
+    rclcpp::Time last_time_;
+    bool have_last_time_{false};
 
     rclcpp::Subscription<sensor_msgs::msg::Imu>::SharedPtr imu_sub_;    // subscribe to raw IMU data to get the latest pitch rate (gyro x)
     rclcpp::Subscription<std_msgs::msg::Float64>::SharedPtr pitch_sub_; // subscribe to the estimated pitch angle to calculate the PID output
@@ -57,17 +62,33 @@ private:
     {
         const double pitch = msg->data;
 
-        // Fall detection - if pitch exceeds ~30 degrees, stop correcting
         if (std::abs(pitch) > fall_detection_threshold_)
         {
+            integral_ = 0.0; // reset integral on fall
+            have_last_time_ = false;
             std_msgs::msg::Float64 zero_msg;
             zero_msg.data = 0.0;
             force_pub_->publish(zero_msg);
             return;
         }
 
+        const auto now = this->now();
+        if (!have_last_time_)
+        {
+            last_time_ = now;
+            have_last_time_ = true;
+            return;
+        }
+        const double dt = (now - last_time_).seconds();
+        last_time_ = now;
+        if (dt <= 0.0 || dt > 0.1)
+            return;
+
         const double error = setpoint_ - pitch;
-        const double output_ = (kp_ * error) + (kd_ * latest_pitch_rate_);
+        integral_ += error * dt;
+        integral_ = std::clamp(integral_, -2.0, 2.0); // anti-windup
+
+        const double output_ = (kp_ * error) + (ki_ * integral_) + (kd_ * latest_pitch_rate_);
         std_msgs::msg::Float64 force_cmd_msg;
         force_cmd_msg.data = output_;
         force_pub_->publish(force_cmd_msg);

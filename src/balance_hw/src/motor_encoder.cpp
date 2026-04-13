@@ -17,7 +17,7 @@ public:
         this->declare_parameter<int>("motor_b_encoder_a", -1);
         this->declare_parameter<int>("motor_b_encoder_b", -1);
         this->declare_parameter<std::string>("chip_path", "");
-        this->declare_parameter<int>("event_time_threshold", 50000); // Minimum interval between valid events in microseconds
+        this->declare_parameter<int>("event_time_threshold", 50000); // Minimum interval between valid events in nanoseconds
 
         motor_a_encoder_a_ = this->get_parameter("motor_a_encoder_a").as_int();
         motor_a_encoder_b_ = this->get_parameter("motor_a_encoder_b").as_int();
@@ -69,7 +69,7 @@ public:
         encoder_pub_ = this->create_publisher<std_msgs::msg::Float64MultiArray>("/wheel_velocity", 10);
 
         timer_ = this->create_wall_timer(
-            std::chrono::microseconds(2500), // 400 Hz
+            std::chrono::microseconds(10000), // 400 Hz
             [this]()
             {
                 const auto age = (this->now() - last_time_).nanoseconds();

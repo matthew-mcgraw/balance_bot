@@ -61,6 +61,10 @@ private:
     bool have_prev_{false};         // flag to check if we have a previous error value for derivative calculation
     rclcpp::Time last_time_;        // last time we received a velocity measurement, used for calculating dt in PID control
 
+    // add to private members
+    double filtered_velocity_{0.0};
+    double vel_filter_alpha_{0.7}; // tune this
+
     rclcpp::Subscription<std_msgs::msg::Float64>::SharedPtr force_sub_;         // subscribe to the force command to calculate the PID output
     rclcpp::Subscription<std_msgs::msg::Float64MultiArray>::SharedPtr vel_sub_; // subscribe to the estimated pitch angle to calculate the PID output
     rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr cmd_vel_pub_;       // publish cmd_vel with linear.x set to the PWM output for the motor controller node to consume
@@ -86,7 +90,9 @@ private:
 
         // average both wheel velocities for a single speed estimate
         // sign convention: positive = forward
-        measured_velocity_ = (msg->data[0] + (-msg->data[1])) / 2.0;
+        const double raw_velocity = (msg->data[0] + (-msg->data[1])) / 2.0;
+        filtered_velocity_ = vel_filter_alpha_ * filtered_velocity_ + (1.0 - vel_filter_alpha_) * raw_velocity;
+        measured_velocity_ = filtered_velocity_;
 
         // compute dt
         const auto now = this->now();
@@ -119,12 +125,18 @@ private:
         integral_ += error * dt;
         integral_ = std::clamp(integral_, -10.0, 10.0); // adjust clamp limits as needed
 
-        // derivative on measurement to avoid derivative kick on setpoint changes
-        const double derivative = (error - prev_error_) / dt;
+        // add to private members
+        double filtered_derivative_{0.0};
+        double deriv_filter_alpha_{0.8};
+
+        // replace derivative calculation:
+        const double raw_derivative = (error - prev_error_) / dt;
+        filtered_derivative_ = deriv_filter_alpha_ * filtered_derivative_ + (1.0 - deriv_filter_alpha_) * raw_derivative;
+
         prev_error_ = error;
 
         // pid output - this is a normalized pwm command in [-1, 1]
-        double output = (kp_vel_ * error) + (ki_vel_ * integral_) + (kd_vel_ * derivative);
+        double output = (kp_vel_ * error) + (ki_vel_ * integral_) + (kd_vel_ * filtered_derivative_);
 
         // clamp output to valid range for motor command
         output = std::clamp(output, -1.0, 1.0);
