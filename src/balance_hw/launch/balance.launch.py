@@ -48,5 +48,11 @@ def generate_launch_description():
                 name="motor_enable_node",
                 parameters=[config],
             ),
+            Node(
+                package="balance_hw",
+                executable="diag_logger_node",
+                name="diag_logger_node",
+                parameters=[config],
+            ),
         ]
     )

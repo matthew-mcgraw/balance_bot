@@ -1,18 +1,18 @@
 motor_enable_node:
   ros__parameters:
-    pwm_a: 13           # PWM pin for motor A
-    a_in1: 6            # Direction pin 1 for motor A
-    a_in2: 26           # Direction pin 2 for motor A
-    pwm_b: 12           # PWM pin for motor B
-    b_in3: 20           # Direction pin 1 for motor B
-    b_in4: 16           # Direction pin 2 for motor B
-    chip_path: "/dev/gpiochip0" # Path to the GPIO chip
+    pwm_a: 13
+    a_in1: 6
+    a_in2: 26
+    pwm_b: 12
+    b_in3: 20
+    b_in4: 16
+    chip_path: "/dev/gpiochip0"
     motor_mode: "pwm"
-    MIN_PWM: 300         # Minimum PWM value to overcome motor stall torque
+    MIN_PWM: 0
 
 imu_estimator_node:
   ros__parameters:
-    alpha: 0.925         # Complementary filter coefficient for sensor fusion
+    alpha: 0.85
 
 imu_node:
   ros__parameters:
@@ -20,28 +20,31 @@ imu_node:
 
 pid_controller_node:
   ros__parameters:
-    kp: 25.0            # Proportional gain
-    ki: 0.2             # Integral gain 
-    kd: 1.2             # Derivative gain
-    setpoint: 0.0       # Desired pitch angle (0 degrees for upright balance)
-    wheel_radius: 0.045 # in meters
-    motor_stall_torque: 1.079 # in N-m, adjust based on your motor's specifications
-    fall_detection_threshold: 0.6 # in radians, if the pitch angle exceeds this threshold, we consider the robot has fallen and stop applying corrective force
+    kp: 30.0
+    ki: 0.0
+    kd: 2.0
+    setpoint: 0.0
+    fall_detection_threshold: 0.78
+    max_velocity_cmd: 6.0
 
 motor_encoder_node:
   ros__parameters:
-    motor_a_encoder_a: 17    # GPIO pin for encoder A on Motor A (yellow wire)
-    motor_a_encoder_b: 27    # GPIO pin for encoder B on Motor A (white/orange wire)
-    motor_b_encoder_a: 22   # GPIO pin for encoder A on Motor B (yellow wire)
-    motor_b_encoder_b: 23   # GPIO pin for encoder B on Motor B (white/orange wire)
-    chip_path: "/dev/gpiochip0" # Path to the GPIO chip
-    event_time_threshold: 100000 # Minimum interval between valid events in nanoseconds (50 ms)
+    motor_a_encoder_a: 17
+    motor_a_encoder_b: 27
+    motor_b_encoder_a: 22
+    motor_b_encoder_b: 23
+    chip_path: "/dev/gpiochip0"
+    event_time_threshold: 100000
 
 velocity_controller_node:
   ros__parameters:
-    wheel_radius: 0.045
-    motor_stall_torque: 1.079
     omega_no_load: 31.4
-    kp_vel: 1.0
-    ki_vel: 0.0
-    kd_vel: 0.0005
+    kp_vel: 0.30
+    ki_vel: 0.05
+    kd_vel: 0.006
+    max_slew_rate: 50.0
+
+diag_logger_node:
+  ros__parameters:
+    log_rate_hz: 100.0
+    csv_path: "/home/mmcgraw/balance_log.csv"

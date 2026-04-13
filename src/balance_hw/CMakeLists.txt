@@ -74,6 +74,14 @@ ament_target_dependencies(velocity_controller_node
   geometry_msgs
 )
 
+add_executable(diag_logger_node src/diag_logger.cpp)
+ament_target_dependencies(diag_logger_node
+  rclcpp
+  sensor_msgs
+  std_msgs
+  geometry_msgs
+)
+
 install(
   DIRECTORY launch
   DESTINATION share/${PROJECT_NAME}
@@ -112,6 +120,11 @@ install(
 
 install(
   TARGETS motor_encoder_node
+  DESTINATION lib/${PROJECT_NAME}
+)
+
+install(
+  TARGETS diag_logger_node
   DESTINATION lib/${PROJECT_NAME}
 )
 
