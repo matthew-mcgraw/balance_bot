@@ -12,6 +12,11 @@
 class IMU_Node : public rclcpp::Node {
     public:
         IMU_Node() : rclcpp::Node("imu_node"){
+
+            this->declare_parameter<int>("SAMPLE_FREQ_MIRCOSEC", 300);
+
+            SAMPLE_FREQ_MIRCOSEC_ = this->get_parameter("SAMPLE_FREQ_MIRCOSEC").as_int();
+
             i2c_fd_ = ::open("/dev/i2c-1", O_RDWR);
             if(i2c_fd_ < 0){
                 RCLCPP_FATAL(get_logger(), "Failed to open /dev/i2c-1");
@@ -169,9 +174,12 @@ class IMU_Node : public rclcpp::Node {
         const double accel_lsb_per_g{16384.0};
         const double gyro_lsb_per_dps{131.0};
         const double deg2rad{3.14159/180.0}; 
+        int64_t SAMPLE_FREQ_MIRCOSEC_{5000};
 
         rclcpp::Publisher<sensor_msgs::msg::Imu>::SharedPtr imu_pub_;
         rclcpp::TimerBase::SharedPtr timer_;
+
+
 
         bool read_sample(uint8_t buf[14]) {
             uint8_t reg = 0x3B; // ACCEL_XOUT_H

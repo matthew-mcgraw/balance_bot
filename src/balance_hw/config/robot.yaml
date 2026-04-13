@@ -14,11 +14,15 @@ imu_estimator_node:
   ros__parameters:
     alpha: 0.95         # Complementary filter coefficient for sensor fusion
 
+imu_node:
+  ros__parameters:
+    SAMPLE_FREQ_MIRCOSEC: 3000
+
 pid_controller_node:
   ros__parameters:
-    kp: 27.0            # Proportional gain
+    kp: 25.0            # Proportional gain
     ki: 0.0             # Integral gain 
-    kd: 1.8             # Derivative gain
+    kd: 2.0             # Derivative gain
     setpoint: 0.0       # Desired pitch angle (0 degrees for upright balance)
     wheel_radius: 0.045 # in meters
     motor_stall_torque: 1.079 # in N-m, adjust based on your motor's specifications
@@ -31,13 +35,13 @@ motor_encoder_node:
     motor_b_encoder_a: 22   # GPIO pin for encoder A on Motor B (yellow wire)
     motor_b_encoder_b: 23   # GPIO pin for encoder B on Motor B (white/orange wire)
     chip_path: "/dev/gpiochip0" # Path to the GPIO chip
-    event_time_threshold: 50000 # Minimum interval between valid events in microseconds (50 ms)
+    event_time_threshold: 100000 # Minimum interval between valid events in microseconds (50 ms)
 
 velocity_controller_node:
   ros__parameters:
     wheel_radius: 0.045
     motor_stall_torque: 1.079
     omega_no_load: 31.4
-    kp_vel: 1.2
+    kp_vel: 1.1
     ki_vel: 0.0
-    kd_vel: 0.0007
+    kd_vel: 0.0009
